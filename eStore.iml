@@ -16,7 +16,14 @@
       </configuration>
     </facet>
     <facet type="Spring" name="Spring">
-      <configuration />
+      <configuration>
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/src/main/java/uz/micros/estore/config/AppConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/java/uz/micros/estore/config/DispatcherConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/java/uz/micros/estore/config/ThymeleafConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/java/uz/micros/estore/config/WebInitializer.java</file>
+        </fileset>
+      </configuration>
     </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7" inherit-compiler-output="false">

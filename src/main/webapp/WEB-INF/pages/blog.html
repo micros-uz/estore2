@@ -7,7 +7,17 @@
 </head>
 <body>
     <section layout:fragment="content">
-        Blog Content
+        <h2 th:text="${blog.title}"></h2>
+
+        <div class="row" th:each="post : ${blog.posts}">
+            <div class="col-md-6">
+                <h3 th:text="${post.title}"/>
+                <p th:text="${post.text}"></p>
+            </div>
+
+        </div>
     </section>
+
+
 </body>
 </html>
