@@ -12,7 +12,7 @@ import java.util.Date;
 public class HomeController {
     @RequestMapping(method = RequestMethod.GET)
     public String printWelcome(ModelMap model) {
-        model.addAttribute("message", "Hi,ww eStore!");
+        model.addAttribute("message", "Hi,OUR NEW eStore!");
         Date curDate = new Date();
         model.addAttribute("curDate", curDate.toString());
 
