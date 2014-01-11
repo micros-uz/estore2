@@ -3,7 +3,6 @@ package uz.micros.estore.config;
 import nz.net.ultraq.thymeleaf.LayoutDialect;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.PropertySource;
 import org.springframework.web.servlet.ViewResolver;
 import org.thymeleaf.spring4.SpringTemplateEngine;
 import org.thymeleaf.spring4.view.ThymeleafViewResolver;
@@ -16,7 +15,7 @@ public class ThymeleafConfig {
 
 
     @Bean
-    public TemplateResolver templateResolver(){
+    public TemplateResolver templateResolver() {
         ServletContextTemplateResolver templateResolver = new ServletContextTemplateResolver();
         templateResolver.setPrefix("/WEB-INF/pages/");
         templateResolver.setSuffix(".html");
@@ -26,7 +25,7 @@ public class ThymeleafConfig {
     }
 
     @Bean
-    public SpringTemplateEngine templateEngine(){
+    public SpringTemplateEngine templateEngine() {
         SpringTemplateEngine templateEngine = new SpringTemplateEngine();
         templateEngine.setTemplateResolver(templateResolver());
         templateEngine.addDialect(new LayoutDialect());
@@ -35,8 +34,8 @@ public class ThymeleafConfig {
     }
 
     @Bean
-    public ViewResolver viewResolver(){
-        ThymeleafViewResolver viewResolver = new ThymeleafViewResolver() ;
+    public ViewResolver viewResolver() {
+        ThymeleafViewResolver viewResolver = new ThymeleafViewResolver();
         viewResolver.setTemplateEngine(templateEngine());
         viewResolver.setOrder(1);
 
@@ -45,14 +44,13 @@ public class ThymeleafConfig {
 
     /**
      //Example for JSP
-     @Bean
-     public ViewResolver viewResolver() {
-         InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
-         viewResolver.setViewClass(JstlView.class);
-         viewResolver.setPrefix("/WEB-INF/pages/");
-         viewResolver.setSuffix(".jsp");
+     @Bean public ViewResolver viewResolver() {
+     InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
+     viewResolver.setViewClass(JstlView.class);
+     viewResolver.setPrefix("/WEB-INF/pages/");
+     viewResolver.setSuffix(".jsp");
 
-         return viewResolver;
+     return viewResolver;
      }
      **/
 }
