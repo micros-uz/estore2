@@ -30,7 +30,7 @@ public class DbManager {
                     "yqAhZ7uXKt6Y");
 
         } catch (SQLException e) {
-            return "Connection Failed! Check output console";
+            return "Connection Failed! Check output console " + e.getMessage();
         }
 
         if (connection != null)
