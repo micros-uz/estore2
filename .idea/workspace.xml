@@ -74,28 +74,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DbManager.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="DbManager.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/util/DbManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="1" selection-start="1335" selection-end="1335" vertical-scroll-proportion="0.0" vertical-offset="304" max-vertical-offset="900">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="openshiftDB.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/openshiftDB.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="88" selection-start="172" selection-end="244" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="240">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="32" selection-start="2919" selection-end="2919" vertical-scroll-proportion="0.31304348" vertical-offset="1560" max-vertical-offset="4080">
+            <state line="32" column="0" selection-start="1148" selection-end="1148" vertical-scroll-proportion="0.4966443" vertical-offset="304" max-vertical-offset="940">
               <folding />
             </state>
           </provider>
@@ -175,8 +157,8 @@
         <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/controller/BlogController.java" />
         <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/controller/AdminController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/adminSql.html" />
-        <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/util/DbManager.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/util/DbManager.java" />
       </list>
     </option>
   </component>
@@ -673,12 +655,12 @@
       <workItem from="1389434012071" duration="9085000" />
       <workItem from="1389447934060" duration="2942000" />
       <workItem from="1389452495635" duration="621000" />
-      <workItem from="1389523076679" duration="1911000" />
+      <workItem from="1389523076679" duration="2377000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75883000" />
+    <option name="totallyTimeSpent" value="76349000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1040" height="744" extended-state="6" />
@@ -1005,23 +987,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="32" selection-start="715" selection-end="715" vertical-scroll-proportion="0.24347825" vertical-offset="180" max-vertical-offset="4080">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/openshiftDB.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="88" selection-start="172" selection-end="244" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+        <state line="6" column="88" selection-start="172" selection-end="244" vertical-scroll-proportion="0.20869565" vertical-offset="0" max-vertical-offset="575">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/util/DbManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="1" selection-start="1335" selection-end="1335" vertical-scroll-proportion="0.0" vertical-offset="304" max-vertical-offset="900">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="32" selection-start="2919" selection-end="2919" vertical-scroll-proportion="0.31304348" vertical-offset="1560" max-vertical-offset="4080">
+        <state line="32" column="0" selection-start="1148" selection-end="1148" vertical-scroll-proportion="0.4966443" vertical-offset="304" max-vertical-offset="940">
           <folding />
         </state>
       </provider>

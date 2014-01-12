@@ -25,8 +25,10 @@ public class DbManager {
                     "jdbc:postgresql://127.0.0.1:5432/estore", "postgres",
                     "dev1234");*/
 
+            String host = System.getenv("OPENSHIFT_POSTGRESQL_DB_HOST");
+            String port = System.getenv("OPENSHIFT_POSTGRESQL_DB_PORT");
             connection = DriverManager.getConnection(
-                    "jdbc:postgresql://${OPENSHIFT_POSTGRESQL_DB_HOST}:${OPENSHIFT_POSTGRESQL_DB_PORT}/estore", "adminn8szx56",
+                    "jdbc:postgresql://" + host + ":" + port + "/estore", "adminn8szx56",
                     "yqAhZ7uXKt6Y");
 
         } catch (SQLException e) {
