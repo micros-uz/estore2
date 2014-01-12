@@ -3,6 +3,7 @@ package uz.micros.estore.util;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.Map;
 
 public class DbManager {
     public static String connectToDb() {
@@ -19,11 +20,18 @@ public class DbManager {
         System.out.println("PostgreSQL JDBC Driver Registered!");
 
         Connection connection = null;
+        String envs = "";
 
         try {
 /*            connection = DriverManager.getConnection(
                     "jdbc:postgresql://127.0.0.1:5432/estore", "postgres",
                     "dev1234");*/
+
+
+            Map<String, String> env = System.getenv();
+            for (String envName : env.keySet()) {
+                envs += String.format("%s=%s%n", envName, env.get(envName));
+            }
 
             String host = System.getenv("OPENSHIFT_POSTGRESQL_DB_HOST");
             String port = System.getenv("OPENSHIFT_POSTGRESQL_DB_PORT");
@@ -38,8 +46,8 @@ public class DbManager {
         }
 
         if (connection != null)
-            return "You made it, take control your database now!";
+            return envs + " You made it, take control your database now!";
         else
-            return "Failed to make connection!";
+            return envs + " Failed to make connection!";
     }
 }

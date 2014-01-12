@@ -77,7 +77,7 @@
       <file leaf-file-name="DbManager.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/util/DbManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="26" selection-start="1027" selection-end="1027" vertical-scroll-proportion="0.39826086" vertical-offset="331" max-vertical-offset="980">
+            <state line="50" column="28" selection-start="1730" selection-end="1730" vertical-scroll-proportion="0.74608696" vertical-offset="511" max-vertical-offset="1120">
               <folding />
             </state>
           </provider>
@@ -737,12 +737,12 @@
       <workItem from="1389447934060" duration="2942000" />
       <workItem from="1389452495635" duration="621000" />
       <workItem from="1389523076679" duration="2650000" />
-      <workItem from="1389534503084" duration="2212000" />
+      <workItem from="1389534503084" duration="2914000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78834000" />
+    <option name="totallyTimeSpent" value="79536000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1040" height="744" extended-state="6" />
@@ -1087,7 +1087,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/util/DbManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="26" selection-start="1027" selection-end="1027" vertical-scroll-proportion="0.39826086" vertical-offset="331" max-vertical-offset="980">
+        <state line="50" column="28" selection-start="1730" selection-end="1730" vertical-scroll-proportion="0.74608696" vertical-offset="511" max-vertical-offset="1120">
           <folding />
         </state>
       </provider>
