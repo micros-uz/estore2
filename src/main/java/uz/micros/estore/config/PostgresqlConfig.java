@@ -7,9 +7,6 @@ import org.springframework.context.annotation.Profile;
 @Profile("openshift")
 //@EnableTransactionManagement
 public class PostgresqlConfig {
-    public void fefe(){
-
-    }
 
 /*    @Bean
     public LocalContainerEntityManagerFactoryBean entityManagerFactory() {

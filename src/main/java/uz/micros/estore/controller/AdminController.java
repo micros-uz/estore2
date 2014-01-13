@@ -10,12 +10,17 @@ import uz.micros.estore.util.DbManager;
 @RequestMapping("/admin")
 public class AdminController {
 
-    @RequestMapping(value="sql", method = RequestMethod.GET)
-    public String sql(ModelMap model){
+    @RequestMapping(value = "sql", method = RequestMethod.GET)
+    public String sql(ModelMap model) {
         String res = DbManager.connectToDb();
 
         model.addAttribute("res", res);
 
-        return "adminSql";
+        return "admin/adminSql";
+    }
+
+    @RequestMapping(value = "exec", method = RequestMethod.GET)
+    public String exec(ModelMap model) {
+        return "admin/adminExec";
     }
 }
