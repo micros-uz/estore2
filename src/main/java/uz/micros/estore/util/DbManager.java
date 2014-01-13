@@ -20,7 +20,7 @@ public class DbManager {
         System.out.println("PostgreSQL JDBC Driver Registered!");
 
         Connection connection = null;
-        String envs = "";
+        //String envs = "";
 
         try {
 /*            connection = DriverManager.getConnection(
@@ -38,7 +38,7 @@ public class DbManager {
 /*            host = "127.4.127.2";
             port = "5432";*/
             connection = DriverManager.getConnection(
-                    "jdbc:postgresql://" + host + ":" + port + "/estore", "adminn8szx56",
+                    "jdbc:postgresql://${OPENSHIFT_POSTGRESQL_DB_HOST}:${OPENSHIFT_POSTGRESQL_DB_PORT}/estore", "adminn8szx56",
                     "yqAhZ7uXKt6Y");
 
         } catch (SQLException e) {
