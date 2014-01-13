@@ -35,10 +35,10 @@ public class DbManager {
 */
             String host = System.getenv("OPENSHIFT_POSTGRESQL_DB_HOST");
             String port = System.getenv("OPENSHIFT_POSTGRESQL_DB_PORT");
-/*            host = "127.4.127.2";
-            port = "5432";*/
+//            host = "127.4.127.2";
+  //          port = "5432";*/
             connection = DriverManager.getConnection(
-                    "jdbc:postgresql://${OPENSHIFT_POSTGRESQL_DB_HOST}:${OPENSHIFT_POSTGRESQL_DB_PORT}/estore", "adminn8szx56",
+                    "jdbc:postgresql://" + host + ":" + port + "/estore", "adminn8szx56",
                     "yqAhZ7uXKt6Y");
 
         } catch (SQLException e) {
