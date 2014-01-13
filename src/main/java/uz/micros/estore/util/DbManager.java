@@ -28,15 +28,15 @@ public class DbManager {
                     "dev1234");*/
 
 
-            Map<String, String> env = System.getenv();
+            /*Map<String, String> env = System.getenv();
             for (String envName : env.keySet()) {
                 envs += String.format("%s=%s%n", envName, env.get(envName));
             }
-
+*/
             String host = System.getenv("OPENSHIFT_POSTGRESQL_DB_HOST");
             String port = System.getenv("OPENSHIFT_POSTGRESQL_DB_PORT");
-            host = "127.4.127.2";
-            port = "5432";
+/*            host = "127.4.127.2";
+            port = "5432";*/
             connection = DriverManager.getConnection(
                     "jdbc:postgresql://" + host + ":" + port + "/estore", "adminn8szx56",
                     "yqAhZ7uXKt6Y");
@@ -46,8 +46,8 @@ public class DbManager {
         }
 
         if (connection != null)
-            return envs + " You made it, take control your database now!";
+            return " You made it, take control your database now!";
         else
-            return envs + " Failed to make connection!";
+            return " Failed to make connection!";
     }
 }
