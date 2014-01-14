@@ -1,8 +1,17 @@
 package uz.micros.estore.entity;
 
+import javax.persistence.*;
 import java.util.ArrayList;
 
+@Entity
+@Table(name = "Blogs")
 public class Blog {
+    @Id
+    @Column(name = "BlogId")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int BlogId;
+
+    @Column(name = "Title")
     private String title;
     private ArrayList<Post> posts;
 
