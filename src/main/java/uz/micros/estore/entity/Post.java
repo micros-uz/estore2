@@ -1,10 +1,23 @@
 package uz.micros.estore.entity;
 
+import javax.persistence.*;
 import java.util.Date;
 
+@Entity
+@Table(name = "Posts")
 public class Post {
+    @Id
+    @Column(name = "PostId")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int PostId;
+
+    @Column(name = "Title")
     private String title;
+
+    @Column(name = "Text")
     private String text;
+
+    @Column(name = "date")
     private Date date;
 
     public String getTitle() {
