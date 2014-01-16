@@ -21,16 +21,18 @@ public class DbManager {
         Connection connection = null;
 
         try {
-/*            connection = DriverManager.getConnection(
-                    "jdbc:postgresql://127.0.0.1:5432/estore", "postgres",
-                    "dev1234");
-*/
             String host = System.getenv("OPENSHIFT_POSTGRESQL_DB_HOST");
             String port = System.getenv("OPENSHIFT_POSTGRESQL_DB_PORT");
 
-            connection = DriverManager.getConnection(
-                    "jdbc:postgresql://" + host + ":" + port + "/estore", "adminn8szx56",
-                    "yqAhZ7uXKt6Y");
+            if (host == null) {
+                connection = DriverManager.getConnection(
+                        "jdbc:postgresql://127.0.0.1:5432/estore", "postgres",
+                        "dev1234");
+            } else {
+                connection = DriverManager.getConnection(
+                        "jdbc:postgresql://" + host + ":" + port + "/estore", "adminn8szx56",
+                        "yqAhZ7uXKt6Y");
+            }
 
         } catch (SQLException e) {
             return "Connection Failed! Check output console " + e.getMessage();
