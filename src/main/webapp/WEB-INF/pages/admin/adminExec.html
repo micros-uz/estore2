@@ -6,17 +6,39 @@
     <title>Admin SQL</title>
 </head>
 <body>
-    <section layout:fragment="content">
-        <h2>Execute query</h2>
-        <form>
-            <div class="form-group">
-                <label>Query</label>
-                <textarea cols="90" rows="4"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Go!</button>
-        </form>
+<section layout:fragment="content">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Execute query</h2>
 
-    </section>
+            <form th:action="@{/admin/exec}" th:object="${ep}" method="post">
+                <div class="form-group">
+                    <label>Query</label>
+                    <textarea cols="90" rows="4" th:field="*{query}"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Go!</button>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th th:text="${header1}">
+
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr data-th-each="dt : ${data}">
+                        <td data-th-text="${dt}">...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
 
 
 </body>
