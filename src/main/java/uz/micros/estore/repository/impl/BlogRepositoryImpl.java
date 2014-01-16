@@ -1,5 +1,6 @@
 package uz.micros.estore.repository.impl;
 
+import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import uz.micros.estore.entity.Post;
@@ -15,6 +16,14 @@ public class BlogRepositoryImpl implements BlogRepository{
 
     @Override
     public List<Post> getPosts() {
-        return null;
+        return sessionFactory.getCurrentSession().createQuery("from Post").list();
+    }
+
+    public void addPost(Post post){
+        sessionFactory.getCurrentSession().save(post);
+    }
+
+    public SessionFactory getSessionFactory() {
+        return sessionFactory;
     }
 }
