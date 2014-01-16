@@ -56,22 +56,7 @@
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/repository/impl/BlogRepositoryImpl.java" line="25" class="uz.micros.estore.repository.impl.BlogRepositoryImpl" package="uz.micros.estore.repository.impl">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/controller/AdminController.java" line="37" class="uz.micros.estore.controller.AdminController" package="uz.micros.estore.controller">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/repository/impl/BlogRepositoryImpl.java" line="35" class="uz.micros.estore.repository.impl.BlogRepositoryImpl" package="uz.micros.estore.repository.impl">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -99,7 +84,7 @@
       <file leaf-file-name="adminExec.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin/adminExec.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="66" selection-start="557" selection-end="557" vertical-scroll-proportion="-5.275862" vertical-offset="167" max-vertical-offset="1000">
+            <state line="35" column="18" selection-start="1122" selection-end="1122" vertical-scroll-proportion="-0.0" vertical-offset="770" max-vertical-offset="1100">
               <folding />
             </state>
           </provider>
@@ -108,7 +93,34 @@
       <file leaf-file-name="AdminController.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/controller/AdminController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="36" selection-start="959" selection-end="959" vertical-scroll-proportion="0.40236688" vertical-offset="304" max-vertical-offset="880">
+            <state line="31" column="0" selection-start="962" selection-end="962" vertical-scroll-proportion="0.35738254" vertical-offset="293" max-vertical-offset="968">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/service/AdminService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="16" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="286">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminServiceImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/service/Impl/AdminServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="0" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BlogService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/service/BlogService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="17" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="286">
               <folding />
             </state>
           </provider>
@@ -117,7 +129,7 @@
       <file leaf-file-name="BlogController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/controller/BlogController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="670" selection-end="670" vertical-scroll-proportion="0.0" vertical-offset="460" max-vertical-offset="920">
+            <state line="23" column="0" selection-start="670" selection-end="670" vertical-scroll-proportion="0.0" vertical-offset="506" max-vertical-offset="1012">
               <folding />
             </state>
           </provider>
@@ -166,7 +178,6 @@
         <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/controller/BlogController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/adminSql.html" />
         <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/controller/HomeController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/util/DbManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/config/PersistenceConfig.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/repository/BlogRepository.java" />
@@ -178,6 +189,9 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin/adminExec.html" />
         <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/controller/viewmodels/ExecParams.java" />
         <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/controller/AdminController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/service/AdminService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/service/Impl/AdminServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/util/DbManager.java" />
       </list>
     </option>
   </component>
@@ -208,7 +222,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1040" />
+    <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -242,6 +256,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -476,7 +491,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="impl" />
+              <option name="myItemId" value="Impl" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -637,7 +652,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -708,25 +722,6 @@
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
-    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="myFilePath" />
-      <option name="GLUE" />
-      <option name="myNameFilter" />
-      <option name="myGeneratedName" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -768,21 +763,6 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -804,10 +784,39 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
-      <option name="VM_PARAMETERS" value="" />
-      <option name="USER_CFG_CLASS" />
-      <option name="CONTEXT_PROVIDER" />
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browserFamily" value="FIREFOX" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
       <method />
     </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
@@ -819,6 +828,99 @@
       <predefined_log_file id="Tomcat Host Manager" enabled="false" />
       <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" output_log_level="null" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browserFamily" value="FIREFOX" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
       <method />
     </configuration>
     <configuration default="false" name="Tomcat 7.0.47" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.47" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="">
@@ -950,14 +1052,15 @@
       <workItem from="1389871574145" duration="8598000" />
       <workItem from="1389880194582" duration="3764000" />
       <workItem from="1389884038606" duration="986000" />
+      <workItem from="1389895764189" duration="1543000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102263000" />
+    <option name="totallyTimeSpent" value="103806000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1040" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -966,6 +1069,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32910156" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3448819" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -974,21 +1078,20 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3023622" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37952757" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32910156" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33789062" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3374817" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4062992" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.392126" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37952757" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22992127" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1018,11 +1121,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.jar!/org/slf4j/Marker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="156" selection-end="156" vertical-scroll-proportion="-0.6851852" vertical-offset="359" max-vertical-offset="740" />
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/ognl/ognl/3.0.6/ognl-3.0.6.jar!/ognl/ASTAssign.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="6" selection-start="140" selection-end="140" vertical-scroll-proportion="0.2739726" vertical-offset="0" max-vertical-offset="460" />
@@ -1165,13 +1263,6 @@
         <state line="34" column="28" selection-start="2248" selection-end="2248" vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="1700" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/util/DbManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="52" selection-start="935" selection-end="944" vertical-scroll-proportion="0.0" vertical-offset="339" max-vertical-offset="1000">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.2.4.Final/hibernate-core-4.2.4.Final.jar!/org/hibernate/SessionFactory.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="17" selection-start="160" selection-end="160" vertical-scroll-proportion="0.23474178" vertical-offset="0" max-vertical-offset="2100" />
@@ -1207,13 +1298,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/config/WebInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="58" selection-start="828" selection-end="828" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="700" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/service/BlogService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="114" selection-end="114" vertical-scroll-proportion="0.32085562" vertical-offset="0" max-vertical-offset="374">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/repository/BlogRepository.java">
@@ -1256,11 +1340,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/service/impl/BlogServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/service/Impl/BlogServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="707" selection-end="707" vertical-scroll-proportion="1.0994765" vertical-offset="0" max-vertical-offset="860">
-          <folding />
-        </state>
+        <state line="28" column="0" selection-start="707" selection-end="707" vertical-scroll-proportion="1.0994765" vertical-offset="0" max-vertical-offset="860" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/config/PostgresqlConfig.java">
@@ -1284,28 +1366,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/controller/viewmodels/ExecParams.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin/adminExec.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="239" selection-end="239" vertical-scroll-proportion="0.5555556" vertical-offset="0" max-vertical-offset="468">
-          <folding>
-            <element signature="e#131#132#0" expanded="true" />
-            <element signature="e#159#160#0" expanded="true" />
-            <element signature="e#201#202#0" expanded="true" />
-            <element signature="e#235#236#0" expanded="true" />
-          </folding>
+        <state line="35" column="18" selection-start="1122" selection-end="1122" vertical-scroll-proportion="0.0" vertical-offset="770" max-vertical-offset="1100">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/admin/adminExec.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/service/BlogService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="66" selection-start="557" selection-end="557" vertical-scroll-proportion="-5.275862" vertical-offset="167" max-vertical-offset="1000">
+        <state line="6" column="17" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="286">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/service/AdminService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="16" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="286">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/service/Impl/AdminServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/util/DbManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="37" selection-start="2002" selection-end="2002" vertical-scroll-proportion="0.69391304" vertical-offset="899" max-vertical-offset="1628">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/controller/AdminController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="36" selection-start="959" selection-end="959" vertical-scroll-proportion="0.40236688" vertical-offset="304" max-vertical-offset="880">
+        <state line="31" column="0" selection-start="962" selection-end="962" vertical-scroll-proportion="0.35738254" vertical-offset="293" max-vertical-offset="968">
           <folding />
         </state>
       </provider>
