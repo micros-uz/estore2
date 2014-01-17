@@ -17,7 +17,7 @@ public class Post {
     @Column(name = "Text")
     private String text;
 
-    @Column(name = "date")
+    @Column(name = "Date")
     private Date date;
 
     public String getTitle() {

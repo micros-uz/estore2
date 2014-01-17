@@ -1,11 +1,13 @@
 package uz.micros.estore.util;
 
-import javafx.util.Pair;
-
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
 
 public class DbManager {
-    public static Pair<String, Connection> connectToDb() {
+    public static Connection connectToDb() {
         String res1 = null;
         Connection res2 = null;
 
@@ -46,23 +48,47 @@ public class DbManager {
                 res1 = " Failed to make connection!";
         }
 
-        return new Pair<>(res1, res2);
+        //if (res1 != null) throw new SQLException(res1);
+
+        return res2;
     }
 
-    public static String runQuery(String query) {
-        Pair<String, Connection> res = connectToDb();
+    public static List<Map<String, Object>> runQuery(String query) {
+        Connection conn = connectToDb();
+        List<Map<String, Object>> list = null;
+        String err = null;
 
-        if (res.getValue() != null) {
+        if (conn != null) {
             try{
-                Statement st = res.getValue().createStatement();
+                Statement st = conn.createStatement();
                 ResultSet rs = st.executeQuery(query);
 
-                return rs.toString();
+                list = parseResultSet(rs);
             }
             catch(SQLException ex){
-                return ex.getMessage();
+                err = ex.getMessage();
             }
         } else
-            return res.getKey();
+            err = "Connection create failed";
+
+        return list;
+    }
+
+    private static List<Map<String, Object>> parseResultSet(ResultSet resultSet) throws SQLException {
+        List<Map<String, Object>> rows = new ArrayList<>();
+        ResultSetMetaData metaData = resultSet.getMetaData();
+        int columnCount = metaData.getColumnCount();
+
+        while (resultSet.next()) {
+            Map<String, Object> columns = new LinkedHashMap<String, Object>();
+
+            for (int i = 1; i <= columnCount; i++) {
+                columns.put(metaData.getColumnLabel(i), resultSet.getObject(i));
+            }
+
+            rows.add(columns);
+        }
+
+        return rows;
     }
 }

@@ -22,20 +22,28 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-            <table class="table">
-                <thead>
-                <tr>
-                    <th th:text="${header1}">
-
-                    </th>
-                </tr>
-                </thead>
-                <tbody>
-                    <tr data-th-each="dt : ${data}">
-                        <td data-th-text="${dt}">...</td>
+            <label>Error: </label>
+            <label data-th-text="${ep.err}"></label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div th:if="${not #lists.isEmpty(ep.result)}">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <td data-th-each="col : ${ep.result[0]}"
+                            data-th-text="${col.key}">
+                        </td>
                     </tr>
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                    <tr data-th-each="cols : ${ep.result}">
+                        <td data-th-each="col : ${cols}" data-th-text="${col}"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </section>
