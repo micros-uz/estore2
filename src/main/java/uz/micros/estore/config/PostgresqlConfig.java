@@ -14,6 +14,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
+import java.util.Properties;
 
 @Configuration
 //@Profile("openshift")
@@ -21,10 +22,11 @@ import javax.sql.DataSource;
 @EnableJpaRepositories(basePackages = "uz.micros.estore.repository.impl")
 public class PostgresqlConfig {
 
-    @Bean
+    @Bean(name = "entityManagerFactory")
     public EntityManagerFactory entityManagerFactory() {
         LocalContainerEntityManagerFactoryBean lef = new LocalContainerEntityManagerFactoryBean();
         lef.setJpaVendorAdapter(jpaVendorAdapter());
+        lef.setJpaProperties(additionalProperties());
         lef.setPackagesToScan("uz.micros.estore.entity");
         lef.setDataSource(dataSource());
         lef.afterPropertiesSet();
@@ -33,12 +35,22 @@ public class PostgresqlConfig {
     }
 
     @Bean
+    public Properties additionalProperties() {
+        return new Properties() {
+            {  // Hibernate Specific:
+                setProperty("hibernate.hbm2ddl.auto", "update");
+                setProperty("hibernate.dialect", "org.hibernate.dialect.PostgreSQL82Dialect");
+            }
+        };
+    }
+
+    @Bean
     public JpaVendorAdapter jpaVendorAdapter() {
-        HibernateJpaVendorAdapter hibernateJpaVendorAdapter = new HibernateJpaVendorAdapter();
-        hibernateJpaVendorAdapter.setShowSql(true);
-        hibernateJpaVendorAdapter.setGenerateDdl(true);
-        hibernateJpaVendorAdapter.setDatabase(Database.POSTGRESQL);
-        return hibernateJpaVendorAdapter;
+        HibernateJpaVendorAdapter jva = new HibernateJpaVendorAdapter();
+        jva.setShowSql(true);
+        jva.setGenerateDdl(true);
+        jva.setDatabase(Database.POSTGRESQL);
+        return jva;
     }
 
     @Bean(destroyMethod = "close")

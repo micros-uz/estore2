@@ -11,8 +11,10 @@ public class Blog {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int BlogId;
 
-    @Column(name = "Title")
+    @Column(name = "Title", unique = true, length = 50, columnDefinition = "text")
     private String title;
+
+    @Transient
     private ArrayList<Post> posts;
 
     public Blog() {

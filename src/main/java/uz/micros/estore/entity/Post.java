@@ -11,10 +11,10 @@ public class Post {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int PostId;
 
-    @Column(name = "Title")
+    @Column(name = "Title", unique = true, length = 25, columnDefinition = "text")
     private String title;
 
-    @Column(name = "Text")
+    @Column(name = "Text", length = 1024, columnDefinition = "text")
     private String text;
 
     @Column(name = "Date")
