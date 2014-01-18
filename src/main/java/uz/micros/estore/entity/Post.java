@@ -20,6 +20,11 @@ public class Post {
     @Column(name = "Date", columnDefinition = "date")
     private Date date;
 
+    public Post() {
+        title = "";
+        text = "";
+    }
+
     public String getTitle() {
         return title;
     }

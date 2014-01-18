@@ -34,7 +34,6 @@ public class BlogController {
 
         model.addAttribute("blog", blog);
 
-        return "blog";
-
+        return "blog/blog";
     }
 }
