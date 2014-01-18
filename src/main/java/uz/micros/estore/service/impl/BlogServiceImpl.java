@@ -20,11 +20,12 @@ public class BlogServiceImpl implements BlogService {
     }
 
     @Override
+    //@Transactional(readOnly = true)
     public List<Post> getAllPosts() {
 
         List<Post> res = repository.getPosts();
 
-        if (res == null) {
+        if (res == null || res.size() == 0) {
             res = new ArrayList<>();
 
             for (int k = 0; k < 4; k++) {

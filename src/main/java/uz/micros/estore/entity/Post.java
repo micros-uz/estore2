@@ -11,13 +11,13 @@ public class Post {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int PostId;
 
-    @Column(name = "Title", unique = true, length = 25, columnDefinition = "text")
+    @Column(name = "Title", unique = true, columnDefinition = "varchar(50)")
     private String title;
 
-    @Column(name = "Text", length = 1024, columnDefinition = "text")
+    @Column(name = "Text", columnDefinition = "varchar(4096)")
     private String text;
 
-    @Column(name = "Date")
+    @Column(name = "Date", columnDefinition = "date")
     private Date date;
 
     public String getTitle() {

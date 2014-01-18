@@ -16,7 +16,7 @@ public class Interceptor extends HandlerInterceptorAdapter {
     @Override
     public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception {
 
-        response.getWriter().println("<h1>END</h1>");
+        //response.getWriter().println("<h1>END</h1>");
 
         super.afterCompletion(request, response, handler, ex);
     }

@@ -9,9 +9,11 @@
     <section layout:fragment="content">
         <h2 th:text="${blog.title}"></h2>
 
+        <a th:href="@{/blog/posts/create}">Create New Post</a>
+
         <div class="row" th:each="post : ${blog.posts}">
             <div class="col-md-6">
-                <h3 th:text="${post.title}"/>
+                <a th:href="@{/blog/posts/}" th:text="${post.title}"/>
                 <p th:text="${post.text}"></p>
             </div>
         </div>

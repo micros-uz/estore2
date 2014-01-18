@@ -40,13 +40,10 @@ public class AdminController {
 
         List<Map<String, Object>> res = DbManager.runQuery(params.getQuery());
 
-        ExecParams ep = new ExecParams();
-        ep.setErr("NO");
+        if (res != null && res.size() > 0)
+            params.setResult(res);
 
-        if (res.size() > 0)
-            ep.setResult(res);
-
-        model.addAttribute("ep", ep);
+        model.addAttribute("ep", params);
 
         return "admin/adminExec";
     }

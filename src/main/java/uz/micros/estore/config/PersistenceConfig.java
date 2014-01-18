@@ -20,9 +20,9 @@ import java.util.Properties;
 //@Profile("openshift")
 @EnableTransactionManagement
 @EnableJpaRepositories(basePackages = "uz.micros.estore.repository.impl")
-public class PostgresqlConfig {
+public class PersistenceConfig {
 
-    @Bean(name = "entityManagerFactory")
+    @Bean
     public EntityManagerFactory entityManagerFactory() {
         LocalContainerEntityManagerFactoryBean lef = new LocalContainerEntityManagerFactoryBean();
         lef.setJpaVendorAdapter(jpaVendorAdapter());
@@ -40,6 +40,7 @@ public class PostgresqlConfig {
             {  // Hibernate Specific:
                 setProperty("hibernate.hbm2ddl.auto", "update");
                 setProperty("hibernate.dialect", "org.hibernate.dialect.PostgreSQL82Dialect");
+                setProperty("hibernate.show_sql", "true");
             }
         };
     }
@@ -86,8 +87,15 @@ public class PostgresqlConfig {
         return dataSource;
     }
 
+/*    @Bean
+    public PlatformTransactionManager transactionManager(EntityManagerFactory emf){
+        JpaTransactionManager transactionManager = new JpaTransactionManager();
+        transactionManager.setEntityManagerFactory(emf);
+
+        return transactionManager;
+    }*/
     @Bean
     public PlatformTransactionManager transactionManager() {
-        return new JpaTransactionManager();
+        return new JpaTransactionManager(entityManagerFactory());
     }
 }

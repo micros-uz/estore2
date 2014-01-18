@@ -11,7 +11,7 @@ public class Blog {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int BlogId;
 
-    @Column(name = "Title", unique = true, length = 50, columnDefinition = "text")
+    @Column(name = "Title", unique = true, columnDefinition = "varchar(50)")
     private String title;
 
     @Transient

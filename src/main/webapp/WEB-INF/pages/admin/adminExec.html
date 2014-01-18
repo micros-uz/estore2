@@ -39,7 +39,7 @@
                     </thead>
                     <tbody>
                     <tr data-th-each="cols : ${ep.result}">
-                        <td data-th-each="col : ${cols}" data-th-text="${col}"></td>
+                        <td data-th-each="col : ${cols}" data-th-text="${col.value}"></td>
                     </tr>
                     </tbody>
                 </table>
