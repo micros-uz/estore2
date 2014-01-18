@@ -5,17 +5,22 @@ import org.springframework.stereotype.Repository;
 import uz.micros.estore.entity.Post;
 import uz.micros.estore.repository.PostRepository;
 
+import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
+import javax.persistence.PersistenceContext;
 
 @Repository
 public class PostRepositoryImpl implements PostRepository {
 
-    private final EntityManagerFactory entityManagerFactory;
+    @PersistenceContext
+    private EntityManager entityManagerFactory;
 
+/*
     @Autowired
     public PostRepositoryImpl(EntityManagerFactory entityManagerFactory) {
         this.entityManagerFactory = entityManagerFactory;
     }
+*/
 
     @Override
     public Post get(int id) {
@@ -24,8 +29,8 @@ public class PostRepositoryImpl implements PostRepository {
 
     @Override
     public void save(Post post) {
-        entityManagerFactory.createEntityManager().persist(post);
-        entityManagerFactory.createEntityManager().flush();
+        entityManagerFactory.persist(post);
+        entityManagerFactory.flush();
     }
 
     @Override
