@@ -9,7 +9,6 @@ import org.springframework.orm.jpa.JpaVendorAdapter;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.Database;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
-import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import javax.persistence.EntityManagerFactory;
@@ -41,6 +40,9 @@ public class PersistenceConfig {
                 setProperty("hibernate.hbm2ddl.auto", "update");
                 setProperty("hibernate.dialect", "org.hibernate.dialect.PostgreSQL82Dialect");
                 setProperty("hibernate.show_sql", "true");
+                setProperty("hibernate.transaction.factory_class", "org.hibernate.transaction.JTATransactionFactory");
+
+                setProperty("hibernate.jta.UserTransaction", "javax.transaction.UserTransaction");
             }
         };
     }
@@ -84,6 +86,8 @@ public class PersistenceConfig {
         dataSource.setMinEvictableIdleTimeMillis(1800000);
         dataSource.setValidationQuery("SELECT version()");
 
+
+
         return dataSource;
     }
 
@@ -94,8 +98,10 @@ public class PersistenceConfig {
 
         return transactionManager;
     }*/
+
     @Bean
-    public PlatformTransactionManager transactionManager() {
+    public JpaTransactionManager transactionManager() {
         return new JpaTransactionManager(entityManagerFactory());
     }
+
 }

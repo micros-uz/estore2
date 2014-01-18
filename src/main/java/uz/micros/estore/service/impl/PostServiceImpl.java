@@ -9,6 +9,7 @@ import uz.micros.estore.repository.PostRepository;
 import uz.micros.estore.service.PostService;
 
 @Service
+@Transactional(readOnly = true, propagation = Propagation.SUPPORTS)
 public class PostServiceImpl implements PostService{
 
     private final PostRepository repository;
