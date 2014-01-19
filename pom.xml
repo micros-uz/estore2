@@ -129,8 +129,6 @@
             <version>${spring.version}</version>
         </dependency>
 
-
-
         <!-- Hibernate -->
 
         <dependency>
@@ -172,7 +170,7 @@
             <version>3.0.3</version>
         </dependency>
 
-        <!-- Unknown Deps)) -->
+        <!-- Unknown Dependencies)) -->
         <dependency>
             <groupId>org.apache.tomcat</groupId>
             <artifactId>tomcat-dbcp</artifactId>

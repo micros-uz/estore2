@@ -12,13 +12,11 @@ import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
 import java.util.Properties;
 
 @Configuration
-//@Profile("openshift")
 @EnableTransactionManagement
 @EnableJpaRepositories(basePackages = "uz.micros.estore.repository.impl")
 public class PersistenceConfig {
@@ -42,9 +40,6 @@ public class PersistenceConfig {
                 setProperty("hibernate.hbm2ddl.auto", "update");
                 setProperty("hibernate.dialect", "org.hibernate.dialect.PostgreSQL82Dialect");
                 setProperty("hibernate.show_sql", "true");
-                //setProperty("hibernate.transaction.factory_class", "org.hibernate.transaction.JTATransactionFactory");
-
-                //setProperty("hibernate.jta.UserTransaction", "javax.transaction.UserTransaction");
             }
         };
     }
@@ -100,12 +95,4 @@ public class PersistenceConfig {
 
         return transactionManager;
     }
-
-/*
-    @Bean
-    public JpaTransactionManager transactionManager() {
-        return new JpaTransactionManager();
-    }
-*/
-
 }

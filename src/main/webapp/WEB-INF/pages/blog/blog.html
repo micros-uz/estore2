@@ -12,8 +12,8 @@
 
         <div class="row" data-th-each="post : ${blog.posts}">
             <div class="col-md-6">
-                <a data-th-href="@{/blog/posts/}" data-th-text="${post.title}"/>
-                <p data-th-text="${post.text}"></p>
+                <a data-th-href="@{'/blog/posts/' + ${post.postId}}" data-th-text="${post.title}"/>
+                <p data-th-text="${post.shortText}"></p>
             </div>
         </div>
     </section>

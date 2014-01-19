@@ -9,7 +9,7 @@ public class Post {
     @Id
     @Column(name = "PostId")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int PostId;
+    private int postId;
 
     @Column(name = "Title", unique = true, columnDefinition = "varchar(50)")
     private String title;
@@ -20,9 +20,23 @@ public class Post {
     @Column(name = "Date", columnDefinition = "date")
     private Date date;
 
+    public String getShortText(){
+        return text != null && text.length() > 0
+                ? (text.length() > 300 ? text.substring(0, 299) + "..." : text)
+                : "";
+    }
+
     public Post() {
         title = "";
         text = "";
+    }
+
+    public int getPostId(){
+        return postId;
+    }
+
+    public void setPostId(int postId) {
+        this.postId = postId;
     }
 
     public String getTitle() {

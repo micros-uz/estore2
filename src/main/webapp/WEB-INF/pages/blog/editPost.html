@@ -11,6 +11,7 @@
             <h2>Create new post</h2>
 
             <form data-th-action="@{/blog/posts/create}" data-th-object="${post}" method="post">
+                <input type="hidden" name="postId" data-th-field="*{postId}" />
                 <div class="row">
                     <div class="col-md-1">
                         <label class="control-label">Title</label>
