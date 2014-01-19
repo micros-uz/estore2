@@ -17,9 +17,10 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-context:4.0.0.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-expression:4.0.0.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:4.0.0.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-web:4.0.0.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-config:4.0.0.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-core:4.0.0.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-web:3.2.0.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-core:3.2.0.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-config:3.2.0.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-javaconfig:1.0.0.M1" />
           <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:3.1.0" />
           <element id="library" level="project" name="Maven: org.postgresql:postgresql:9.3-1100-jdbc41" />
           <element id="library" level="project" name="Maven: joda-time:joda-time:2.1" />
