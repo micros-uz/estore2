@@ -10,8 +10,8 @@
         <div class="col-md-6">
             <h2 data-th-text="${post.title}"></h2>
             <h5 data-th-text="${post.date}"></h5>
-            <p data-th-text="${post.text}"></p>
-            <div class="btn-group pull-left">
+            <pre data-th-text="${post.text}"></pre>
+            <div class="pull-left">
                 <a class="btn" data-th-href="@{'/blog/posts/edit/' + ${post.postId}}">Edit</a>
                 <a class="btn" data-th-href="@{'/blog/posts/delete/' + ${post.postId}}">Delete</a>
             </div>
