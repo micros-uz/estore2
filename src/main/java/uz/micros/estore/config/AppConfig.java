@@ -14,7 +14,7 @@ import uz.micros.estore.util.DateFormatter;
 //@Profile("openshift")
 @EnableTransactionManagement
 
-@Import({WebInitializer.class, DispatcherConfig.class})
+//@Import({WebInitializer.class, WebMvcConfig.class})
 public class AppConfig {
 
     @Bean(name = "dateFormatter")

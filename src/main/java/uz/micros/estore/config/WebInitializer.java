@@ -9,7 +9,7 @@ import org.springframework.web.servlet.DispatcherServlet;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRegistration;
-
+/*
 @Configuration
 public class WebInitializer implements WebApplicationInitializer {
     @Override
@@ -26,7 +26,7 @@ public class WebInitializer implements WebApplicationInitializer {
         // Create the dispatcher servlet's Spring application context
         AnnotationConfigWebApplicationContext dispatcherContext =
                 new AnnotationConfigWebApplicationContext();
-        dispatcherContext.register(DispatcherConfig.class);
+        dispatcherContext.register(WebMvcConfig.class);
 
         // Register and map the dispatcher servlet
         ServletRegistration.Dynamic dispatcher =
@@ -35,3 +35,4 @@ public class WebInitializer implements WebApplicationInitializer {
         dispatcher.addMapping("/");
     }
 }
+*/

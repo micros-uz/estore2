@@ -9,7 +9,7 @@ import uz.micros.estore.util.Interceptor;
 
 @Configuration
 @Import({ThymeleafConfig.class})
-public class DispatcherConfig extends WebMvcConfigurerAdapter {
+public class WebMvcConfig extends WebMvcConfigurerAdapter {
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {

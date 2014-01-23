@@ -1,15 +1,94 @@
 package uz.micros.estore.config;
 
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+
+@Configuration
+@EnableWebSecurity
+@EnableGlobalMethodSecurity(securedEnabled = true)
+public class SecurityConfig extends WebSecurityConfigurerAdapter {
+
+    @Autowired
+    public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
+        auth
+                .inMemoryAuthentication()
+                .withUser("user").password("password").roles("USER");
+    }
+
+
+    @Override
+    protected void configure(HttpSecurity http) throws Exception {
+        http
+                .formLogin()
+                .and()
+                .authorizeRequests()
+                .anyRequest().permitAll();
+    }
+}
+/*
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import org.springframework.security.config.annotation.web.configurers.FormLoginConfigurer;
 
-import javax.sql.DataSource;
+@Configuration
+@EnableWebSecurity
+public class SecurityConfig extends WebSecurityConfigurerAdapter {
+
+    private static Logger log = LoggerFactory.getLogger(SecurityConfig.class);
+
+    @Override
+    protected void configure(HttpSecurity http) throws Exception {
+
+        http.authorizeRequests()
+                //.antMatchers("/user/login").permitAll()
+                //.antMatchers("/user/register").permitAll()
+                .antMatchers("/secured*/
+/**").hasRole("ADMIN")
+ .antMatchers("*/
+/**").hasRole("USER")
+ .anyRequest().authenticated()
+ .and()
+ */
+/*.formLogin()
+                .loginUrl("/user/login")
+                .loginPage("/user/login")
+                .defaultSuccessUrl("/user/me")
+
+                        //It seems that when specifying a custom login form, you also need to specify these for them to be populated.
+                        //.usernameParameter("user")
+                        //.passwordParameter("pwd")
+                .permitAll()
+*//*
+
+        ;
+        log.info("Web security configured.");
+    }
+
+    @Override
+    public void configure(WebSecurity builder) throws Exception {
+        builder
+                .ignoring()
+                .antMatchers("/swagger-ui*/
+/**", "/css*/
+/**", "/images*/
+/**", "/js*/
+/**")
+ ;
+ }
+ }
+
+ */
 
 //http://docs.spring.io/spring-security/site/docs/3.2.x/guides/helloworld.html
 
@@ -26,6 +105,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 }
 */
+/*
 
 @EnableWebSecurity
 @Configuration
@@ -38,27 +118,32 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     public void configure(WebSecurity web) throws Exception {
         web.debug(true)
                 .ignoring()
-                .antMatchers("/webjars/**","/css/**","/img/**");
-    }
+                .antMatchers("/webjars*/
+/**","/css*/
+/**","/img*/
+/**");
+ }
 
-    @Autowired
-    public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
-        auth
-                .inMemoryAuthentication()
-                .withUser("user").password("password").roles("USER");
+ @Autowired public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
+ auth
+ .inMemoryAuthentication()
+ .withUser("user").password("password").roles("USER");
+ */
 /*        auth
                 .jdbcAuthentication()
                 .dataSource(dataSource)
                 .usersByUsernameQuery(getUserQuery())
                 .authoritiesByUsernameQuery(getAuthoritiesQuery())
-                .rolePrefix("");*/
+                .rolePrefix("");*//*
+
     }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
                 .authorizeRequests()
-                .anyRequest().denyAll();/*
+                .anyRequest().denyAll();*/
+/*
                 .formLogin()
                 .loginPage("/login")
                 .defaultSuccessUrl("/success-login", true)
@@ -76,7 +161,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .rememberMe()
                 .and()
                 .csrf()
-                .disable()*/;
+                .disable()*//*
+;
     }
 
     private String getUserQuery() {
@@ -94,4 +180,4 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 + "AND employee.active = 1";
     }
 
-}
+}*/
