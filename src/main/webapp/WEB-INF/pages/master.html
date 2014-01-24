@@ -47,6 +47,34 @@
                 </ul>
             </li>
         </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <a href="#">
+                    <img src="Cart.png" height="24"/>
+                    <span>0 items</span>
+                </a>
+            </li>
+            <li class="dropdown">
+                <a href="/login" class="dropdown-toggle login-a" data-toggle="dropdown">
+                    <div th:if="${#httpServletRequest.remoteUser != null}">
+                        <span th:text="${#httpServletRequest.remoteUser}"></span><br></br>
+                        <span>My Account</span>
+                        <b class="caret"></b>
+                    </div>
+                    <div th:if="${#httpServletRequest.remoteUser == null}">
+                        <span th:text="${#httpServletRequest.remoteUser}"></span><br></br>
+                        <span>Log In</span>
+                    </div>
+                </a>
+                <!--http://docs.spring.io/spring-security/site/docs/3.2.x/guides/hellomvc.html-->
+                <div th:if="${#httpServletRequest.remoteUser != null}">
+                    <ul class="dropdown-menu">
+                        <li><a href="/logout">Log Off</a></li>
+                        <li><a href="#">My Basket</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
     </div>
 </nav>
 <div class="container">
