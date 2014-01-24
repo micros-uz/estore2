@@ -1,14 +1,12 @@
 package uz.micros.estore.config;
 
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Import;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import uz.micros.estore.util.Interceptor;
 
 @Configuration
-@Import({ThymeleafConfig.class})
 public class WebMvcConfig extends WebMvcConfigurerAdapter {
 
     @Override
