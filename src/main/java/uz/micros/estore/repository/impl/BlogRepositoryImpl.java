@@ -1,12 +1,10 @@
 package uz.micros.estore.repository.impl;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import uz.micros.estore.entity.Post;
 import uz.micros.estore.repository.BlogRepository;
 
 import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
 import javax.persistence.PersistenceContext;
 import java.util.List;
 
@@ -14,7 +12,7 @@ import java.util.List;
 public class BlogRepositoryImpl implements BlogRepository {
 
     @PersistenceContext
-    private EntityManager entityManager;
+    private EntityManager em;
 /*    @Autowired
     public BlogRepositoryImpl(EntityManagerFactory entityManagerFactory) {
         this.entityManagerFactory = entityManagerFactory;
@@ -25,7 +23,7 @@ public class BlogRepositoryImpl implements BlogRepository {
 
     @Override
     public List<Post> getPosts() {
-        return entityManager.createQuery("from Post").getResultList();
+        return em.createQuery("from Post").getResultList();
         //return sessionFactory.getCurrentSession().createQuery("from Post").list();
         //EntityManagerFactory d = factory.getObject();
         //return d.createEntityManager().createQuery("from Post").getResultList();

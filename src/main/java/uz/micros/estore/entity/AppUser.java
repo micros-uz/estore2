@@ -5,6 +5,9 @@ import javax.persistence.*;
 @Entity
 @Table(name = "users")
 public class AppUser {
+    public static final int ROLE_ADMIN = 0x01;
+    public static final int ROLE_USER = 0x02;
+
     @Id
     @Column(name = "appUserId")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,6 +21,9 @@ public class AppUser {
 
     @Column(name="password")
     private String password;
+
+    @Column(name="type")
+    private Integer type;
 
     public String getPassword() {
         return password;
@@ -41,5 +47,13 @@ public class AppUser {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Integer getType() {
+        return type;
+    }
+
+    public void setType(Integer type) {
+        this.type = type;
     }
 }

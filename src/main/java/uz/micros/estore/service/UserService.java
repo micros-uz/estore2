@@ -1,7 +1,11 @@
 package uz.micros.estore.service;
 
-import org.springframework.security.core.userdetails.UserDetails;
+import uz.micros.estore.entity.AppUser;
+
+import java.util.List;
 
 public interface UserService {
-    UserDetails getUser(String name);
+    List<AppUser> getUsers();
+    AppUser getUserByName(String name);
+
 }

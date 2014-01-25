@@ -11,28 +11,28 @@ import javax.persistence.PersistenceContext;
 public class PostRepositoryImpl implements PostRepository {
 
     @PersistenceContext
-    private EntityManager emf;
+    private EntityManager em;
 
     @Override
     public Post get(int id) {
-        return emf.find(Post.class, id);
+        return em.find(Post.class, id);
     }
 
     @Override
     public void save(Post post) {
         if (post.getPostId() == 0)
-            emf.persist(post);
+            em.persist(post);
         else
-            emf.merge(post);
-        emf.flush();
+            em.merge(post);
+        em.flush();
     }
 
     @Override
     public void remove(int id) {
-        //Post p = emf.find(Post.class, id);
-        //if (p != null) emf.remove(p);
+        //Post p = em.find(Post.class, id);
+        //if (p != null) em.remove(p);
 
-        emf.createQuery(
+        em.createQuery(
                 "DELETE FROM Post c WHERE c.postId = :id").setParameter("id", id).executeUpdate();
     }
 }
