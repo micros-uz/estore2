@@ -7,7 +7,7 @@ import java.util.Date;
 @Table(name = "Posts")
 public class Post {
     @Id
-    @Column(name = "PostId")
+    @Column(name = "postId")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int postId;
 

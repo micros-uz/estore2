@@ -22,7 +22,6 @@ public class BlogServiceImpl implements BlogService {
     @Override
     @Transactional(readOnly = true)
     public List<Post> getAllPosts() {
-
         return repository.getPosts();
     }
 }

@@ -6,29 +6,42 @@ import org.springframework.security.config.annotation.authentication.builders.Au
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.annotation.web.servlet.configuration.EnableWebMvcSecurity;
+import uz.micros.estore.security.CustomUserDetailsService;
 
-//http://docs.spring.io/spring-security/site/docs/3.2.x/guides/hellomvc.html
+/*
+
+    Main reference - http://docs.spring.io/spring-security/site/docs/3.2.x/reference/htmlsingle/
+
+
+    http://docs.spring.io/spring-security/site/docs/3.2.x/guides/hellomvc.html
+
+*/
 
 @Configuration
 @EnableWebMvcSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
+    CustomUserDetailsService customDetailsUserService;
+
+    @Autowired
     public void registerGlobalAuthentication(
             AuthenticationManagerBuilder auth) throws Exception {
         auth
-                .inMemoryAuthentication()
-                .withUser("user").password("password").roles("USER");
+                .userDetailsService(customDetailsUserService);
+                //.inMemoryAuthentication()
+                //.withUser("user").password("password").roles("USER");
     }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
                 .authorizeRequests()
-                .anyRequest().authenticated()
-                .and();
-        http.formLogin()
-                .loginPage("/login")
-                .permitAll();
+                .antMatchers("/webjars/**").permitAll()
+                .anyRequest().authenticated();
+        http
+                .formLogin()
+                    .loginPage("/login")
+                    .permitAll();
     }
 }

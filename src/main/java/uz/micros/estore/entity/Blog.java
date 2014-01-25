@@ -7,9 +7,9 @@ import java.util.ArrayList;
 @Table(name = "Blogs")
 public class Blog {
     @Id
-    @Column(name = "BlogId")
+    @Column(name = "blogId")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int BlogId;
+    private int blogId;
 
     @Column(name = "Title", unique = true, columnDefinition = "varchar(50)")
     private String title;
