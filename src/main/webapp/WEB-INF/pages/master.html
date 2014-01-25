@@ -55,24 +55,21 @@
                 </a>
             </li>
             <li class="dropdown">
-                <a href="/login" class="dropdown-toggle login-a" data-toggle="dropdown">
-                    <div th:if="${#httpServletRequest.remoteUser != null}">
-                        <span th:text="${#httpServletRequest.remoteUser}"></span><br></br>
-                        <span>My Account</span>
-                        <b class="caret"></b>
-                    </div>
-                    <div th:if="${#httpServletRequest.remoteUser == null}">
-                        <span th:text="${#httpServletRequest.remoteUser}"></span><br></br>
-                        <span>Log In</span>
-                    </div>
+
+                <a th:if="${#httpServletRequest.remoteUser == null}" href="/login">
+                    <span>Hello, Guest!</span><br></br>
+                    <span>Log In</span>
                 </a>
-                <!--http://docs.spring.io/spring-security/site/docs/3.2.x/guides/hellomvc.html-->
-                <div th:if="${#httpServletRequest.remoteUser != null}">
-                    <ul class="dropdown-menu">
-                        <li><a href="/logout">Log Off</a></li>
-                        <li><a href="#">My Basket</a></li>
-                    </ul>
-                </div>
+                <a th:if="${#httpServletRequest.remoteUser != null}" href="#" class="dropdown-toggle"
+                   data-toggle="dropdown">
+                    <span th:text="${#httpServletRequest.remoteUser}"></span><br></br>
+                    <span>My Account</span>
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="/logout">Log Off</a></li>
+                    <li><a href="#">My Basket</a></li>
+                </ul>
             </li>
         </ul>
     </div>
@@ -94,5 +91,10 @@
         </div>
     </div>
 </div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"
+        th:src="@{/webjars/jquery/1.9.0/jquery.js}"></script>
+<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/3.0.3/js/bootstrap.min.js"
+      th:src="@{/webjars/bootstrap/3.0.3/js/bootstrap.min.js}" rel="stylesheet"></script>
+
 </body>
 </html>
