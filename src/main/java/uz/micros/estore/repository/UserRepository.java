@@ -8,4 +8,6 @@ public interface UserRepository {
     public List<AppUser> getUsers();
 
     AppUser getUserByName(String name);
+
+    AppUser addUser(AppUser user);
 }

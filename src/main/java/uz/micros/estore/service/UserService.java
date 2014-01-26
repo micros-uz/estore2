@@ -7,5 +7,5 @@ import java.util.List;
 public interface UserService {
     List<AppUser> getUsers();
     AppUser getUserByName(String name);
-
+    AppUser addUser(AppUser user);
 }

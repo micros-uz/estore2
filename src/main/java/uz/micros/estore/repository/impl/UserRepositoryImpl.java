@@ -32,4 +32,12 @@ public class UserRepositoryImpl implements UserRepository {
             return null;
         }
     }
+
+    @Override
+    public AppUser addUser(AppUser user) {
+        em.persist(user);
+        em.flush();
+
+        return user;
+    }
 }

@@ -25,6 +25,17 @@ public class AppUser {
     @Column(name="type")
     private Integer type;
 
+    public AppUser() {
+        type = ROLE_USER;
+    }
+
+    public AppUser(String name, String password, String email, Integer type) {
+        this.name = name;
+        this.email = email;
+        this.password = password;
+        this.type = type;
+    }
+
     public String getPassword() {
         return password;
     }
