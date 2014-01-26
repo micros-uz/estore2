@@ -71,6 +71,36 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/controller/AccountController.java" line="32" class="uz.micros.estore.controller.AccountController" package="uz.micros.estore.controller">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/controller/AccountController.java" line="18" class="uz.micros.estore.controller.AccountController" package="uz.micros.estore.controller">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
     </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
@@ -81,40 +111,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="master.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/master.html">
+      <file leaf-file-name="AccountController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/controller/AccountController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="8" selection-start="239" selection-end="239" vertical-scroll-proportion="0.49838188" vertical-offset="0" max-vertical-offset="2332">
+            <state line="23" column="17" selection-start="768" selection-end="768" vertical-scroll-proportion="0.0" vertical-offset="336" max-vertical-offset="682">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/home.html">
+      <file leaf-file-name="RegUserDto.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/dto/RegUserDto.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="15" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="462">
+            <state line="5" column="19" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
               <folding>
-                <element signature="tag#section#0;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="e#204#205#0" expanded="false" />
+                <element signature="e#235#236#0" expanded="false" />
+                <element signature="e#283#284#0" expanded="false" />
+                <element signature="e#323#324#0" expanded="false" />
+                <element signature="e#358#359#0" expanded="false" />
+                <element signature="e#389#390#0" expanded="false" />
+                <element signature="e#437#438#0" expanded="false" />
+                <element signature="e#477#478#0" expanded="false" />
+                <element signature="e#513#514#0" expanded="false" />
+                <element signature="e#545#546#0" expanded="false" />
+                <element signature="e#595#596#0" expanded="false" />
+                <element signature="e#637#638#0" expanded="false" />
+                <element signature="e#669#670#0" expanded="false" />
+                <element signature="e#697#698#0" expanded="false" />
+                <element signature="e#739#740#0" expanded="false" />
+                <element signature="e#773#774#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blog.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/blog/blog.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="15" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="616">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/account/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="18" selection-start="257" selection-end="257" vertical-scroll-proportion="-4.967742" vertical-offset="0" max-vertical-offset="704">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -122,43 +149,25 @@
       <file leaf-file-name="logon.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/account/logon.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1606">
+            <state line="20" column="0" selection-start="724" selection-end="724" vertical-scroll-proportion="9.225806" vertical-offset="726" max-vertical-offset="1562">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="error.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/error.html">
+      <file leaf-file-name="register.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/account/register.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="352">
+            <state line="15" column="32" selection-start="596" selection-end="633" vertical-scroll-proportion="4.2580647" vertical-offset="462" max-vertical-offset="858">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="editPost.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/blog/editPost.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1144">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="post.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/blog/post.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="6" selection-start="157" selection-end="157" vertical-scroll-proportion="-4.2580647" vertical-offset="0" max-vertical-offset="594">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SecurityConfig.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="SecurityConfig.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/config/SecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="53" selection-start="1598" selection-end="1598" vertical-scroll-proportion="0.0" vertical-offset="695" max-vertical-offset="1078">
+            <state line="39" column="9" selection-start="1433" selection-end="1433" vertical-scroll-proportion="-0.0037453184" vertical-offset="727" max-vertical-offset="1078">
               <folding />
             </state>
           </provider>
@@ -174,9 +183,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/service/AdminService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/service/Impl/AdminServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/service/impl/AdminServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/controller/viewmodels/ExecParams.java" />
         <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/util/DbManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/config/PostgresqlConfig.java" />
@@ -223,8 +229,11 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/master.html" />
-        <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/config/SecurityConfig.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/account/logon.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/account/register.html" />
+        <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/dto/RegUserDto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/controller/AccountController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/config/SecurityConfig.java" />
       </list>
     </option>
   </component>
@@ -289,6 +298,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -535,165 +545,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="estore2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="estore2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="estore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="impl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="estore2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="estore2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="estore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="security" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="estore2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="estore2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="estore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="repository" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="estore2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="estore2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="estore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="repository" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="impl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="estore2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="estore2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="estore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entity" />
+              <option name="myItemId" value="dto" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -759,7 +611,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -1008,6 +859,12 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
+      <method />
+    </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -1025,12 +882,6 @@
       <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
-      <option name="VM_PARAMETERS" value="" />
-      <option name="USER_CFG_CLASS" />
-      <option name="CONTEXT_PROVIDER" />
       <method />
     </configuration>
     <configuration default="false" name="Tomcat 7.0.47" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.47" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="">
@@ -1185,11 +1036,12 @@
       <workItem from="1390642429013" duration="6227000" />
       <workItem from="1390649560935" duration="13441000" />
       <workItem from="1390677190318" duration="7625000" />
+      <workItem from="1390731241874" duration="5421000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="194770000" />
+    <option name="totallyTimeSpent" value="200191000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1230,12 +1082,12 @@
     <layout-to-restore>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32910156" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3023622" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1255,8 +1107,8 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37952757" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29648608" sideWeight="0.23" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32910156" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22992127" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
@@ -1286,20 +1138,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/3.2.0.RELEASE/spring-security-web-3.2.0.RELEASE.jar!/org/springframework/security/web/authentication/logout/LogoutFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="16" selection-start="1054" selection-end="1054" vertical-scroll-proportion="0.0" vertical-offset="352" max-vertical-offset="1034">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/persistence/persistence-api/1.0/persistence-api-1.0.jar!/javax/persistence/EntityManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="28" selection-start="751" selection-end="751" vertical-scroll-proportion="0.0" vertical-offset="682" max-vertical-offset="1232">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="0" selection-start="1080" selection-end="1080" vertical-scroll-proportion="0.0" vertical-offset="550" max-vertical-offset="6468">
@@ -1449,9 +1287,7 @@
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/javax/persistence/persistence-api/1.0/persistence-api-1.0.jar!/javax/persistence/EntityManager.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="28" selection-start="751" selection-end="751" vertical-scroll-proportion="0.0" vertical-offset="682" max-vertical-offset="1232">
-          <folding />
-        </state>
+        <state line="31" column="28" selection-start="751" selection-end="751" vertical-scroll-proportion="0.0" vertical-offset="682" max-vertical-offset="1232" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -1468,9 +1304,7 @@
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/3.2.0.RELEASE/spring-security-web-3.2.0.RELEASE.jar!/org/springframework/security/web/authentication/logout/LogoutFilter.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="16" selection-start="1054" selection-end="1054" vertical-scroll-proportion="0.0" vertical-offset="352" max-vertical-offset="1034">
-          <folding />
-        </state>
+        <state line="16" column="16" selection-start="1054" selection-end="1054" vertical-scroll-proportion="0.0" vertical-offset="352" max-vertical-offset="1034" />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/3.2.0.RELEASE/spring-security-web-3.2.0.RELEASE.jar!/org/springframework/security/web/FilterChainProxy.class">
@@ -1495,13 +1329,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="27" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/notFound.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="440">
@@ -1509,32 +1336,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/config/SecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="53" selection-start="1598" selection-end="1598" vertical-scroll-proportion="0.0" vertical-offset="695" max-vertical-offset="1078">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="15" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="462">
-          <folding>
-            <element signature="tag#section#0;tag#body#0;tag#html#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/blog/post.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="6" selection-start="157" selection-end="157" vertical-scroll-proportion="-4.2580647" vertical-offset="0" max-vertical-offset="594">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/blog/editPost.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1144">
+        <state line="6" column="6" selection-start="157" selection-end="157" vertical-scroll-proportion="0.18230088" vertical-offset="29" max-vertical-offset="594">
           <folding />
         </state>
       </provider>
@@ -1546,20 +1357,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/account/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="18" selection-start="257" selection-end="257" vertical-scroll-proportion="-4.967742" vertical-offset="0" max-vertical-offset="704">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/account/logon.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1606">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/error.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="353">
@@ -1567,9 +1364,127 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/blog/editPost.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="81" selection-start="347" selection-end="371" vertical-scroll-proportion="0.46725664" vertical-offset="0" max-vertical-offset="1144">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/master.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="8" selection-start="239" selection-end="239" vertical-scroll-proportion="0.49838188" vertical-offset="0" max-vertical-offset="2332">
+        <state line="7" column="8" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0" vertical-offset="154" max-vertical-offset="2332">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/account/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="42" selection-start="475" selection-end="475" vertical-scroll-proportion="0.2761062" vertical-offset="108" max-vertical-offset="704">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/account/logon.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="724" selection-end="724" vertical-scroll-proportion="9.225806" vertical-offset="726" max-vertical-offset="1562">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/account/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="32" selection-start="596" selection-end="633" vertical-scroll-proportion="4.2580647" vertical-offset="462" max-vertical-offset="858">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/dto/RegUserDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="19" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
+          <folding>
+            <element signature="e#204#205#0" expanded="false" />
+            <element signature="e#235#236#0" expanded="false" />
+            <element signature="e#283#284#0" expanded="false" />
+            <element signature="e#323#324#0" expanded="false" />
+            <element signature="e#358#359#0" expanded="false" />
+            <element signature="e#389#390#0" expanded="false" />
+            <element signature="e#437#438#0" expanded="false" />
+            <element signature="e#477#478#0" expanded="false" />
+            <element signature="e#513#514#0" expanded="false" />
+            <element signature="e#545#546#0" expanded="false" />
+            <element signature="e#595#596#0" expanded="false" />
+            <element signature="e#637#638#0" expanded="false" />
+            <element signature="e#669#670#0" expanded="false" />
+            <element signature="e#697#698#0" expanded="false" />
+            <element signature="e#739#740#0" expanded="false" />
+            <element signature="e#773#774#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/controller/AccountController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="17" selection-start="768" selection-end="768" vertical-scroll-proportion="0.0" vertical-offset="336" max-vertical-offset="682">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/3.2.0.RELEASE/spring-security-config-3.2.0.RELEASE.jar!/org/springframework/security/config/annotation/web/configurers/FormLoginConfigurer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="97" selection-start="759" selection-end="759" vertical-scroll-proportion="0.0" vertical-offset="87" max-vertical-offset="638">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/3.2.0.RELEASE/spring-security-web-3.2.0.RELEASE.jar!/org/springframework/security/web/authentication/SimpleUrlAuthenticationFailureHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="190" selection-end="190" vertical-scroll-proportion="0.0" vertical-offset="28" max-vertical-offset="858">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/3.2.0.RELEASE/spring-security-web-3.2.0.RELEASE-sources.jar!/org/springframework/security/web/RedirectStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="9" selection-start="579" selection-end="579" vertical-scroll-proportion="1.1382114" vertical-offset="116" max-vertical-offset="572">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/3.2.0.RELEASE/spring-security-web-3.2.0.RELEASE-sources.jar!/org/springframework/security/web/DefaultRedirectStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="13" selection-start="474" selection-end="474" vertical-scroll-proportion="-4.495935" vertical-offset="1326" max-vertical-offset="1606">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/3.2.0.RELEASE/spring-security-web-3.2.0.RELEASE-sources.jar!/org/springframework/security/web/authentication/SimpleUrlAuthenticationFailureHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="59" selection-start="1618" selection-end="1618" vertical-scroll-proportion="0.33333334" vertical-offset="402" max-vertical-offset="2530">
+          <folding>
+            <element signature="e#4878#4879#0" expanded="false" />
+            <element signature="e#4934#4935#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/3.2.0.RELEASE/spring-security-config-3.2.0.RELEASE-sources.jar!/org/springframework/security/config/annotation/web/configurers/AbstractAuthenticationFilterConfigurer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="205" column="54" selection-start="9066" selection-end="9066" vertical-scroll-proportion="0.33031675" vertical-offset="3601" max-vertical-offset="7216">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/3.2.0.RELEASE/spring-security-config-3.2.0.RELEASE-sources.jar!/org/springframework/security/config/annotation/web/configurers/FormLoginConfigurer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="180" column="27" selection-start="7848" selection-end="7848" vertical-scroll-proportion="0.3895131" vertical-offset="3350" max-vertical-offset="5412">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/config/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="9" selection-start="1433" selection-end="1433" vertical-scroll-proportion="-0.0037453184" vertical-offset="727" max-vertical-offset="1078">
           <folding />
         </state>
       </provider>

@@ -36,15 +36,15 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
-                .authorizeRequests()
-                .antMatchers("/webjars/**").permitAll()
-                .antMatchers("/resources/**").permitAll()
-                .antMatchers("/register").permitAll()
-                .anyRequest().authenticated();
+            .csrf().disable()
+            .authorizeRequests()
+            .antMatchers("/webjars/**").permitAll()
+            .antMatchers("/resources/**").permitAll()
+            .antMatchers("/register").permitAll()
+            .anyRequest().authenticated();
         http
-                .formLogin()
-                    .loginPage("/login")
-
-                    .permitAll();
+            .formLogin()
+                .loginPage("/login")
+                .permitAll();
     }
 }
