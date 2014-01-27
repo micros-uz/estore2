@@ -68,7 +68,11 @@
                     <b class="caret"></b>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a href="/logout">Log Off</a></li>
+                    <li>
+                        <form th:action="@{/logout}" method="post">
+                            <input type="submit" value="Sign Out"/>
+                        </form>
+                    </li>
                     <li><a href="#">My Basket</a></li>
                 </ul>
             </li>
