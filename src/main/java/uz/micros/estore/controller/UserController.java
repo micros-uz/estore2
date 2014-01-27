@@ -23,6 +23,7 @@ public class UserController {
 
     @RequestMapping("/login")
     public String login(ModelMap map) {
+        //map.addAttribute()
         return "account/logon";
     }
 
