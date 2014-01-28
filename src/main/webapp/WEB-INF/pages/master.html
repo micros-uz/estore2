@@ -12,11 +12,11 @@
 
    -->
 
-    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css"
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"
           th:href="@{/webjars/bootstrap/3.0.3/css/bootstrap.min.css}" rel="stylesheet"/>
 
     <link rel="stylesheet" type="text/css"
-          href="/resources/css/site.css" />
+          href="/resources/css/site.css"/>
 </head>
 <body>
 <nav class="navbar navbar-default" role="navigation">
@@ -81,7 +81,12 @@
 </nav>
 <div class="container">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-2">
+            <section layout:fragment="sidebar">
+
+            </section>
+        </div>
+        <div class="col-md-10">
             <section layout:fragment="content">
                 <p>Page content goes here</p>
             </section>
@@ -98,8 +103,8 @@
 </div>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"
         th:src="@{/webjars/jquery/2.1.0/jquery.js}"></script>
-<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/3.0.3/js/bootstrap.min.js"
-      th:src="@{/webjars/bootstrap/3.0.3/js/bootstrap.min.js}" rel="stylesheet"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"
+        th:src="@{/webjars/bootstrap/3.0.3/js/bootstrap.min.js}" rel="stylesheet"></script>
 
 </body>
 </html>

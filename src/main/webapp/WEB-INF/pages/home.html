@@ -7,17 +7,46 @@
     <title>Content page 2weer</title>
 </head>
 <body>
-    <section layout:fragment="content">
-        <h2 th:text="${message}"></h2>
-        <h3 th:text="${curDate}"></h3>
-        <span th:inline="text">[[${'Current date is : '+beans.dateFormatter.getCurrentDate()}]]</span>
+<section layout:fragment="sidebar">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">categories</h3>
+        </div>
+        <div class="list-group">
+            <li>fefe</li>
+            <li>fefe</li>
+            <li>fefe</li>
+            <li>fefe</li>
+            <li>fefe</li>
+        </div>
+    </div>
 
-        <p>This is a paragraph from content page 1</p>
+    @foreach (var item in @Model)
+    {
+    <li>
+        @Html.ActionLink(item.Title, "Index", "Book", new { id = item.GenreId }, null)
+        @if (IsEditAllowed)
+        {
+        <text>
+            @Html.ActionLink("Edit", "Edit", new { id = item.GenreId }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.GenreId })
+        </text>
+        }
+    </li>
+    }
+</section>
+<section layout:fragment="content">
+    <h2 th:text="${message}"></h2>
+
+    <h3 th:text="${curDate}"></h3>
+    <span th:inline="text">[[${'Current date is : '+beans.dateFormatter.getCurrentDate()}]]</span>
+
+    <p>This is a paragraph from content page 1</p>
 
 
-    </section>
-    <footer>
-        <p layout:fragment="custom-footer">This is some footer content from content page 1</p>
-    </footer>
+</section>
+<footer>
+    <p layout:fragment="custom-footer">This is some footer content from content page 1</p>
+</footer>
 </body>
 </html>
