@@ -16,6 +16,8 @@ public class HomeController {
         Date curDate = new Date();
         model.addAttribute("curDate", curDate.toString());
 
+        model.addAttribute("genres", new String[]{"fefe", "Fantasy"});
+
         return "home";
     }
 }
