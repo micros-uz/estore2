@@ -1,6 +1,6 @@
 package uz.micros.estore.repository;
 
-import uz.micros.estore.entity.Post;
+import uz.micros.estore.entity.blog.Post;
 
 import java.util.List;
 

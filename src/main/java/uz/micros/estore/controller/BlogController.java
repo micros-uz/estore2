@@ -5,8 +5,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import uz.micros.estore.entity.Blog;
-import uz.micros.estore.entity.Post;
+import uz.micros.estore.entity.blog.Blog;
+import uz.micros.estore.entity.blog.Post;
 import uz.micros.estore.service.BlogService;
 
 import java.util.List;
@@ -25,7 +25,7 @@ public class BlogController {
     @RequestMapping(method = RequestMethod.GET)
     public String blogIndex(ModelMap model) {
         Blog blog = new Blog();
-        blog.setTitle("eStore corporative Blog!");
+        blog.setTitle("eStore corporative blog!");
 
         List<Post> posts = service.getAllPosts();
 

@@ -1,7 +1,7 @@
 package uz.micros.estore.repository.impl;
 
 import org.springframework.stereotype.Repository;
-import uz.micros.estore.entity.Post;
+import uz.micros.estore.entity.blog.Post;
 import uz.micros.estore.repository.PostRepository;
 
 import javax.persistence.EntityManager;

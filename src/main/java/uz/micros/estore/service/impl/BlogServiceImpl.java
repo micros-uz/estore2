@@ -3,7 +3,7 @@ package uz.micros.estore.service.impl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import uz.micros.estore.entity.Post;
+import uz.micros.estore.entity.blog.Post;
 import uz.micros.estore.repository.BlogRepository;
 import uz.micros.estore.service.BlogService;
 

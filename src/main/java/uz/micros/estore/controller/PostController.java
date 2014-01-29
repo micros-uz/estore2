@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
-import uz.micros.estore.entity.Post;
+import uz.micros.estore.entity.blog.Post;
 import uz.micros.estore.service.PostService;
 
 @Controller
