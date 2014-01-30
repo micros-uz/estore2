@@ -1,4 +1,4 @@
-package uz.micros.estore.controller;
+package uz.micros.estore.controller.blog;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 import uz.micros.estore.entity.blog.Post;
-import uz.micros.estore.service.PostService;
+import uz.micros.estore.service.blog.PostService;
 
 @Controller
 @RequestMapping("/blog/posts")

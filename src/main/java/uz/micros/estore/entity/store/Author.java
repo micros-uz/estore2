@@ -1,15 +1,25 @@
 package uz.micros.estore.entity.store;
 
-import uz.micros.estore.entity.BaseEntity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "authors")
-public class Author extends BaseEntity {
+public class Author /*extends BaseEntity*/ {
 
-    @Column("name")
+    @Id
+    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+
+    @Column(name = "name")
     private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }

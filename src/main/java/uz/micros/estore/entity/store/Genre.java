@@ -1,15 +1,24 @@
 package uz.micros.estore.entity.store;
 
-import uz.micros.estore.entity.BaseEntity;
-
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "Genres")
-public class Genre extends BaseEntity {
+public class Genre/* extends BaseEntity*/ {
 
-    @Column("title")
+    @Id
+    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+
+    @Column(name = "title")
     private String title;
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
 }
