@@ -1,6 +1,7 @@
 package uz.micros.estore.config;
 
 import org.apache.tomcat.dbcp.dbcp.BasicDataSource;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
@@ -21,6 +22,26 @@ import java.util.Properties;
 @EnableJpaRepositories(basePackages = "uz.micros.estore.repository.impl")
 public class PersistenceConfig {
 
+    @Value("${jdbc.driverClassName}")
+    private String driverClassName;
+    @Value("${jdbc.host}")
+    private String hostName;
+    @Value("${jdbc.port}")
+    private String prt;
+    @Value("${jdbc.dbName}")
+    private String dbName;
+    @Value("${jdbc.userName}")
+    private String userName;
+    @Value("${jdbc.password}")
+    private String pwd;
+
+    @Value("${hibernate.dialect}")
+    private String hibernateDialect;
+    @Value("${hibernate.show_sql}")
+    private String hibernateShowSql;
+    @Value("${hibernate.hbm2ddl.auto}")
+    private String hibernateHbm2ddlAuto;
+
     @Bean
     public EntityManagerFactory entityManagerFactory() {
         LocalContainerEntityManagerFactoryBean lef = new LocalContainerEntityManagerFactoryBean();
@@ -35,13 +56,13 @@ public class PersistenceConfig {
 
     @Bean
     public Properties additionalProperties() {
-        return new Properties() {
-            {  // Hibernate Specific:
-                setProperty("hibernate.hbm2ddl.auto", "update");
-                setProperty("hibernate.dialect", "org.hibernate.dialect.PostgreSQL82Dialect");
-                setProperty("hibernate.show_sql", "true");
-            }
-        };
+        Properties properties = new Properties();
+
+        properties.put("hibernate.dialect", hibernateDialect);
+        properties.put("hibernate.show_sql", hibernateShowSql);
+        properties.put("hibernate.hbm2ddl.auto", hibernateHbm2ddlAuto);
+
+        return properties;
     }
 
     @Bean
@@ -50,6 +71,7 @@ public class PersistenceConfig {
         jva.setShowSql(true);
         jva.setGenerateDdl(true);
         jva.setDatabase(Database.POSTGRESQL);
+
         return jva;
     }
 
@@ -62,16 +84,16 @@ public class PersistenceConfig {
         String databaseName = System.getenv("OPENSHIFT_APP_NAME");
 
         if (host == null) {
-            host = "127.0.0.1";
-            port = "5432";
-            username = "postgres";
-            password = "dev1234";
-            databaseName = "estore";
+            host = hostName;
+            port = prt;
+            username = userName;
+            password = pwd;
+            databaseName = dbName;
         }
 
         String url = "jdbc:postgresql://" + host + ":" + port + "/" + databaseName;
         BasicDataSource dataSource = new BasicDataSource();
-        dataSource.setDriverClassName("org.postgresql.Driver");
+        dataSource.setDriverClassName(driverClassName);
         dataSource.setUrl(url);
         dataSource.setUsername(username);
         dataSource.setPassword(password);
