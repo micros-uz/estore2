@@ -1,23 +1,21 @@
 package uz.micros.estore.entity.blog;
 
+import uz.micros.estore.entity.BaseEntity;
+
 import javax.persistence.*;
 import java.util.Date;
 
 @Entity
 @Table(name = "Posts")
-public class Post {
-    @Id
-    @Column(name = "postId")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int postId;
+public class Post extends BaseEntity {
 
-    @Column(name = "Title", unique = true, columnDefinition = "varchar(50)")
+    @Column(name = "Title", unique = true, columnDefinition = "varchar(50)", nullable = false)
     private String title;
 
-    @Column(name = "Text", columnDefinition = "varchar(4096)")
+    @Column(name = "Text", columnDefinition = "varchar(4096)", nullable = false)
     private String text;
 
-    @Column(name = "Date", columnDefinition = "date")
+    @Column(name = "Date", columnDefinition = "date", nullable = false)
     private Date date;
 
     public String getShortText(){
@@ -29,14 +27,6 @@ public class Post {
     public Post() {
         title = "";
         text = "";
-    }
-
-    public int getPostId(){
-        return postId;
-    }
-
-    public void setPostId(int postId) {
-        this.postId = postId;
     }
 
     public String getTitle() {

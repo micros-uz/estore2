@@ -1,24 +1,22 @@
 package uz.micros.estore.entity.blog;
 
+import uz.micros.estore.entity.BaseEntity;
+
 import javax.persistence.*;
 
 import java.util.Date;
 
 @Entity
 @Table(name = "Comments")
-public class Comment {
-    @Id
-    @Column(name = "commentId")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int commentId;
+public class Comment extends BaseEntity {
 
-    @Column(columnDefinition = "varchar(512)")
+    @Column(columnDefinition = "varchar(512)", nullable = false)
     private String text;
 
-    @Column(columnDefinition = "date")
+    @Column(columnDefinition = "date", nullable = false)
     private Date date;
 
-    @Column(columnDefinition = "varchar(20)")
+    @Column(columnDefinition = "varchar(20)", nullable = false)
     private String author;
 
     public String getText() {

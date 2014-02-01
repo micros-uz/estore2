@@ -20,7 +20,7 @@ public class PostRepositoryImpl implements PostRepository {
 
     @Override
     public void save(Post post) {
-        if (post.getPostId() == 0)
+        if (post.getId() == 0)
             em.persist(post);
         else
             em.merge(post);
@@ -33,6 +33,6 @@ public class PostRepositoryImpl implements PostRepository {
         //if (p != null) em.remove(p);
 
         em.createQuery(
-                "DELETE FROM Post c WHERE c.postId = :id").setParameter("id", id).executeUpdate();
+                "DELETE FROM Post c WHERE c.id = :id").setParameter("id", id).executeUpdate();
     }
 }

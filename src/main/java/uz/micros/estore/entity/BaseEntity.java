@@ -1,26 +1,23 @@
 package uz.micros.estore.entity;
 
-import org.springframework.data.annotation.Id;
-
 import javax.persistence.*;
+import java.io.Serializable;
 
 @MappedSuperclass
-public class BaseEntity {
-    //private static final long serialVersionUID = 1640401007252876492L;
+public abstract class BaseEntity implements Serializable {
+
+    private static final long serialVersionUID = 1640401007252876492L;
 
     @Id
-    @Column(name="id")
+    @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private int id;
 
-    @Version
-    private int version;
-
-    public Integer getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(int id) {
         this.id = id;
     }
 }

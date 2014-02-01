@@ -28,7 +28,7 @@ public class PostController {
         return "blog/editPost";
     }
 
-    @RequestMapping(value = "create", method = RequestMethod.POST)
+    @RequestMapping(method = RequestMethod.POST)
     public ModelAndView create(@ModelAttribute(value = "post") Post post){
         service.save(post);
 

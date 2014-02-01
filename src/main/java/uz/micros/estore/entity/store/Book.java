@@ -1,22 +1,35 @@
 package uz.micros.estore.entity.store;
 
+import uz.micros.estore.entity.BaseEntity;
 import javax.persistence.*;
 
 @Entity
 @Table(name = "Books")
-public class Book /*extends BaseEntity*/{
+public class Book extends BaseEntity {
+    public Book() {
+    }
 
-    @Id
+    /*    @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private int id;*/
 
-    @Column(name = "title")
-	private String title;
+    @Column(name = "title", nullable = false, unique = true)
+    private String title;
 
-/*    @ManyToOne
+/*    @Column(name = "author_id")
+    private int author_id;
+
+    @Column(name = "genre_id")
+    private int genre_id;*/
+
+    @ManyToOne
     @JoinColumn(name = "author_id")
-	private Author author;*/
+    private Author author;
+
+    @ManyToOne
+    @JoinColumn(name = "genre_id")
+    private Genre genre;
 
     public String getTitle() {
         return title;
@@ -26,11 +39,19 @@ public class Book /*extends BaseEntity*/{
         this.title = title;
     }
 
-/*    public Author getAuthor() {
+    public Author getAuthor() {
         return author;
     }
 
     public void setAuthor(Author author) {
         this.author = author;
-    }*/
+    }
+
+    public Genre getGenre() {
+        return genre;
+    }
+
+    public void setGenre(Genre genre) {
+        this.genre = genre;
+    }
 }

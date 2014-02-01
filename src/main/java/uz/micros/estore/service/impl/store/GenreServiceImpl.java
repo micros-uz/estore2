@@ -15,6 +15,7 @@ public class GenreServiceImpl implements GenreService {
 
         Genre g = new Genre();
         g.setTitle("genre 1");
+
         res.add(g);
         g = new Genre();
         g.setTitle("genre 34");

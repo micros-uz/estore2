@@ -10,8 +10,8 @@
         <div class="col-md-12">
             <h2>Create new post</h2>
 
-            <form data-th-action="@{/blog/posts/create}" data-th-object="${post}" method="post">
-                <input type="hidden" name="postId" data-th-field="*{postId}" />
+            <form data-th-action="@{/blog/posts}" data-th-object="${post}" method="post">
+                <input type="hidden" name="id" data-th-field="*{id}" />
                 <div class="row">
                     <div class="col-md-1">
                         <label class="control-label">Title</label>

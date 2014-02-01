@@ -14,7 +14,13 @@
         </div>
         <div class="list-group">
             <li class="list-group-item" data-th-each="genre : ${genres}">
-                <a href="#" data-th-text="${genre.title}"></a>
+                <a href="#" data-th-href="@{'/store/genres/' + ${genre.id}}" data-th-text="${genre.title}"></a>
+                <a th:if="${#httpServletRequest.remoteUser != null}" href="#" data-th-href="@{'/store/genres/edit/' + ${genre.id}}">
+                    <span class="glyphicon glyphicon-refresh"/>
+                </a>
+                <a th:if="${#httpServletRequest.remoteUser != null}" href="#" data-th-href="@{'/store/genres/delete/' + ${genre.id}}">
+                    <span class="glyphicon glyphicon-remove"/>
+                </a>
             </li>
         </div>
     </div>
