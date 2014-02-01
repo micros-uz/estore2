@@ -5,3 +5,49 @@
 .post-date{
     color:gray;
 }
+
+.books-pane {
+    margin: 0 10px 0;
+}
+
+.book-items-header {
+    padding-bottom: 9px;
+    margin: 20px 0 20px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.book-item {
+    border: 1px solid #d6e0e6;
+    border-radius: 0 0 2px 0;
+    margin: 10px 0;
+}
+
+.book-item-author {
+    font-size: small;
+}
+
+.book-item-title {
+    margin: 0 10px 0 10px;
+    min-height: 70px;
+    font-size: small;
+}
+
+.book-item-price {
+    color: Green;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.book-item-img-box {
+    padding: 10px 0;
+}
+
+.book-item-img {
+    height: 120px;
+    border-radius: 4px;
+    border: 1px solid #dcd5d5;
+}
+
+.book-item-buttons {
+    padding: 3px;
+}

@@ -33,6 +33,8 @@ public class PostRepositoryImpl implements PostRepository {
         //if (p != null) em.remove(p);
 
         em.createQuery(
-                "DELETE FROM Post c WHERE c.id = :id").setParameter("id", id).executeUpdate();
+                "DELETE FROM Post c WHERE c.id = :id")
+                .setParameter("id", id)
+                .executeUpdate();
     }
 }

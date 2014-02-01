@@ -1,4 +1,4 @@
-package uz.micros.estore.service.blog;
+package uz.micros.estore.service.intf.blog.blog;
 
 import uz.micros.estore.entity.blog.Post;
 

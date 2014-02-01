@@ -13,3 +13,10 @@ COMMON LINKS
 
 http://developers.google.com/speed/pagespeed/insights
 https://www.artifact-listener.org/
+
+###################
+Very good tutorial
+Jdbc, Hibernate, Jpa, Spring Data setup with no xml
+http://thysmichels.com/2013/09/15/jdbc-hibernate-and-jpa-spring-setup-with-no-xml/
+https://github.com/thysmichels/cloudsole-database
+######################

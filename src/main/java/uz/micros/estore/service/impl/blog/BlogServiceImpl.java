@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import uz.micros.estore.entity.blog.Post;
 import uz.micros.estore.repository.BlogRepository;
-import uz.micros.estore.service.blog.BlogService;
+import uz.micros.estore.service.intf.blog.blog.BlogService;
 
 import java.util.List;
 

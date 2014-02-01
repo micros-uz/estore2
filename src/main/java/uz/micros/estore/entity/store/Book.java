@@ -9,19 +9,14 @@ public class Book extends BaseEntity {
     public Book() {
     }
 
-    /*    @Id
-    @Column(name = "id")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;*/
-
     @Column(name = "title", nullable = false, unique = true)
     private String title;
 
-/*    @Column(name = "author_id")
+    @Column(name = "author_id", insertable = false, updatable = false)
     private int author_id;
 
-    @Column(name = "genre_id")
-    private int genre_id;*/
+    @Column(name = "genre_id", insertable = false, updatable = false)
+    private int genre_id;
 
     @ManyToOne
     @JoinColumn(name = "author_id")

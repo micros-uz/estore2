@@ -10,13 +10,13 @@
 <section layout:fragment="sidebar">
     <div class="panel panel-default">
         <div class="panel-heading">
-            <h3 class="panel-title">categories</h3>
+            <h3 class="panel-title">Categories</h3>
         </div>
         <div class="list-group">
             <li class="list-group-item" data-th-each="genre : ${genres}">
                 <a href="#" data-th-href="@{'/store/genres/' + ${genre.id}}" data-th-text="${genre.title}"></a>
                 <a th:if="${#httpServletRequest.remoteUser != null}" href="#" data-th-href="@{'/store/genres/edit/' + ${genre.id}}">
-                    <span class="glyphicon glyphicon-refresh"/>
+                    <span class="glyphicon glyphicon-edit"/>
                 </a>
                 <a th:if="${#httpServletRequest.remoteUser != null}" href="#" data-th-href="@{'/store/genres/delete/' + ${genre.id}}">
                     <span class="glyphicon glyphicon-remove"/>

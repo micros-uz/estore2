@@ -5,7 +5,7 @@ import javax.persistence.*;
 import java.util.Set;
 
 @Entity
-@Table(name = "authors")
+@Table(name = "Authors")
 public class Author extends BaseEntity {
 
     public Author() {
@@ -15,8 +15,8 @@ public class Author extends BaseEntity {
     @Column(name = "name", unique = true, nullable = false)
     private String name;
 
-/*    @OneToMany(mappedBy="author_id")
-    private Set<Book> books;*/
+    @OneToMany(mappedBy="author")
+    private Set<Book> books;
 
     public String getName() {
         return name;
@@ -26,7 +26,11 @@ public class Author extends BaseEntity {
         this.name = name;
     }
 
-/*    public Set<Book> getBooks() {
+    public Set<Book> getBooks() {
         return books;
-    }*/
+    }
+
+    public void setBooks(Set<Book> books) {
+        this.books = books;
+    }
 }

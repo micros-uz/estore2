@@ -1,6 +1,6 @@
 package uz.micros.estore.service.impl;
 
-import uz.micros.estore.service.AdminService;
+import uz.micros.estore.service.intf.AdminService;
 
 import java.util.List;
 

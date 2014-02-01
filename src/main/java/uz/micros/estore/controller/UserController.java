@@ -2,7 +2,6 @@ package uz.micros.estore.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import uz.micros.estore.dto.RegUserDto;
 import uz.micros.estore.entity.AppUser;
-import uz.micros.estore.service.UserService;
+import uz.micros.estore.service.intf.UserService;
 
 import javax.servlet.http.HttpSession;
 import java.util.Locale;

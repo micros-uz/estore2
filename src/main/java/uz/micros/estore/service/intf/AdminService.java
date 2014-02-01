@@ -1,4 +1,4 @@
-package uz.micros.estore.service;
+package uz.micros.estore.service.intf;
 
 import java.util.List;
 

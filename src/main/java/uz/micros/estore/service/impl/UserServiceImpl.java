@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import uz.micros.estore.entity.AppUser;
 import uz.micros.estore.repository.UserRepository;
-import uz.micros.estore.service.UserService;
+import uz.micros.estore.service.intf.UserService;
 
 import java.util.List;
 

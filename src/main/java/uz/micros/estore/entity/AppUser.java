@@ -3,7 +3,7 @@ package uz.micros.estore.entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "users")
+@Table(name = "Users")
 public class AppUser {
     public static final int ROLE_ADMIN = 0x01;
     public static final int ROLE_USER = 0x02;

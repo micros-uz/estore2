@@ -6,7 +6,7 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 import uz.micros.estore.entity.blog.Post;
 import uz.micros.estore.repository.PostRepository;
-import uz.micros.estore.service.blog.PostService;
+import uz.micros.estore.service.intf.blog.blog.PostService;
 
 import java.util.Date;
 

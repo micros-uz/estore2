@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 import uz.micros.estore.entity.blog.Post;
-import uz.micros.estore.service.blog.PostService;
+import uz.micros.estore.service.intf.blog.blog.PostService;
 
 @Controller
 @RequestMapping("/blog/posts")
