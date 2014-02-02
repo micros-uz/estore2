@@ -12,7 +12,7 @@ public class Author extends BaseEntity {
 
     }
 
-    @Column(name = "name", unique = true, nullable = false)
+    @Column(name = "name", columnDefinition = "varchar(30)", unique = true, nullable = false)
     private String name;
 
     @OneToMany(mappedBy="author")

@@ -33,3 +33,4 @@ insert into Authors (Name) values ('Эспозито Д.');
 insert into Series (Genre_Id, Title) values (9, 'Классика computer science');
 insert into Series (Genre_Id, Title) values (9, 'Мастер-класс');
 insert into Series (Genre_Id, Title) values (9, 'Бестселлеры O''Reilly');
+

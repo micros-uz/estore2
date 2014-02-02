@@ -16,6 +16,6 @@ public class BookServiceImpl implements BookService {
 
     @Override
     public List<Book> getByGenre(int id) {
-        return null;
+        return rpstr.getByGenreId(id);
     }
 }

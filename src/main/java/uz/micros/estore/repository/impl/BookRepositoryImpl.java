@@ -16,7 +16,7 @@ public class BookRepositoryImpl implements BookRepository {
 
     @Override
     public List<Book> getByGenreId(int id) {
-        return em.createQuery("SELECT b FROM Book b WHERE b.genreId = :id")
+        return em.createQuery("SELECT b FROM Book b WHERE b.genre.id = :id")
                 .setParameter("id", id)
                 .getResultList();
     }

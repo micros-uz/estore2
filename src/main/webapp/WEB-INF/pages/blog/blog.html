@@ -5,19 +5,21 @@
     <title>Blog Index</title>
 </head>
 <body>
-    <section layout:fragment="content">
-        <h2 data-th-href="${blog.title}"></h2>
+<section layout:fragment="content">
+    <h2 data-th-href="${blog.title}"></h2>
 
-        <a data-th-if="${#httpServletRequest.remoteUser != null}" data-th-href="@{/blog/posts/create}">Create New Post</a>
+    <a data-th-if="${#httpServletRequest.remoteUser != null}" data-th-href="@{/blog/posts/create}">Create New Post</a>
 
-        <div class="row" data-th-each="post : ${blog.posts}">
-            <div class="col-md-6">
-                <h2><a data-th-href="@{'/blog/posts/' + ${post.id}}" data-th-text="${post.title}"/></h2>
-                <p class="post-date" data-th-text="${post.date}"></p>
-                <p data-th-text="${post.shortText}"></p>
-            </div>
+    <div class="row" data-th-each="post : ${blog.posts}">
+        <div class="col-md-6">
+            <h2><a data-th-href="@{'/blog/posts/' + ${post.id}}" data-th-text="${post.title}"/></h2>
+
+            <p class="post-date" data-th-text="${post.date}"></p>
+
+            <p data-th-text="${post.shortText}"></p>
         </div>
-    </section>
+    </div>
+</section>
 
 
 </body>
