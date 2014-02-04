@@ -58,7 +58,7 @@
             <li class="dropdown">
 
                 <a th:if="${#httpServletRequest.remoteUser == null}" href="/login">
-                    <span>Hello, Guest!</span><br></br>
+                    <span>Привет, Guest!</span><br></br>
                     <span>Log In</span>
                 </a>
                 <a th:if="${#httpServletRequest.remoteUser != null}" href="#" class="dropdown-toggle"
