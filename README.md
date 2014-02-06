@@ -20,3 +20,6 @@ Jdbc, Hibernate, Jpa, Spring Data setup with no xml
 http://thysmichels.com/2013/09/15/jdbc-hibernate-and-jpa-spring-setup-with-no-xml/
 https://github.com/thysmichels/cloudsole-database
 ######################
+
+
+UTF http://www.cakesolutions.net/teamblogs/2009/04/02/utf-8-encoding-and-message-sources/
