@@ -33,10 +33,10 @@
 
     <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav">
-            <li class="active"><a th:href="@{/}">Home</a></li>
-            <li><a th:href="@{/blog}">Blog</a></li>
-            <li><a th:href="@{/forum}">Forum</a></li>
-            <li><a th:href="@{/catalog}">Catalog</a></li>
+            <li class="active"><a th:href="@{/}" th:text="#{menu.home}">Home</a></li>
+            <li><a th:href="@{/blog}" th:text="#{menu.blog}">Blog</a></li>
+            <li><a th:href="@{/forum}" th:text="#{menu.forum}">Forum</a></li>
+            <li><a th:href="@{/catalog}" th:text="#{menu.catalog}">Catalog</a></li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">S<b class="caret"></b></a>
                 <ul class="dropdown-menu">
@@ -58,22 +58,22 @@
             <li class="dropdown">
 
                 <a th:if="${#httpServletRequest.remoteUser == null}" href="/login">
-                    <span>Привет, Guest!</span><br></br>
-                    <span>Log In</span>
+                    <span th:text="#{acc.hello}">Hello Guest</span><br></br>
+                    <span th:text="#{acc.login}">Log In</span>
                 </a>
                 <a th:if="${#httpServletRequest.remoteUser != null}" href="#" class="dropdown-toggle"
                    data-toggle="dropdown">
                     <span th:text="${#httpServletRequest.remoteUser}" class="bold"></span><br></br>
-                    <span>My Account</span>
+                    <span th:text="#{acc.myacc}">My Account</span>
                     <b class="caret"></b>
                 </a>
                 <ul class="dropdown-menu">
                     <li>
                         <form th:action="@{/logout}" method="post">
-                            <input type="submit" value="Sign Out"/>
+                            <input type="submit" value="Logout" th:value="#{acc.logout}"/>
                         </form>
                     </li>
-                    <li><a href="#">My Basket</a></li>
+                    <li><a href="#" th:text="#{acc.mybasket}">My Basket</a></li>
                 </ul>
             </li>
         </ul>
