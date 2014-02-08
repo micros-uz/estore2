@@ -8,16 +8,19 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import uz.micros.estore.service.intf.store.GenreService;
 
 import java.util.Date;
+import java.util.Locale;
 
 @Controller
 @RequestMapping("/")
 public class HomeController {
+
     @Autowired
     private GenreService service;
 
     @RequestMapping(method = RequestMethod.GET)
-    public String printWelcome(ModelMap model) {
-        model.addAttribute("message", "Hi,OUR NEW eStore!");
+    public String printWelcome(Locale locale, ModelMap model) {
+        model.addAttribute("message", "Привет, магазин!");
+        model.addAttribute("locale", locale.toString());
         Date curDate = new Date();
         model.addAttribute("curDate", curDate.toString());
 

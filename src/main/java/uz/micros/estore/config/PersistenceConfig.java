@@ -105,8 +105,6 @@ public class PersistenceConfig {
         dataSource.setMinEvictableIdleTimeMillis(1800000);
         dataSource.setValidationQuery("SELECT version()");
 
-
-
         return dataSource;
     }
 
