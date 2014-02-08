@@ -112,7 +112,7 @@
       <file leaf-file-name="ThymeleafConfig.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/config/ThymeleafConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="0" selection-start="1514" selection-end="1514" vertical-scroll-proportion="0.22222222" vertical-offset="846" max-vertical-offset="1280">
+            <state line="14" column="0" selection-start="528" selection-end="528" vertical-scroll-proportion="0.3501805" vertical-offset="86" max-vertical-offset="1320">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -902,16 +902,16 @@
       <workItem from="1391525354654" duration="2401000" />
       <workItem from="1391696264985" duration="2927000" />
       <workItem from="1391838855092" duration="8389000" />
-      <workItem from="1391865144421" duration="3641000" />
+      <workItem from="1391865144421" duration="5542000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="279997000" />
+    <option name="totallyTimeSpent" value="281898000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1040" height="744" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -935,7 +935,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854986" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3466797" sideWeight="0.76960784" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3480315" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3480315" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.392126" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
@@ -1274,7 +1274,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/config/ThymeleafConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="0" selection-start="1514" selection-end="1514" vertical-scroll-proportion="0.22222222" vertical-offset="846" max-vertical-offset="1280">
+        <state line="14" column="0" selection-start="528" selection-end="528" vertical-scroll-proportion="0.3501805" vertical-offset="86" max-vertical-offset="1320">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

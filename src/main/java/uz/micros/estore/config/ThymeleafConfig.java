@@ -12,12 +12,14 @@ import org.thymeleaf.templateresolver.TemplateResolver;
 @Configuration
 public class ThymeleafConfig {
 
+    //http://jdevelopment.nl/internationalization-jsf-utf8-encoded-properties-files/
     @Bean
     public TemplateResolver templateResolver() {
         ServletContextTemplateResolver templateResolver = new ServletContextTemplateResolver();
         templateResolver.setPrefix("/WEB-INF/pages/");
         templateResolver.setSuffix(".html");
         templateResolver.setTemplateMode("HTML5");
+        //templateResolver.set
         templateResolver.setCharacterEncoding("UTF-8");
 
         return templateResolver;
