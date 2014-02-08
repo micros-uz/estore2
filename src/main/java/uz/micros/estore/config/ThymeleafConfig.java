@@ -1,8 +1,10 @@
 package uz.micros.estore.config;
 
 import nz.net.ultraq.thymeleaf.LayoutDialect;
+import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.support.ReloadableResourceBundleMessageSource;
 import org.springframework.web.servlet.ViewResolver;
 import org.thymeleaf.spring4.SpringTemplateEngine;
 import org.thymeleaf.spring4.view.ThymeleafViewResolver;
@@ -10,9 +12,16 @@ import org.thymeleaf.templateresolver.ServletContextTemplateResolver;
 import org.thymeleaf.templateresolver.TemplateResolver;
 
 @Configuration
-/*@PropertySource("classpath:thymeleaf.properties")*/
 public class ThymeleafConfig {
+    private static final String MESSAGE_SOURCE = "/WEB-INF/i18n/messages";
 
+    @Bean(name = "messageSource")
+    public MessageSource messageSource() {
+        ReloadableResourceBundleMessageSource messageSource = new ReloadableResourceBundleMessageSource();
+        messageSource.setBasename(MESSAGE_SOURCE);
+        messageSource.setCacheSeconds(5);
+        return messageSource;
+    }
 
     @Bean
     public TemplateResolver templateResolver() {
