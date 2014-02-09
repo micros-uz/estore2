@@ -19,7 +19,7 @@ public class HomeController {
 
     @RequestMapping(method = RequestMethod.GET)
     public String printWelcome(Locale locale, ModelMap model) {
-        model.addAttribute("message", "Привет, магазин!");
+        model.addAttribute("message", "\u041f\u0440\u0438\u0432\u0435\u0442, магазин!");
         model.addAttribute("locale", locale.toString());
         Date curDate = new Date();
         model.addAttribute("curDate", curDate.toString());

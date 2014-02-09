@@ -27,6 +27,9 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter {
         messageSource.setFallbackToSystemLocale(false);
         //messageSource.setFileEncodings();
         messageSource.setCacheSeconds(5);
+        // if true, the key of the message will be displayed if the key is not
+        // found, instead of throwing a NoSuchMessageException
+        messageSource.setUseCodeAsDefaultMessage(false);
         return messageSource;
     }
 

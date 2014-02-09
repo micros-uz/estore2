@@ -21,7 +21,6 @@
           <element id="library" level="project" name="Maven: org.springframework.security:spring-security-core:3.2.0.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.security:spring-security-config:3.2.0.RELEASE" />
           <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:3.1.0" />
-          <element id="library" level="project" name="Maven: javax.servlet.jsp:jsp-api:2.2" />
           <element id="library" level="project" name="Maven: org.postgresql:postgresql:9.3-1100-jdbc41" />
           <element id="library" level="project" name="Maven: joda-time:joda-time:2.1" />
           <element id="library" level="project" name="Maven: org.springframework.data:spring-data-jpa:1.4.3.RELEASE" />
@@ -45,7 +44,6 @@
           <element id="library" level="project" name="Maven: ognl:ognl:3.0.6" />
           <element id="library" level="project" name="Maven: org.thymeleaf:thymeleaf-spring4:2.1.2.RELEASE" />
           <element id="library" level="project" name="Maven: nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:1.2.1" />
-          <element id="library" level="project" name="Maven: javax.servlet:jstl:1.1.2" />
           <element id="library" level="project" name="Maven: org.webjars:bootstrap:3.0.3" />
           <element id="library" level="project" name="Maven: org.webjars:jquery:2.1.0" />
           <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-dbcp:7.0.47" />

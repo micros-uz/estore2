@@ -176,7 +176,7 @@
         </dependency>
 
         <!-- JSP -->
-        <dependency>
+<!--        <dependency>
             <groupId>javax.servlet.jsp</groupId>
             <artifactId>jsp-api</artifactId>
             <version>2.2</version>
@@ -185,7 +185,7 @@
             <groupId>javax.servlet</groupId>
             <artifactId>jstl</artifactId>
             <version>1.1.2</version>
-        </dependency>
+        </dependency>-->
         <!-- Web Jars -->
         <dependency>
             <groupId>org.webjars</groupId>
