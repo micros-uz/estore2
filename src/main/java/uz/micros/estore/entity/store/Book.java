@@ -43,7 +43,7 @@ public class Book extends BaseEntity {
     @Column(name = "isbn", nullable = false, columnDefinition = "varchar(20)")
     private String ISBN;
 
-    @Column(name = "descriptor", nullable = false, columnDefinition = "varchar(3072)")
+    @Column(name = "description", nullable = false, columnDefinition = "varchar(3072)")
     private String desc;
 
     @Column(name = "imageFile")

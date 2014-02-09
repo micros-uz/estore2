@@ -11,7 +11,7 @@ public class Series extends BaseEntity {
     @Column(name = "title", unique = true, nullable = false)
     private String title;
 
-    @Column(name = "descriptor")
+    @Column(name = "description")
     private String desc;
 
     @ManyToOne()

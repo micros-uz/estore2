@@ -12,7 +12,7 @@ public class Genre extends BaseEntity {
     @Column(name = "title", unique = true, nullable = false, columnDefinition = "varchar(25)")
     private String title;
 
-    @Column(name = "descriptor", nullable = true, columnDefinition = "varchar(250)")
+    @Column(name = "description", nullable = true, columnDefinition = "varchar(250)")
     private String desc;
 
     @OneToMany(mappedBy = "genre")
