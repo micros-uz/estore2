@@ -9,25 +9,25 @@ import uz.micros.estore.entity.store.Book;
 import uz.micros.estore.service.intf.store.BookService;
 import uz.micros.estore.service.intf.store.GenreService;
 
-import java.util.List;
-
 @Controller
-@RequestMapping("/store/genres")
-public class GenreController {
-
-    @Autowired
-    private GenreService genreSvc;
+@RequestMapping("/store/books")
+public class BookController {
 
     @Autowired
     private BookService bookSvc;
+    @Autowired
+    private GenreService genreSvc;
 
     @RequestMapping("/{id}/**")
-    public ModelAndView getBooks(@PathVariable(value = "id") int id){
+    public ModelAndView details(@PathVariable(value = "id") int id){
 
-        List<Book> books = bookSvc.getByGenre(id);
+        Book book = bookSvc.getById(id);
 
-        return new ModelAndView("store/books")
-                .addObject("books", books)
-                .addObject("genres", genreSvc.getGenres());
+        if (book != null)
+            return new ModelAndView("store/details")
+                    .addObject("book", book)
+                    .addObject("genres", genreSvc.getGenres());
+        else
+            return new ModelAndView("notFound");
     }
 }

@@ -6,6 +6,9 @@
     <title>Books</title>
 </head>
 <body>
+<section layout:fragment="sidebar">
+    <div layout:include="store\catalog :: catalog"></div>
+</section>
 <section layout:fragment="content">
     <div class="books-pane">
         <div class="row">
@@ -17,7 +20,7 @@
         </div>
 
         <p data-th-if="${#httpServletRequest.remoteUser != null}">
-            <a data-th-if="${#httpServletRequest.remoteUser != null}" data-th-href="@{/blog/books/create}">Add New
+            <a data-th-if="${#httpServletRequest.remoteUser != null}" data-th-href="@{/store/books/create}">Add New
                 Book</a>
         </p>
 
@@ -30,10 +33,11 @@
                     <a data-th-href="@{'/store/books/author/' + ${book.author.id}}" data-th-text="${book.author.name}"/>
                 </div>
                 <div class="book-item-title">
-                    <p class="centred"><a data-th-href="@{'/store/books/' + ${book.id}}" data-th-text="${book.title}"/></p>
+                    <p class="centred"><a data-th-href="@{'/store/books/' + ${book.id}}" data-th-text="${book.title}"/>
+                    </p>
                 </div>
                 <div class="book-item-price">
-                    <b>109.34</b>
+                    <b data-th-text="${book.price}"></b>
                 </div>
                 <div class="btn-group" style="width:100%">
                     <div class="pull-right book-item-buttons-pane">

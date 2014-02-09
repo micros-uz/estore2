@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <title></title>
+</head>
+<body layout:fragment="catalog">
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Categories</h3>
+    </div>
+    <div class="list-group">
+        <li class="list-group-item" data-th-each="genre : ${genres}">
+            <a href="#" data-th-href="@{'/store/genres/' + ${genre.id}}" data-th-text="${genre.title}"></a>
+            <a th:if="${#httpServletRequest.remoteUser != null}" href="#"
+               data-th-href="@{'/store/genres/edit/' + ${genre.id}}">
+                <span class="glyphicon glyphicon-edit"/>
+            </a>
+            <a th:if="${#httpServletRequest.remoteUser != null}" href="#"
+               data-th-href="@{'/store/genres/delete/' + ${genre.id}}">
+                <span class="glyphicon glyphicon-remove"/>
+            </a>
+        </li>
+    </div>
+</div>
+</body>
+</html>

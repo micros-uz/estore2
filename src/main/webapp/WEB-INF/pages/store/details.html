@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="master">
+<head>
+    <title>Details</title>
+</head>
+<body>
+<section layout:fragment="sidebar">
+    <div layout:include="store\catalog :: catalog"></div>
+</section>
+<section layout:fragment="content">
+    <div class="row">
+        <div class="col-md-4">
+            <!--<img class="centred" src= "@Url.Action("Image", new { fileName = Model.ImageFile})" alt="Image" width="200"/>-->
+            <div><p class="det-price" th:text="${book.price}"></p></div>
+            <div>
+                <button class="addToCart btn btn-primary centred" data-bookid="${book.id}"
+                        data-bind="click: addToCartVM.addToCart"><span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;Add
+                    to Cart
+                </button>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <!--@Html.HiddenFor(model=>model.BookId)-->
+            <span><strong th:text="${book.title}"></strong></span>
+            <br></br>
+            <span th:text="${book.author.name}"></span>
+            <br></br><br></br>
+
+            <div>
+                <span class="overview-hdr">Overview - </span>
+                <span th:text="${book.desc}"></span>
+                <!--                @if (Model.IsDescTooLong)
+                                {
+                                <a href="#overview">Read more...</a>
+                                }-->
+            </div>
+            <br></br>
+
+            <div class="hr-top"></div>
+            <span>Published Year: </span><b><span th:text="${book.year}"></span></b><br/>
+            <span>Pages: </span><b><span th:text="${book.pages}"></span></b><br/>
+            <span>ISBN: </span><b><span th:text="${book.ISBN}"></span></b><br/>
+        </div>
+    </div>
+    <br></br><br></br><br></br><br></br>
+
+    <p>
+        <a th:href="@{'/store/genres/' + ${book.genre.id}}">Back to List</a>
+    </p>
+
+</section>
+</body>
+</html>

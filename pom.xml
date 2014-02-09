@@ -171,7 +171,7 @@
         <dependency>
             <groupId>nz.net.ultraq.thymeleaf</groupId>
             <artifactId>thymeleaf-layout-dialect</artifactId>
-            <version>1.2.1</version>
+            <version>1.2.2</version>
             <scope>compile</scope>
         </dependency>
 

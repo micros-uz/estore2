@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface BookRepository {
     List<Book> getByGenreId(int id);
+
+    Book getById(int id);
 }

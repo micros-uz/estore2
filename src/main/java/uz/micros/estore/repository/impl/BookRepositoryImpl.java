@@ -1,6 +1,7 @@
 package uz.micros.estore.repository.impl;
 
 import org.springframework.stereotype.Repository;
+import uz.micros.estore.entity.blog.Post;
 import uz.micros.estore.entity.store.Book;
 import uz.micros.estore.repository.BookRepository;
 
@@ -19,5 +20,10 @@ public class BookRepositoryImpl implements BookRepository {
         return em.createQuery("SELECT b FROM Book b WHERE b.genre.id = :id")
                 .setParameter("id", id)
                 .getResultList();
+    }
+
+    @Override
+    public Book getById(int id) {
+        return em.find(Book.class, id);
     }
 }
