@@ -27,7 +27,7 @@
         <div class="row">
             <div class="col-md-3" data-th-each="book : ${books}">
                 <div class="book-item">
-                    <!--<img class="book-item-img centred" src="@Url.Action("Image", "Book", new { fileName = item.ImageFile })" alt="Image"/>-->
+                    <img class="book-item-img centred" data-th-attr="src=@{/resources/images/hadoop.jpg}" alt="Image"/>
                 </div>
                 <div class="book-item-author">
                     <a data-th-href="@{'/store/books/author/' + ${book.author.id}}" data-th-text="${book.author.name}"/>

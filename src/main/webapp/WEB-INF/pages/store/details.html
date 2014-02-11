@@ -12,7 +12,7 @@
 <section layout:fragment="content">
     <div class="row">
         <div class="col-md-4">
-            <!--<img class="centred" src= "@Url.Action("Image", new { fileName = Model.ImageFile})" alt="Image" width="200"/>-->
+            <img class="centred" th:attr="src=@{/resources/images/hadoop.jpg}" alt="Image" width="200"/>
             <div><p class="det-price" th:text="${book.price}"></p></div>
             <div>
                 <button class="addToCart btn btn-primary centred" data-bookid="${book.id}"
