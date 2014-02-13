@@ -24,5 +24,8 @@ public class BookServiceImpl implements BookService {
         return rpstr.getById(id);
     }
 
-
+    @Override
+    public void save(Book book) {
+        rpstr.save(book);
+    }
 }

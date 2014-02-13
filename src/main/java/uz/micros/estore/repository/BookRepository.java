@@ -8,4 +8,6 @@ public interface BookRepository {
     List<Book> getByGenreId(int id);
 
     Book getById(int id);
+
+    void save(Book book);
 }

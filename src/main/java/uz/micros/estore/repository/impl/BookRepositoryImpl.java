@@ -1,7 +1,6 @@
 package uz.micros.estore.repository.impl;
 
 import org.springframework.stereotype.Repository;
-import uz.micros.estore.entity.blog.Post;
 import uz.micros.estore.entity.store.Book;
 import uz.micros.estore.repository.BookRepository;
 
@@ -25,5 +24,14 @@ public class BookRepositoryImpl implements BookRepository {
     @Override
     public Book getById(int id) {
         return em.find(Book.class, id);
+    }
+
+    @Override
+    public void save(Book book) {
+        if (book.getId() == 0)
+            em.persist(book);
+        else
+            em.merge(book);
+        em.flush();
     }
 }
