@@ -8,6 +8,8 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import uz.micros.estore.util.DateFormatter;
+import uz.micros.estore.util.SecurityContextFacade;
+import uz.micros.estore.util.SecurityContextHolderFacade;
 
 @Configuration
 @EnableWebMvc
@@ -27,5 +29,10 @@ public class AppConfig {
     @Bean(name = "dateFormatter")
     public DateFormatter getDateFormatter() {
         return new DateFormatter();
+    }
+
+    @Bean(name="securityContextFacade")
+    public SecurityContextFacade getSecurityContextFacade(){
+        return new SecurityContextHolderFacade();
     }
 }

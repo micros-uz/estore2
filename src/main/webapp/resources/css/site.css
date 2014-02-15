@@ -24,6 +24,9 @@
 
 .book-item-author {
     font-size: small;
+    text-align: center;
+    padding: 2px;
+    color: #0c8342;
 }
 
 .book-item-title {
@@ -48,6 +51,17 @@
     border: 1px solid #dcd5d5;
 }
 
+.centred {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .book-item-buttons {
     padding: 3px;
+}
+
+.det-price {
+    text-align: center;
+    padding: 10px;
 }

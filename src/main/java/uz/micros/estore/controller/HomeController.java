@@ -1,16 +1,11 @@
 package uz.micros.estore.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import uz.micros.estore.entity.store.Genre;
-import uz.micros.estore.service.intf.store.GenreService;
 
 import java.util.Date;
-import java.util.List;
 import java.util.Locale;
 
 @Controller
