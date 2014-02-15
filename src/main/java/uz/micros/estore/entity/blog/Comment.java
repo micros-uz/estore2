@@ -1,9 +1,9 @@
 package uz.micros.estore.entity.blog;
 
+import uz.micros.estore.entity.AppUser;
 import uz.micros.estore.entity.BaseEntity;
 
 import javax.persistence.*;
-
 import java.util.Date;
 
 @Entity
@@ -16,8 +16,23 @@ public class Comment extends BaseEntity {
     @Column(columnDefinition = "date", nullable = false)
     private Date date;
 
-    @Column(columnDefinition = "varchar(20)", nullable = false)
-    private String author;
+    @Column(name = "author_id", insertable = false, updatable = false)
+    private int author_id;
+
+    @ManyToOne
+    @JoinColumn(name = "author_id", nullable = false)
+    private AppUser author;
+
+    @Column(name = "post_id", insertable = false, updatable = false)
+    private int post_id;
+
+    @ManyToOne
+    @JoinColumn(name = "post_id", nullable = false)
+    private Post post;
+
+    public Comment() {
+        text = "";
+    }
 
     public String getText() {
         return text;
@@ -35,11 +50,19 @@ public class Comment extends BaseEntity {
         this.date = date;
     }
 
-    public String getAuthor() {
+    public Post getPost() {
+        return post;
+    }
+
+    public void setPost(Post post) {
+        this.post = post;
+    }
+
+    public AppUser getAuthor() {
         return author;
     }
 
-    public void setAuthor(String author) {
+    public void setAuthor(AppUser author) {
         this.author = author;
     }
 }

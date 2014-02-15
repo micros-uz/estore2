@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
+import uz.micros.estore.entity.blog.Comment;
 import uz.micros.estore.entity.blog.Post;
 import uz.micros.estore.service.intf.blog.blog.PostService;
 
@@ -39,9 +40,18 @@ public class PostController {
     public ModelAndView get(@PathVariable("id") int id){
         Post post = service.get(id);
 
-        return post != null
-            ? new ModelAndView("blog/post").addObject("post", post)
-            : new ModelAndView("redirect:/blog");//new ModelAndView("notFound");
+        if (post != null){
+            Comment comment = new Comment();
+            comment.setPost(post);
+
+            ModelAndView m = new ModelAndView("blog/post")
+                .addObject("post", post)
+                .addObject("comment", comment);
+
+            return m;
+        }
+        else
+            return new ModelAndView("redirect:/blog");//new ModelAndView("notFound");
     }
 
     @RequestMapping("/edit/{id}")
@@ -51,6 +61,7 @@ public class PostController {
 
         if (post != null){
             map.addAttribute("post", post);
+
             return "blog/editPost";
         }else
             return "notFound";
