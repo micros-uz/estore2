@@ -21,7 +21,7 @@ public class BookServiceImpl implements BookService {
 
     @Override
     public Book getById(int id) {
-        return rpstr.getById(id);
+        return rpstr.findOne(id);
     }
 
     @Override

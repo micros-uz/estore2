@@ -18,7 +18,7 @@ public class UserServiceImpl implements UserService {
     @Override
     @Transactional(readOnly = true)
     public List<AppUser> getUsers() {
-        return rpstr.getUsers();
+        return rpstr.findAll();
     }
 
     @Override
@@ -30,6 +30,6 @@ public class UserServiceImpl implements UserService {
     @Override
     @Transactional(readOnly = false)
     public AppUser addUser(AppUser user) {
-        return rpstr.addUser(user);
+        return rpstr.saveAndFlush(user);
     }
 }

@@ -1,13 +1,8 @@
 package uz.micros.estore.repository;
 
+import org.springframework.data.jpa.repository.JpaRepository;
 import uz.micros.estore.entity.AppUser;
 
-import java.util.List;
-
-public interface UserRepository {
-    public List<AppUser> getUsers();
-
+public interface UserRepository extends JpaRepository<AppUser, Integer> {
     AppUser getUserByName(String name);
-
-    AppUser addUser(AppUser user);
 }

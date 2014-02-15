@@ -1,9 +1,8 @@
 package uz.micros.estore.repository;
 
+import org.springframework.data.jpa.repository.JpaRepository;
 import uz.micros.estore.entity.store.Genre;
 
-import java.util.List;
+public interface GenreRepository extends JpaRepository<Genre, Integer> {
 
-public interface GenreRepository {
-    List<Genre> getGenres();
 }

@@ -19,7 +19,7 @@ import java.util.Properties;
 
 @Configuration
 @EnableTransactionManagement
-@EnableJpaRepositories(basePackages = "uz.micros.estore.repository.impl")
+@EnableJpaRepositories(basePackages = "uz.micros.estore.repository")
 public class PersistenceConfig {
 
     @Value("${jdbc.driverClassName}")

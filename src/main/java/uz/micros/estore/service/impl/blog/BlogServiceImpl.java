@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import uz.micros.estore.entity.blog.Post;
-import uz.micros.estore.repository.BlogRepository;
+import uz.micros.estore.repository.PostRepository;
 import uz.micros.estore.service.intf.blog.blog.BlogService;
 
 import java.util.List;
@@ -12,16 +12,12 @@ import java.util.List;
 @Service
 public class BlogServiceImpl implements BlogService {
 
-    private BlogRepository repository;
-
     @Autowired
-    public BlogServiceImpl(BlogRepository rpstr) {
-        repository = rpstr;
-    }
+    private PostRepository rpstr;
 
     @Override
     @Transactional(readOnly = true)
     public List<Post> getAllPosts() {
-        return repository.getPosts();
+        return rpstr.findAll();
     }
 }

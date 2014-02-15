@@ -24,19 +24,19 @@ public class PostServiceImpl implements PostService{
     @Override
     @Transactional(readOnly = true)
     public Post get(int id) {
-        return repository.get(id);
+        return repository.findOne(id);
     }
 //http://piotrnowicki.com/2012/11/types-of-entitymanagers-application-managed-entitymanager/
     @Override
     @Transactional(readOnly = false, propagation = Propagation.REQUIRED)
     public void save(Post post) {
         post.setDate(new Date());
-        repository.save(post);
+        repository.saveAndFlush(post);
     }
 
     @Override
     @Transactional(readOnly = false, propagation = Propagation.REQUIRED)
     public void delete(int id) {
-        repository.remove(id);
+        repository.delete(id);
     }
 }

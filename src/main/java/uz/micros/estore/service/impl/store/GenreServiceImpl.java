@@ -11,11 +11,16 @@ import java.util.List;
 @Service
 public class GenreServiceImpl implements GenreService {
 
-    @Autowired
+    //@Autowired
     private GenreRepository rpstr;
+
+    @Autowired
+    public GenreServiceImpl(GenreRepository rpstr) {
+        this.rpstr = rpstr;
+    }
 
     @Override
     public List<Genre> getGenres() {
-        return rpstr.getGenres();
+        return rpstr.findAll();
     }
 }
