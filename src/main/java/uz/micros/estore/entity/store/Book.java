@@ -121,4 +121,9 @@ public class Book extends BaseEntity {
     public void setDesc(String desc) {
         this.desc = desc;
     }
+
+    public String shortTitle(){
+        return title.length() <= 40 ? title
+                : title.substring(0, 39);
+    }
 }

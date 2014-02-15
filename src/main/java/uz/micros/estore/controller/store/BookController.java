@@ -36,6 +36,18 @@ public class BookController extends BaseController {
                 .addObject("book", new Book());
     }
 
+    @RequestMapping("/edit/{id}/**")
+    public ModelAndView edit(@PathVariable(value = "id") int id){
+        Book book = bookSvc.getById(id);
+
+        if (book != null)
+            return new ModelAndView("store/createEditBook")
+                    .addObject("book", book)
+                    .addObject("useSideBar", false);
+        else
+            return new ModelAndView("notFound");
+    }
+
     @RequestMapping(value = "create", method = RequestMethod.POST)
     public ModelAndView save(@ModelAttribute(value = "book") Book book){
 

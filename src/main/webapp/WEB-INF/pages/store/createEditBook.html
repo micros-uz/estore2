@@ -60,7 +60,7 @@
                     <div class="col-md-5">
                         <div class="form-group">
                             <label class="control-label">Price</label>
-                            <input class="form-control" data-th-field="*{price}" autofocus="autofocus"/>
+                            <input class="form-control" data-th-field="*{price}"/>
                         </div>
                         <div class="form-group">
                             <label class="control-label">Image</label>
@@ -70,21 +70,21 @@
                                         <span class="btn btn-primary btn-file">
                                             Browse&hellip; <input name="Book.Image" id="Book_Image" type="file"/>
                                         </span>
-                                    <input class="form-control" autofocus="autofocus" style="width: 78%;"/>
+                                    <input class="form-control" style="width: 78%;"/>
                                 </span>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="control-label">Description</label>
-                            <input class="form-control" data-th-field="*{desc}" autofocus="autofocus"/>
+                            <textarea class="form-control" data-th-field="*{desc}" cols="20" rows="5"/>
                         </div>
                         <p>
-                            <input type="submit" class="btn btn-default" value="Save"/>
+                            <input type="submit" class="btn btn-primary" value="Save"/>
                         </p>
                     </div>
                     <div class="col-md-5">
-                        <!--                        <img id="preview" src="@Url.Action(" Image", new { fileName = Model.Book.ImageFile})"
-                                                alt="Image" width="150" height="200"/>-->
+                        <img id="preview" data-th-attr="src=@{'/resources/images/' + ${id} + '.jpg'}"
+                             alt="Image" width="150" height="200"/>
                     </div>
                 </div>
                 <div class="modal fade" id="addGenre" role="dialog">

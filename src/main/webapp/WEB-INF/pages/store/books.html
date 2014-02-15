@@ -19,16 +19,15 @@
             </div>
         </div>
 
-        <p data-th-if="${#httpServletRequest.remoteUser != null}">
-            <a data-th-if="${#httpServletRequest.remoteUser != null}" data-th-href="@{/store/books/create}">Add New
-                Book</a>
+        <p data-th-if="${beans.securityContextFacade.isAdmin()}">
+            <a data-th-href="@{/store/books/create}">Add New Book</a>
         </p>
 
         <div class="row">
             <div class="col-md-3" data-th-each="book : ${books}">
                 <div class="book-item">
                     <div class="book-item-img-box">
-                        <img class="book-item-img centred" data-th-attr="src=@{/resources/images/hadoop.jpg}"
+                        <img class="book-item-img centred" data-th-attr="src=@{'/resources/images/' + ${book.id} + '.jpg'}"
                              alt="Image"/>
                     </div>
                     <div class="book-item-author">
@@ -37,7 +36,7 @@
                     </div>
                     <div class="book-item-title">
                         <p class="centred"><a data-th-href="@{'/store/books/' + ${book.id}}"
-                                              data-th-text="${book.title}"/>
+                                              data-th-text="${book.shortTitle()}"/>
                         </p>
                     </div>
                     <div class="book-item-price">

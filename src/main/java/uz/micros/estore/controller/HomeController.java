@@ -18,6 +18,7 @@ public class HomeController extends BaseController{
         model.addAttribute("locale", locale.toString());
         Date curDate = new Date();
         model.addAttribute("curDate", curDate.toString());
+        model.addAttribute("useSideBar", true);
 
         return "home";
     }
