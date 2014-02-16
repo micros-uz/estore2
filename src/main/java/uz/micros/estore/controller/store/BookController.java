@@ -2,13 +2,13 @@ package uz.micros.estore.controller.store;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 import uz.micros.estore.controller.BaseController;
-import uz.micros.estore.dto.CreateEditBookDto;
 import uz.micros.estore.entity.store.Book;
 import uz.micros.estore.service.intf.store.AuthorService;
 import uz.micros.estore.service.intf.store.BookService;
@@ -63,11 +63,11 @@ public class BookController extends BaseController {
     }
 
     @RequestMapping(method = RequestMethod.POST)
-    public ModelAndView save(@ModelAttribute(value = "book") Book book){
+    public ModelAndView save(@ModelAttribute(value = "book") Book book, BindingResult result){
 
-        bookSvc.save(book);
+        book = bookSvc.save(book);
 
-        return new ModelAndView("store/createEditBook")
-                .addObject("book", new Book());
+        return new ModelAndView("store/details")
+                .addObject("book", book);
     }
 }

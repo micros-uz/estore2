@@ -41,4 +41,9 @@ public class Genre extends BaseEntity {
     public void setBooks(Set<Book> books) {
         this.books = books;
     }
+
+    @Override
+    public String toString() {
+        return title;
+    }
 }

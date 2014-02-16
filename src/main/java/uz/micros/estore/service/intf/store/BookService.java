@@ -9,5 +9,5 @@ public interface BookService {
 
     Book getById(int id);
 
-    void save(Book book);
+    Book save(Book book);
 }

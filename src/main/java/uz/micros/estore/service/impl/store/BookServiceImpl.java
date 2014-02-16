@@ -25,7 +25,7 @@ public class BookServiceImpl implements BookService {
     }
 
     @Override
-    public void save(Book book) {
-        rpstr.save(book);
+    public Book save(Book book) {
+        return rpstr.save(book);
     }
 }

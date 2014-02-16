@@ -87,7 +87,7 @@ public class Book extends BaseEntity {
     }
 
     public void setPrice(double price) {
-        price = price;
+        this.price = price;
     }
 
     public short getYear() {
@@ -95,7 +95,7 @@ public class Book extends BaseEntity {
     }
 
     public void setYear(short year) {
-        year = year;
+        this.year = year;
     }
 
     public short getPages() {
@@ -103,7 +103,7 @@ public class Book extends BaseEntity {
     }
 
     public void setPages(short pages) {
-        pages = pages;
+        this.pages = pages;
     }
 
     public String getIsbn() {

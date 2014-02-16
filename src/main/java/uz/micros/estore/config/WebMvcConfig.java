@@ -4,12 +4,15 @@ import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.support.ReloadableResourceBundleMessageSource;
+import org.springframework.format.FormatterRegistry;
 import org.springframework.web.servlet.LocaleResolver;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.i18n.LocaleChangeInterceptor;
 import org.springframework.web.servlet.i18n.SessionLocaleResolver;
+import uz.micros.estore.controller.store.AuthorFormatter;
+import uz.micros.estore.controller.store.GenreFormatter;
 import uz.micros.estore.util.Interceptor;
 
 import java.util.Locale;
@@ -57,5 +60,21 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter {
         LocaleChangeInterceptor localeChangeInterceptor=new LocaleChangeInterceptor();
         localeChangeInterceptor.setParamName("lang");
         return localeChangeInterceptor;
+    }
+
+    @Override
+    public void addFormatters(FormatterRegistry registry) {
+        registry.addFormatter(getGenreFormatter());
+        registry.addFormatter(getAuthorFormatter());
+    }
+
+    @Bean
+    public GenreFormatter getGenreFormatter(){
+        return new GenreFormatter();
+    }
+
+    @Bean
+    public AuthorFormatter getAuthorFormatter(){
+        return new AuthorFormatter();
     }
 }

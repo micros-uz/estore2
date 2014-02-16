@@ -33,4 +33,9 @@ public class Author extends BaseEntity {
     public void setBooks(Set<Book> books) {
         this.books = books;
     }
+
+    @Override
+    public String toString() {
+        return name;
+    }
 }

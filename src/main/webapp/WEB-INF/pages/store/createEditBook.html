@@ -38,8 +38,8 @@
                     <div class="col-md-5">
                         <div class="form-group">
                             <label class="control-label">Genre</label>
-                            <select id="genre" th:field="*{genre_id}" class="form-control">
-                                <option th:each="g : ${genres}" th:value="${g.id}" th:text="${g.title}"></option>
+                            <select id="genre" th:field="*{genre}" class="form-control">
+                                <option th:each="g : ${genres}" th:value="${g}" th:text="${g}"></option>
                             </select>
                         </div>
                     </div>
@@ -51,8 +51,8 @@
                     <div class="col-md-5">
                         <div class="form-group">
                             <label class="control-label">Author</label>
-                            <select id="author" th:field="*{author_id}" class="form-control">
-                                <option th:each="a : ${authors}" th:value="${a.id}" th:text="${a.name}"></option>
+                            <select id="author" th:field="*{author}" class="form-control">
+                                <option th:each="a : ${authors}" th:value="${a}" th:text="${a}"></option>
                             </select>
                         </div>
                     </div>
