@@ -103,7 +103,25 @@
       <file leaf-file-name="BookController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/controller/store/BookController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="0" selection-start="2328" selection-end="2328" vertical-scroll-proportion="0.0" vertical-offset="767" max-vertical-offset="1340">
+            <state line="78" column="0" selection-start="2634" selection-end="2634" vertical-scroll-proportion="0.0" vertical-offset="1067" max-vertical-offset="1640">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="notFound.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/notFound.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="20" selection-start="326" selection-end="326" vertical-scroll-proportion="2.689655" vertical-offset="238" max-vertical-offset="520">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="7" selection-start="342" selection-end="342" vertical-scroll-proportion="8.275862" vertical-offset="420" max-vertical-offset="720">
               <folding />
             </state>
           </provider>
@@ -118,19 +136,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="createEditBook.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="createEditBook.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/store/createEditBook.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="9" selection-start="2282" selection-end="2282" vertical-scroll-proportion="-2.0689654" vertical-offset="900" max-vertical-offset="3100">
+            <state line="12" column="0" selection-start="333" selection-end="333" vertical-scroll-proportion="0.29850745" vertical-offset="120" max-vertical-offset="3100">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GenreFormatter.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="catalog.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/store/catalog.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="0" selection-start="623" selection-end="1060" vertical-scroll-proportion="-2.0689654" vertical-offset="300" max-vertical-offset="720">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="books.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/store/books.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="16" selection-start="1117" selection-end="1117" vertical-scroll-proportion="-2.137931" vertical-offset="558" max-vertical-offset="1260">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="details.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/store/details.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="58" column="17" selection-start="2294" selection-end="2294" vertical-scroll-proportion="-8.344828" vertical-offset="918" max-vertical-offset="1440">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GenreFormatter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/controller/store/GenreFormatter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="43" selection-start="385" selection-end="385" vertical-scroll-proportion="0.71895427" vertical-offset="0" max-vertical-offset="740">
+            <state line="16" column="13" selection-start="464" selection-end="464" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="740">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -148,7 +193,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/controller/store/GenreController.java" />
         <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/repository/impl/GenreRepositoryImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/service/impl/store/GenreServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/config/PersistenceConfig.java" />
@@ -183,22 +227,23 @@
         <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/dto/CreateEditBookDto.java" />
         <option value="$PROJECT_DIR$/src/main/resources/app.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/Import2.sql" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/store/details.html" />
         <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/entity/store/Genre.java" />
         <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/entity/store/Author.java" />
         <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/controller/store/AuthorFormatter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/service/intf/store/BookService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/service/impl/store/BookServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/controller/store/ShortFormatter.java" />
         <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/entity/store/Buk.java" />
         <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/controller/store/GenreFormatter.java" />
         <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/controller/store/ShortConverter.java" />
         <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/controller/store/ShortToStringConverter.java" />
         <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/controller/store/StringToShortConverter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/controller/store/BookController.java" />
         <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/config/WebMvcConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/entity/store/Book.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/store/createEditBook.html" />
+        <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/service/impl/store/BookServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/service/intf/store/BookService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/controller/store/BookController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/notFound.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/store/details.html" />
       </list>
     </option>
   </component>
@@ -450,6 +495,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1243,16 +1292,16 @@
       <workItem from="1392461583402" duration="10992000" />
       <workItem from="1392488549871" duration="7536000" />
       <workItem from="1392549726040" duration="7994000" />
-      <workItem from="1392559307349" duration="1965000" />
+      <workItem from="1392559307349" duration="4017000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="342007000" />
+    <option name="totallyTimeSpent" value="344059000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1040" height="744" extended-state="1" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1040" height="744" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1269,15 +1318,15 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3023622" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4852941" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2859477" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30438066" sideWeight="0.23114355" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854986" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31466395" sideWeight="0.76960784" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4362745" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33197555" sideWeight="0.76960784" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19771242" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.392126" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
@@ -1312,13 +1361,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/store/books.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="16" selection-start="1117" selection-end="1117" vertical-scroll-proportion="1.2583026" vertical-offset="0" max-vertical-offset="1386">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/Import2.sql">
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
@@ -1354,11 +1396,6 @@
         <state line="13" column="5" selection-start="458" selection-end="458" vertical-scroll-proportion="0.3939394" vertical-offset="104" max-vertical-offset="500" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/store/details.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="5" selection-start="1875" selection-end="1875" vertical-scroll-proportion="0.0" vertical-offset="900" max-vertical-offset="1320" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/controller/blog/PostController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="47" column="17" selection-start="1533" selection-end="1533" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="1584">
@@ -1368,7 +1405,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/blog/editPost.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1144" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1144">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/entity/store/Author.java">
@@ -1394,13 +1433,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/controller/store/GenreController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="9" selection-start="967" selection-end="967" vertical-scroll-proportion="0.46666667" vertical-offset="145" max-vertical-offset="520">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/config/WebInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="13" selection-start="1634" selection-end="1634" vertical-scroll-proportion="3.2098765" vertical-offset="0" max-vertical-offset="1380">
@@ -1423,20 +1455,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/service/impl/store/GenreServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="13" selection-start="356" selection-end="356" vertical-scroll-proportion="0.20242915" vertical-offset="0" max-vertical-offset="520">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/service/impl/store/BookServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="22" selection-start="707" selection-end="707" vertical-scroll-proportion="0.6356275" vertical-offset="126" max-vertical-offset="620">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/service/intf/store/BookService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="8" selection-start="216" selection-end="216" vertical-scroll-proportion="0.36437246" vertical-offset="0" max-vertical-offset="494">
           <folding />
         </state>
       </provider>
@@ -1564,9 +1582,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="160" column="0" selection-start="6515" selection-end="6515" vertical-scroll-proportion="0.37846154" vertical-offset="2437" max-vertical-offset="12620">
           <folding>
-            <element signature="e#5618#5648#0" expanded="true" />
-            <element signature="e#18723#18753#0" expanded="true" />
-            <element signature="e#21469#21499#0" expanded="true" />
+            <element signature="e#5618#5648#0" expanded="false" />
+            <element signature="e#18723#18753#0" expanded="false" />
+            <element signature="e#21469#21499#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1589,29 +1607,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="1151" column="0" selection-start="42978" selection-end="42978" vertical-scroll-proportion="0.72615385" vertical-offset="21564" max-vertical-offset="22960">
           <folding>
-            <element signature="e#23950#23958#0" expanded="true" />
-            <element signature="e#25592#25622#0" expanded="true" />
-            <element signature="e#26277#26427#0" expanded="true" />
-            <element signature="e#26419#26420#0" expanded="true" />
-            <element signature="e#26612#26787#0" expanded="true" />
-            <element signature="e#26779#26780#0" expanded="true" />
-            <element signature="e#33668#33698#0" expanded="true" />
-            <element signature="e#40708#40882#0" expanded="true" />
-            <element signature="e#40870#40871#0" expanded="true" />
-            <element signature="e#41084#41262#0" expanded="true" />
-            <element signature="e#41250#41251#0" expanded="true" />
-            <element signature="e#42315#42472#0" expanded="true" />
-            <element signature="e#42463#42464#0" expanded="true" />
-            <element signature="e#42679#42864#0" expanded="true" />
-            <element signature="e#42855#42856#0" expanded="true" />
+            <element signature="e#23950#23958#0" expanded="false" />
+            <element signature="e#25592#25622#0" expanded="false" />
+            <element signature="e#26277#26427#0" expanded="false" />
+            <element signature="e#26419#26420#0" expanded="false" />
+            <element signature="e#26612#26787#0" expanded="false" />
+            <element signature="e#26779#26780#0" expanded="false" />
+            <element signature="e#33668#33698#0" expanded="false" />
+            <element signature="e#40708#40882#0" expanded="false" />
+            <element signature="e#40870#40871#0" expanded="false" />
+            <element signature="e#41084#41262#0" expanded="false" />
+            <element signature="e#41250#41251#0" expanded="false" />
+            <element signature="e#42315#42472#0" expanded="false" />
+            <element signature="e#42463#42464#0" expanded="false" />
+            <element signature="e#42679#42864#0" expanded="false" />
+            <element signature="e#42855#42856#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/controller/store/BookController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="0" selection-start="2328" selection-end="2328" vertical-scroll-proportion="0.0" vertical-offset="767" max-vertical-offset="1340">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1667,19 +1678,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/store/createEditBook.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/controller/store/GenreFormatter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="9" selection-start="2282" selection-end="2282" vertical-scroll-proportion="-2.0689654" vertical-offset="900" max-vertical-offset="3100">
+        <state line="16" column="13" selection-start="464" selection-end="464" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="740">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/service/intf/store/BookService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="24" selection-start="259" selection-end="259" vertical-scroll-proportion="0.5641026" vertical-offset="0" max-vertical-offset="390">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/controller/store/GenreFormatter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/service/impl/store/BookServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="43" selection-start="385" selection-end="385" vertical-scroll-proportion="0.71895427" vertical-offset="0" max-vertical-offset="740">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="11" column="42" selection-start="382" selection-end="382" vertical-scroll-proportion="0.25641027" vertical-offset="0" max-vertical-offset="720">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/repository/BookRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="17" selection-start="185" selection-end="185" vertical-scroll-proportion="0.2122016" vertical-offset="0" max-vertical-offset="377">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/controller/store/GenreController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="0" selection-start="906" selection-end="1048" vertical-scroll-proportion="0.3633952" vertical-offset="143" max-vertical-offset="520">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/controller/store/BookController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="0" selection-start="2634" selection-end="2634" vertical-scroll-proportion="0.0" vertical-offset="1067" max-vertical-offset="1640">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/notFound.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="20" selection-start="326" selection-end="326" vertical-scroll-proportion="2.689655" vertical-offset="238" max-vertical-offset="520">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="7" selection-start="342" selection-end="342" vertical-scroll-proportion="8.275862" vertical-offset="420" max-vertical-offset="720">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/store/catalog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="623" selection-end="1060" vertical-scroll-proportion="-2.0689654" vertical-offset="300" max-vertical-offset="720">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/store/books.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="16" selection-start="1117" selection-end="1117" vertical-scroll-proportion="-2.137931" vertical-offset="558" max-vertical-offset="1260">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/store/details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="17" selection-start="2294" selection-end="2294" vertical-scroll-proportion="-8.344828" vertical-offset="918" max-vertical-offset="1440">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/store/createEditBook.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="333" selection-end="333" vertical-scroll-proportion="0.29850745" vertical-offset="120" max-vertical-offset="3100">
+          <folding />
         </state>
       </provider>
     </entry>

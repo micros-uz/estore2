@@ -28,4 +28,9 @@ public class BookServiceImpl implements BookService {
     public Book save(Book book) {
         return rpstr.save(book);
     }
+
+    @Override
+    public void delete(int id){
+        rpstr.delete(id);
+    }
 }

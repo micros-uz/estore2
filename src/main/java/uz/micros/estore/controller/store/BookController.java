@@ -14,6 +14,8 @@ import uz.micros.estore.service.intf.store.AuthorService;
 import uz.micros.estore.service.intf.store.BookService;
 import uz.micros.estore.service.intf.store.GenreService;
 
+import java.util.List;
+
 @Controller
 @RequestMapping("/store/books")
 public class BookController extends BaseController {
@@ -28,7 +30,7 @@ public class BookController extends BaseController {
     private GenreService genreSvc;
 
     @RequestMapping("/{id}/**")
-    public ModelAndView details(@PathVariable(value = "id") int id){
+    public ModelAndView details(@PathVariable(value = "id") int id) {
 
         Book book = bookSvc.getById(id);
 
@@ -40,7 +42,7 @@ public class BookController extends BaseController {
     }
 
     @RequestMapping("/create")
-    public ModelAndView create(){
+    public ModelAndView create() {
         return new ModelAndView("store/createEditBook")
                 .addObject("book", new Book())
                 .addObject("genres", getGenres())
@@ -48,26 +50,41 @@ public class BookController extends BaseController {
     }
 
     @RequestMapping("/edit/{id}/**")
-    public ModelAndView edit(@PathVariable(value = "id") int id){
+    public ModelAndView edit(@PathVariable(value = "id") int id) {
         Book book = bookSvc.getById(id);
 
-        if (book != null){
+        if (book != null) {
             return new ModelAndView("store/createEditBook")
                     .addObject("book", book)
                     .addObject("genres", getGenres())
                     .addObject("authors", authorSvc.getAuthors())
                     .addObject("useSideBar", false);
-        }
-        else
+        } else
             return new ModelAndView("notFound");
     }
 
     @RequestMapping(method = RequestMethod.POST)
-    public ModelAndView save(@ModelAttribute(value = "book") Book book, BindingResult result){
+    public ModelAndView save(@ModelAttribute(value = "book") Book book, BindingResult result) {
 
         book = bookSvc.save(book);
 
         return new ModelAndView("store/details")
                 .addObject("book", book);
+    }
+
+    @RequestMapping("/delete/{id}/**")
+    public ModelAndView delete(@PathVariable(value = "id") int id) {
+
+        Book book = bookSvc.getById(id);
+
+        if (book != null) {
+            bookSvc.delete(id);
+
+            List<Book> books = bookSvc.getByGenre(book.getGenre().getId());
+
+            return new ModelAndView("store/books")
+                    .addObject("books", books);
+        }else
+            return new ModelAndView("notFound");
     }
 }

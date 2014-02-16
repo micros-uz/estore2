@@ -13,6 +13,7 @@
     <div class="row">
         <div class="col-md-4">
             <img class="centred" th:attr="src=@{'/resources/images/' + ${book.id} + '.jpg'}" alt="Image" width="200"/>
+
             <div><p class="det-price" th:text="${book.price}"></p></div>
             <div>
                 <button class="addToCart btn btn-primary centred" data-bookid="${book.id}"
@@ -49,11 +50,16 @@
 
     <p>
         <a data-th-href="@{'/store/genres/' + ${book.genre.id}}">Back to List</a>
+
         <a data-th-if="${beans.securityContextFacade.isAdmin()}"
-           data-th-href="@{'/store/books/edit/' + ${book.id}}">Edit</a>
+           data-th-href="@{'/store/books/edit/' + ${book.id}}">
+            <span class="glyphicon glyphicon-edit"/>
+        </a>
         <!--TODO - make POST request for DELETE!-->
         <a data-th-if="${beans.securityContextFacade.isAdmin()}"
-           data-th-href="@{'/store/books/delete/' + ${book.id}}">Delete</a>
+           data-th-href="@{'/store/books/delete/' + ${book.id}}">
+            <span class="glyphicon glyphicon-remove"/>
+        </a>
     </p>
 
 </section>
