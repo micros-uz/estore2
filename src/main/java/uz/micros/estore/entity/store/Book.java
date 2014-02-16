@@ -32,16 +32,16 @@ public class Book extends BaseEntity {
     private Series series;
 
     @Column(name = "price", nullable = false)
-    private double Price;
+    private double price;
 
     @Column(name = "year", nullable = false)
-    private short Year;
+    private short year;
 
     @Column(name = "pages", nullable = false)
-    private short Pages;
+    private short pages;
 
     @Column(name = "isbn", nullable = false, columnDefinition = "varchar(20)")
-    private String ISBN;
+    private String isbn;
 
     @Column(name = "description", nullable = false, columnDefinition = "varchar(3072)")
     private String desc;
@@ -83,35 +83,35 @@ public class Book extends BaseEntity {
     }
 
     public double getPrice() {
-        return Price;
+        return price;
     }
 
     public void setPrice(double price) {
-        Price = price;
+        price = price;
     }
 
     public short getYear() {
-        return Year;
+        return year;
     }
 
     public void setYear(short year) {
-        Year = year;
+        year = year;
     }
 
     public short getPages() {
-        return Pages;
+        return pages;
     }
 
     public void setPages(short pages) {
-        Pages = pages;
+        pages = pages;
     }
 
-    public String getISBN() {
-        return ISBN;
+    public String getIsbn() {
+        return isbn;
     }
 
-    public void setISBN(String ISBN) {
-        this.ISBN = ISBN;
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
     }
 
     public String getDesc() {

@@ -82,21 +82,22 @@
 </nav>
 <div class="container">
     <div class="row">
-        <div data-th-if="${useSideBar}" class="col-md-2">
+        <!--data-th-if="${useSideBar}"-->
+        <div class="col-md-2">
             <section layout:fragment="sidebar">
 
             </section>
         </div>
-        <div data-th-if="${useSideBar}"  class="col-md-10">
+        <div class="col-md-10">
             <section layout:fragment="content">
                 <p>Page content goes here</p>
             </section>
         </div>
-        <div data-th-if="${!useSideBar}"  class="col-md-12">
+<!--        <div data-th-if="${!useSideBar}"  class="col-md-12">
             <section layout:fragment="content">
                 <p>Page content goes here</p>
             </section>
-        </div>
+        </div>-->
     </div>
     <div class="row">
         <div class="col-md-12">
