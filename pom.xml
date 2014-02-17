@@ -18,6 +18,7 @@
         <!-- Web dependencies -->
         <webjars-bootstrap.version>3.1.1</webjars-bootstrap.version>
         <webjars-jquery.version>2.1.0</webjars-jquery.version>
+        <webjars-knockout.version>3.0.0</webjars-knockout.version>
 
         <hibernate.version>4.2.4.Final</hibernate.version>
         <hibernate.validator.version>4.2.4.Final</hibernate.validator.version>
@@ -196,6 +197,11 @@
             <groupId>org.webjars</groupId>
             <artifactId>jquery</artifactId>
             <version>${webjars-jquery.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>knockout</artifactId>
+            <version>${webjars-knockout.version}</version>
         </dependency>
 
         <!-- Unknown Dependencies)) -->
