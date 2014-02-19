@@ -1,12 +1,13 @@
 package uz.micros.estore.controller.store;
 
+import com.sun.net.httpserver.HttpsServer;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.context.support.HttpRequestHandlerServlet;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 import uz.micros.estore.controller.BaseController;
 import uz.micros.estore.entity.store.Book;
@@ -14,6 +15,9 @@ import uz.micros.estore.service.intf.store.AuthorService;
 import uz.micros.estore.service.intf.store.BookService;
 import uz.micros.estore.service.intf.store.GenreService;
 
+import javax.servlet.http.HttpServletRequest;
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.util.List;
 
 @Controller
@@ -64,17 +68,38 @@ public class BookController extends BaseController {
     }
 
     @RequestMapping(method = RequestMethod.POST)
-    public ModelAndView save(@ModelAttribute(value = "book") Book book, BindingResult result) {
+    public ModelAndView save(@ModelAttribute(value = "book") Book book,
+                             @RequestParam(value = "file", required = false) MultipartFile file,
+                             //HttpServletRequest request,
+                             BindingResult result) {
 
-        book = bookSvc.save(book);
+        ModelAndView res;
+/*
+        String path;
+        try {
+            path = new String(request.getServletPath().getBytes(
+                    "ISO-8859-1"), "UTF-8");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+*/
 
-        return new ModelAndView("store/details")
-                .addObject("book", book);
+        try {
+            book = bookSvc.save(book, (file != null) ? file.getBytes() : null);
+            res = new ModelAndView("store/details")
+                    .addObject("book", book);
+        } catch (IOException e) {
+            res = new ModelAndView("error")
+                    .addObject("errorCode", 0)
+                    .addObject("errorMessage", e.getMessage());
+        }
+
+        return res;
     }
 
     @RequestMapping("/delete/{id}/**")
     public ModelAndView delete(@PathVariable(value = "id") int id) {
-
+        ModelAndView res;
         Book book = bookSvc.getById(id);
 
         if (book != null) {
@@ -82,9 +107,11 @@ public class BookController extends BaseController {
 
             List<Book> books = bookSvc.getByGenre(book.getGenre().getId());
 
-            return new ModelAndView("store/books")
+            res = new ModelAndView("store/books")
                     .addObject("books", books);
-        }else
-            return new ModelAndView("notFound");
+        } else
+            res = new ModelAndView("notFound");
+
+        return res;
     }
 }

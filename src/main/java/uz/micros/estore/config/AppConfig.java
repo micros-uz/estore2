@@ -11,6 +11,8 @@ import uz.micros.estore.util.DateFormatter;
 import uz.micros.estore.util.SecurityContextFacade;
 import uz.micros.estore.util.SecurityContextHolderFacade;
 
+import javax.servlet.MultipartConfigElement;
+
 @Configuration
 @EnableWebMvc
 @ComponentScan(basePackages = "uz.micros.estore")

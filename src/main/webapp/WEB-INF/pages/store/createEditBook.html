@@ -11,7 +11,7 @@
         <div class="col-md-12">
             <h2>Create new book</h2>
 
-            <form data-th-action="@{/store/books}" data-th-object="${book}" method="post">
+            <form data-th-action="@{/store/books}" data-th-object="${book}" method="post" enctype="multipart/form-data">
                 <input type="hidden" name="id" data-th-field="*{id}"/>
 
                 <div class="row">
@@ -72,7 +72,7 @@
                             <div class="input-group">
                                 <span class="input-group-btn">
                                         <span class="btn btn-primary btn-file">
-                                            Browse&hellip; <input name="Book.Image" id="Book_Image" type="file"/>
+                                            Browse&hellip; <input name="file" id="file" type="file"/>
                                         </span>
                                     <input class="form-control" style="width: 78%;"/>
                                 </span>
@@ -139,8 +139,6 @@
             </form>
         </div>
     </div>
-
-
 
     <div>
         <a href="#">Back to List</a>

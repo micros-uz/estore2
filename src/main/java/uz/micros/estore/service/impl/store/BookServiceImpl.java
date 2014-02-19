@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 import uz.micros.estore.entity.store.Book;
 import uz.micros.estore.repository.BookRepository;
 import uz.micros.estore.service.intf.store.BookService;
+import uz.micros.estore.service.intf.store.FileService;
 
 import java.util.List;
 
@@ -13,6 +14,9 @@ public class BookServiceImpl implements BookService {
 
     @Autowired
     private BookRepository rpstr;
+
+    @Autowired
+    private FileService fileSvc;
 
     @Override
     public List<Book> getByGenre(int id) {
@@ -25,8 +29,14 @@ public class BookServiceImpl implements BookService {
     }
 
     @Override
-    public Book save(Book book) {
-        return rpstr.save(book);
+    public Book save(Book book, byte[] file) {
+        Book res = rpstr.save(book);
+
+        if (file != null){
+            fileSvc.saveBookImage(res.getId(), file);
+        }
+
+        return res;
     }
 
     @Override

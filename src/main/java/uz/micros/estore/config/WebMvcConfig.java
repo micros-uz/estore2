@@ -5,6 +5,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.support.ReloadableResourceBundleMessageSource;
 import org.springframework.format.FormatterRegistry;
+import org.springframework.web.multipart.MultipartResolver;
+import org.springframework.web.multipart.commons.CommonsMultipartResolver;
+import org.springframework.web.multipart.support.StandardServletMultipartResolver;
 import org.springframework.web.servlet.LocaleResolver;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
@@ -15,6 +18,7 @@ import uz.micros.estore.controller.store.AuthorFormatter;
 import uz.micros.estore.controller.store.GenreFormatter;
 import uz.micros.estore.util.Interceptor;
 
+import javax.servlet.MultipartConfigElement;
 import java.util.Locale;
 
 @Configuration
@@ -76,5 +80,11 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter {
     @Bean
     public AuthorFormatter getAuthorFormatter(){
         return new AuthorFormatter();
+    }
+
+    // file upload support
+    @Bean
+    public MultipartResolver multipartResolver() {
+        return new StandardServletMultipartResolver();
     }
 }

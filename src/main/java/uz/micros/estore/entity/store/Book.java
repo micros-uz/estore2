@@ -1,7 +1,9 @@
 package uz.micros.estore.entity.store;
 
+import org.springframework.web.multipart.MultipartFile;
 import uz.micros.estore.entity.BaseEntity;
 import javax.persistence.*;
+import javax.servlet.annotation.MultipartConfig;
 import java.util.UUID;
 
 @Entity
@@ -125,5 +127,16 @@ public class Book extends BaseEntity {
     public String shortTitle(){
         return title.length() <= 40 ? title
                 : title.substring(0, 39);
+    }
+
+    @Transient
+    private MultipartFile file;
+
+    public MultipartFile getFile() {
+        return file;
+    }
+
+    public void setFile(MultipartFile file) {
+        this.file = file;
     }
 }
