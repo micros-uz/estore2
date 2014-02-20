@@ -30,9 +30,6 @@ public class BookController extends BaseController {
     @Autowired
     private AuthorService authorSvc;
 
-    @Autowired
-    private GenreService genreSvc;
-
     @RequestMapping("/{id}/**")
     public ModelAndView details(@PathVariable(value = "id") int id) {
 
@@ -70,19 +67,9 @@ public class BookController extends BaseController {
     @RequestMapping(method = RequestMethod.POST)
     public ModelAndView save(@ModelAttribute(value = "book") Book book,
                              @RequestParam(value = "file", required = false) MultipartFile file,
-                             //HttpServletRequest request,
                              BindingResult result) {
 
         ModelAndView res;
-/*
-        String path;
-        try {
-            path = new String(request.getServletPath().getBytes(
-                    "ISO-8859-1"), "UTF-8");
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
-        }
-*/
 
         try {
             book = bookSvc.save(book, (file != null) ? file.getBytes() : null);
