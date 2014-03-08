@@ -23,6 +23,17 @@
           <element id="library" level="project" name="Maven: org.springframework.security:spring-security-web:3.2.0.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.security:spring-security-core:3.2.0.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.security:spring-security-config:3.2.0.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.social:spring-social-core:1.1.0.BUILD-SNAPSHOT" />
+          <element id="library" level="project" name="Maven: org.springframework.social:spring-social-web:1.1.0.BUILD-SNAPSHOT" />
+          <element id="library" level="project" name="Maven: javax.inject:javax.inject:1" />
+          <element id="library" level="project" name="Maven: org.springframework.social:spring-social-google:1.0.0.M3" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-crypto:3.1.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.social:spring-social-config:1.1.0.M4" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.2.2" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.2.2" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.2.2" />
+          <element id="library" level="project" name="Maven: org.springframework.social:spring-social-twitter:1.1.0.BUILD-SNAPSHOT" />
+          <element id="library" level="project" name="Maven: org.springframework.social:spring-social-facebook:1.1.0.BUILD-SNAPSHOT" />
           <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:3.1.0" />
           <element id="library" level="project" name="Maven: org.postgresql:postgresql:9.3-1101-jdbc41" />
           <element id="library" level="project" name="Maven: joda-time:joda-time:2.1" />
@@ -50,6 +61,7 @@
           <element id="library" level="project" name="Maven: org.webjars:bootstrap:3.1.1" />
           <element id="library" level="project" name="Maven: org.webjars:jquery:2.1.0" />
           <element id="library" level="project" name="Maven: org.webjars:knockout:3.0.0" />
+          <element id="library" level="project" name="Maven: org.webjars:font-awesome:4.0.3" />
           <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-dbcp:7.0.47" />
         </element>
       </element>

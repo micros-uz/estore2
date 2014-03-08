@@ -10,6 +10,12 @@
     <properties>
         <spring.security.version>3.2.0.RELEASE</spring.security.version>
         <spring.version>4.0.0.RELEASE</spring.version>
+
+        <springframework.social-version>1.1.0.BUILD-SNAPSHOT</springframework.social-version>
+        <springframework.social-google-version>1.0.0.M3</springframework.social-google-version>
+        <springframework.social.facebook-version>1.1.0.BUILD-SNAPSHOT</springframework.social.facebook-version>
+        <spring-social-twitter.version>1.1.0.BUILD-SNAPSHOT</spring-social-twitter.version>
+
         <jdk.version>1.7</jdk.version>
         <junit.version>4.11</junit.version>
         <jetty.version>9.1.3.v20140225</jetty.version>
@@ -19,6 +25,8 @@
         <webjars-bootstrap.version>3.1.1</webjars-bootstrap.version>
         <webjars-jquery.version>2.1.0</webjars-jquery.version>
 		<webjars-knockout.version>3.0.0</webjars-knockout.version>
+		<webjars-font-awesome.version>4.0.3</webjars-font-awesome.version>
+
         <tomcat-dbcp.version>7.0.47</tomcat-dbcp.version>
         <spring-data-jpa.version>1.4.3.RELEASE</spring-data-jpa.version>
 
@@ -41,13 +49,11 @@
             <artifactId>spring-web</artifactId>
             <version>${spring.version}</version>
         </dependency>
-
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
             <version>${spring.version}</version>
         </dependency>
-
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
@@ -118,6 +124,38 @@
                 </exclusion>
             </exclusions>
         </dependency>
+
+        <!-- Spring Social -->
+        <dependency>
+            <groupId>org.springframework.social</groupId>
+            <artifactId>spring-social-core</artifactId>
+            <version>${springframework.social-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.social</groupId>
+            <artifactId>spring-social-web</artifactId>
+            <version>${springframework.social-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.social</groupId>
+            <artifactId>spring-social-google</artifactId>
+            <version>${springframework.social-google-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.social</groupId>
+            <artifactId>spring-social-twitter</artifactId>
+            <version>${spring-social-twitter.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.social</groupId>
+            <artifactId>spring-social-facebook</artifactId>
+            <version>${springframework.social.facebook-version}</version>
+        </dependency>
+<!--        <dependency>
+            <groupId>org.springframework.social</groupId>
+            <artifactId>spring-social-security</artifactId>
+            <version>${springframework.social-version}</version>
+        </dependency>-->
 
         <dependency>
             <groupId>javax.servlet</groupId>
@@ -255,6 +293,17 @@
             <artifactId>knockout</artifactId>
             <version>${webjars-knockout.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>font-awesome</artifactId>
+            <version>${webjars-font-awesome.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.webjars</groupId>
+                    <artifactId>bootstrap</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
 
         <!-- Unknown Dependencies)) -->
         <dependency>
@@ -304,6 +353,14 @@
             </build>
         </profile>
     </profiles>
+
+    <repositories>
+        <repository>
+            <id>spring-social-google</id>
+            <name>Spring Social Google</name>
+            <url>https://github.com/GabiAxel/maven/raw/master/</url>
+        </repository>
+    </repositories>
 
     <build>
         <finalName>eStore</finalName>
