@@ -31,6 +31,10 @@ public class ThymeleafConfig {
         //templateEngine.setMessageResolver(new MessageResolver());
         templateEngine.addDialect(new LayoutDialect());
 
+        // http://html5valdialect.sourceforge.net/
+        // странно, но обошлось без этого
+        //templateEngine.addDialect(new Html5ValDialect());
+
         return templateEngine;
     }
 

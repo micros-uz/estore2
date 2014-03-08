@@ -103,7 +103,29 @@
       <file leaf-file-name="BookController.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/controller/store/BookController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="0" selection-start="1140" selection-end="1140" vertical-scroll-proportion="0.4921466" vertical-offset="120" max-vertical-offset="2024">
+            <state line="82" column="26" selection-start="2989" selection-end="2989" vertical-scroll-proportion="1.2473118" vertical-offset="1176" max-vertical-offset="2240">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="createEditBook.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/store/createEditBook.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="83" column="0" selection-start="4487" selection-end="4487" vertical-scroll-proportion="-3.4482758" vertical-offset="1560" max-vertical-offset="3460">
+              <folding>
+                <element signature="n#style#0;n#input#0;n#span#0;n#div#0;n#div#1;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PersistenceConfig.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/config/PersistenceConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="34" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="2480">
               <folding />
             </state>
           </provider>
@@ -119,7 +141,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/repository/impl/BookRepositoryImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/repository/PostRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/repository/BookRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/repository/BlogRepository.java" />
@@ -156,8 +177,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/store/details.html" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/controller/store/Buk.java" />
-        <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/entity/store/Book.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/store/createEditBook.html" />
         <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/config/WebInitializer.java" />
         <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/config/WebMvcConfig.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/master.html" />
@@ -169,6 +188,9 @@
         <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/config/AppConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/util/PathHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/service/impl/store/FileServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/config/PersistenceConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/entity/store/Book.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/store/createEditBook.html" />
         <option value="$PROJECT_DIR$/src/main/java/uz/micros/estore/controller/store/BookController.java" />
       </list>
     </option>
@@ -200,7 +222,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
+    <option name="width" value="1040" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -234,7 +256,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -306,6 +328,40 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="estore2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="estore2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="store" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -833,7 +889,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -886,6 +942,12 @@
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 7.0.47">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
     <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails" singleton="true">
       <module name="" />
       <setting name="vmparams" value="" />
@@ -894,12 +956,6 @@
       <setting name="passParentEnv" value="true" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <setting name="launchBrowser" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
       <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -913,17 +969,23 @@
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
       <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -954,6 +1016,34 @@
       <listeners />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -975,39 +1065,10 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
-      <option name="BCName" value="" />
-      <option name="IOSSimulatorSdkPath" value="" />
-      <option name="adlOptions" value="" />
-      <option name="airProgramParameters" value="" />
-      <option name="appDescriptorForEmulator" value="Android" />
-      <option name="debugTransport" value="USB" />
-      <option name="debuggerSdkRaw" value="BC SDK" />
-      <option name="emulator" value="NexusOne" />
-      <option name="emulatorAdlOptions" value="" />
-      <option name="fastPackaging" value="true" />
-      <option name="fullScreenHeight" value="0" />
-      <option name="fullScreenWidth" value="0" />
-      <option name="launchUrl" value="false" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browserFamily" value="FIREFOX" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="FlashPlayerDebugger.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="mobileRunTarget" value="Emulator" />
-      <option name="moduleName" value="" />
-      <option name="overriddenMainClass" value="" />
-      <option name="overriddenOutputFileName" value="" />
-      <option name="overrideMainClass" value="false" />
-      <option name="runTrusted" value="true" />
-      <option name="screenDpi" value="0" />
-      <option name="screenHeight" value="0" />
-      <option name="screenWidth" value="0" />
-      <option name="url" value="http://" />
-      <option name="usbDebugPort" value="7936" />
+    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
       <method />
     </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
@@ -1019,99 +1080,6 @@
       <predefined_log_file id="Tomcat Host Manager" enabled="false" />
       <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <method />
-    </configuration>
-    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
-      <module name="" />
-      <option name="TESTING_TYPE" value="0" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" output_log_level="null" package_name="" scope="Class">
-      <option name="BCName" value="" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browserFamily" value="FIREFOX" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="FlashPlayerDebugger.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="moduleName" value="" />
-      <option name="trusted" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="myFilePath" />
-      <option name="GLUE" />
-      <option name="myNameFilter" />
-      <option name="myGeneratedName" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
-      <module name="" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="DEPLOY" value="true" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
-      <option name="VM_PARAMETERS" value="" />
-      <option name="USER_CFG_CLASS" />
-      <option name="CONTEXT_PROVIDER" />
       <method />
     </configuration>
     <configuration default="false" name="Tomcat 7.0.47" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.47" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="">
@@ -1302,26 +1270,27 @@
       <workItem from="1392559307349" duration="4017000" />
       <workItem from="1392663216879" duration="870000" />
       <workItem from="1392745325651" duration="22020000" />
+      <workItem from="1394281578261" duration="2505000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="366949000" />
+    <option name="totallyTimeSpent" value="369454000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1040" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32910156" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3120915" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42647058" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30438066" sideWeight="0.23039216" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3023622" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
@@ -1334,8 +1303,9 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854986" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24622357" sideWeight="0.76960784" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27124184" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32077393" sideWeight="0.76960784" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32843137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.392126" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1346,7 +1316,7 @@
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
-    <option name="RECENTLY_FILTERED_USERS">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
       <collection />
     </option>
   </component>
@@ -1370,6 +1340,15 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/controller/store/BookController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="0" selection-start="1140" selection-end="1140" vertical-scroll-proportion="0.0" vertical-offset="640" max-vertical-offset="1840">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.0.0.RELEASE/spring-beans-4.0.0.RELEASE.jar!/org/springframework/beans/TypeConverterDelegate.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="18" selection-start="1357" selection-end="1357" vertical-scroll-proportion="-4.64" vertical-offset="284" max-vertical-offset="940" />
@@ -1406,23 +1385,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/notFound.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="20" selection-start="418" selection-end="418" vertical-scroll-proportion="0.0" vertical-offset="308" max-vertical-offset="572">
-          <folding />
-        </state>
+        <state line="14" column="20" selection-start="418" selection-end="418" vertical-scroll-proportion="0.0" vertical-offset="308" max-vertical-offset="572" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="7" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="792">
-          <folding />
-        </state>
+        <state line="9" column="7" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="792" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/store/catalog.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="623" selection-end="1060" vertical-scroll-proportion="0.0" vertical-offset="396" max-vertical-offset="792">
-          <folding />
-        </state>
+        <state line="18" column="0" selection-start="623" selection-end="1060" vertical-scroll-proportion="0.0" vertical-offset="396" max-vertical-offset="792" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/store/books.html">
@@ -1434,75 +1407,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/store/details.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="10" selection-start="2496" selection-end="2496" vertical-scroll-proportion="0.0" vertical-offset="1408" max-vertical-offset="1584">
-          <folding />
-        </state>
+        <state line="64" column="10" selection-start="2496" selection-end="2496" vertical-scroll-proportion="0.0" vertical-offset="1408" max-vertical-offset="1584" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/estore.filepick.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="28" selection-start="514" selection-end="514" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1254">
-          <folding />
-        </state>
+        <state line="10" column="28" selection-start="514" selection-end="514" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1254" />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.0.0.RELEASE/spring-web-4.0.0.RELEASE.jar!/org/springframework/web/multipart/commons/CommonsMultipartResolver.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="606" selection-end="606" vertical-scroll-proportion="0.5945946" vertical-offset="0" max-vertical-offset="726">
-          <folding />
-        </state>
+        <state line="12" column="0" selection-start="606" selection-end="606" vertical-scroll-proportion="0.5945946" vertical-offset="0" max-vertical-offset="726" />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.0.0.RELEASE/spring-web-4.0.0.RELEASE.jar!/org/springframework/web/multipart/MultipartResolver.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="180" selection-end="180" vertical-scroll-proportion="0.20872866" vertical-offset="0" max-vertical-offset="527">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/entity/store/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="8" selection-start="2833" selection-end="2833" vertical-scroll-proportion="0.0" vertical-offset="1868" max-vertical-offset="2332">
-          <folding>
-            <element signature="e#2908#2909#0" expanded="true" />
-            <element signature="e#2935#2936#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="6" column="17" selection-start="180" selection-end="180" vertical-scroll-proportion="0.20872866" vertical-offset="0" max-vertical-offset="527" />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.0-api/1.0.1.Final/hibernate-jpa-2.0-api-1.0.1.Final.jar!/javax/persistence/Transient.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="18" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0" vertical-offset="29" max-vertical-offset="308">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.0-api/1.0.1.Final/hibernate-jpa-2.0-api-1.0.1.Final-sources.jar!/javax/persistence/Transient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="18" selection-start="1434" selection-end="1434" vertical-scroll-proportion="0.0" vertical-offset="183" max-vertical-offset="748">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="21" selection-start="2696" selection-end="2696" vertical-scroll-proportion="-8.08" vertical-offset="1316" max-vertical-offset="6732">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://G:/install/Dev/apache-tomcat-7.0.47/lib/servlet-api.jar!/javax/servlet/http/Part.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="165" selection-end="165" vertical-scroll-proportion="0.3607143" vertical-offset="9" max-vertical-offset="638">
-          <folding />
-        </state>
+        <state line="8" column="18" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0" vertical-offset="29" max-vertical-offset="308" />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.0.0.RELEASE/spring-web-4.0.0.RELEASE.jar!/org/springframework/web/multipart/MultipartFile.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="180" selection-end="180" vertical-scroll-proportion="-0.37827715" vertical-offset="211" max-vertical-offset="594">
-          <folding />
-        </state>
+        <state line="6" column="17" selection-start="180" selection-end="180" vertical-scroll-proportion="-0.37827715" vertical-offset="211" max-vertical-offset="594" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/config/WebInitializer.java">
@@ -1512,30 +1442,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://G:/install/Dev/apache-tomcat-7.0.47/lib/servlet-api.jar!/javax/servlet/MultipartConfigElement.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="11" selection-start="354" selection-end="354" vertical-scroll-proportion="-0.23303835" vertical-offset="321" max-vertical-offset="660">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/store/createEditBook.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="136" column="26" selection-start="7454" selection-end="7454" vertical-scroll-proportion="-96.51613" vertical-offset="0" max-vertical-offset="3366">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/config/SecurityWebAppInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="20" selection-start="149" selection-end="149" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="440">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/config/PersistenceConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="1042" selection-end="1042" vertical-scroll-proportion="0.0" vertical-offset="33" max-vertical-offset="2398">
           <folding />
         </state>
       </provider>
@@ -1549,16 +1458,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/master.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="119" column="41" selection-start="5017" selection-end="5017" vertical-scroll-proportion="-5.354839" vertical-offset="2452" max-vertical-offset="2816">
-          <folding />
-        </state>
+        <state line="119" column="41" selection-start="5017" selection-end="5017" vertical-scroll-proportion="-5.354839" vertical-offset="2452" max-vertical-offset="2816" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/error.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="377">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="377" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/service/intf/store/AuthorService.java">
@@ -1577,58 +1482,37 @@
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.0.0.RELEASE/spring-web-4.0.0.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="34" selection-start="1453" selection-end="1453" vertical-scroll-proportion="-2.68" vertical-offset="417" max-vertical-offset="902">
-          <folding />
-        </state>
+        <state line="23" column="34" selection-start="1453" selection-end="1453" vertical-scroll-proportion="-2.68" vertical-offset="417" max-vertical-offset="902" />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.0.0.RELEASE/spring-webmvc-4.0.0.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="22" selection-start="1035" selection-end="1035" vertical-scroll-proportion="-2.68" vertical-offset="329" max-vertical-offset="946">
-          <folding />
-        </state>
+        <state line="19" column="22" selection-start="1035" selection-end="1035" vertical-scroll-proportion="-2.68" vertical-offset="329" max-vertical-offset="946" />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.0.0.RELEASE/spring-webmvc-4.0.0.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="57" selection-start="8642" selection-end="8642" vertical-scroll-proportion="-2.36" vertical-offset="2339" max-vertical-offset="2860">
-          <folding />
-        </state>
+        <state line="110" column="57" selection-start="8642" selection-end="8642" vertical-scroll-proportion="-2.36" vertical-offset="2339" max-vertical-offset="2860" />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.0.0.RELEASE/spring-webmvc-4.0.0.RELEASE.jar!/org/springframework/web/servlet/mvc/method/AbstractHandlerMethodAdapter.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="62" selection-start="845" selection-end="845" vertical-scroll-proportion="-2.68" vertical-offset="329" max-vertical-offset="682">
-          <folding />
-        </state>
+        <state line="19" column="62" selection-start="845" selection-end="845" vertical-scroll-proportion="-2.68" vertical-offset="329" max-vertical-offset="682" />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.0.0.RELEASE/spring-webmvc-4.0.0.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="19" selection-start="7460" selection-end="7460" vertical-scroll-proportion="-2.36" vertical-offset="2295" max-vertical-offset="2860">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://G:/install/Dev/apache-tomcat-7.0.47/lib/servlet-api.jar!/javax/servlet/http/HttpServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="16" selection-start="3036" selection-end="3036" vertical-scroll-proportion="0.33146068" vertical-offset="887" max-vertical-offset="1100">
-          <folding />
-        </state>
+        <state line="108" column="19" selection-start="7460" selection-end="7460" vertical-scroll-proportion="-2.36" vertical-offset="2295" max-vertical-offset="2860" />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.0.0.RELEASE/spring-webmvc-4.0.0.RELEASE.jar!/org/springframework/web/servlet/FrameworkServlet.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="0" selection-start="8316" selection-end="8316" vertical-scroll-proportion="-3.24" vertical-offset="2669" max-vertical-offset="3190">
-          <folding />
-        </state>
+        <state line="126" column="0" selection-start="8316" selection-end="8316" vertical-scroll-proportion="-3.24" vertical-offset="2669" max-vertical-offset="3190" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../jpersona/src/main/java/com/arusland/jpersona/service/PathUtilService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="207" selection-end="207" vertical-scroll-proportion="0.19730942" vertical-offset="0" max-vertical-offset="880">
-          <folding />
-        </state>
+        <state line="9" column="0" selection-start="207" selection-end="207" vertical-scroll-proportion="0.19730942" vertical-offset="0" max-vertical-offset="880" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/service/impl/store/AuthorServiceImpl.java">
@@ -1647,23 +1531,17 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_45/src.zip!/java/nio/file/Path.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="597" column="9" selection-start="26671" selection-end="26671" vertical-scroll-proportion="1.2031662" vertical-offset="12106" max-vertical-offset="17182">
-          <folding />
-        </state>
+        <state line="597" column="9" selection-start="26671" selection-end="26671" vertical-scroll-proportion="1.2031662" vertical-offset="12106" max-vertical-offset="17182" />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.0.0.RELEASE/spring-web-4.0.0.RELEASE.jar!/org/springframework/web/context/support/WebApplicationContextUtils.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1430">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1430" />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.0.0.RELEASE/spring-beans-4.0.0.RELEASE.jar!/org/springframework/beans/factory/support/AutowireUtils.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="32" selection-start="1488" selection-end="1488" vertical-scroll-proportion="0.33333334" vertical-offset="480" max-vertical-offset="726">
-          <folding />
-        </state>
+        <state line="26" column="32" selection-start="1488" selection-end="1488" vertical-scroll-proportion="0.33333334" vertical-offset="480" max-vertical-offset="726" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/util/PathHelper.java">
@@ -1677,9 +1555,7 @@
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.0.0.RELEASE/spring-web-4.0.0.RELEASE.jar!/org/springframework/web/multipart/support/StandardMultipartHttpServletRequest.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="22" selection-start="1674" selection-end="1674" vertical-scroll-proportion="0.33333334" vertical-offset="656" max-vertical-offset="990">
-          <folding />
-        </state>
+        <state line="34" column="22" selection-start="1674" selection-end="1674" vertical-scroll-proportion="0.33333334" vertical-offset="656" max-vertical-offset="990" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/entity/BaseEntity.java">
@@ -1720,10 +1596,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/entity/store/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="23" selection-start="1795" selection-end="1795" vertical-scroll-proportion="0.5769231" vertical-offset="1200" max-vertical-offset="2620">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1801#1802#0" expanded="true" />
+            <element signature="e#1829#1830#0" expanded="true" />
+            <element signature="e#1871#1872#0" expanded="true" />
+            <element signature="e#1905#1906#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6120">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/config/PersistenceConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="34" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="2480">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/store/createEditBook.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="0" selection-start="4487" selection-end="4487" vertical-scroll-proportion="-3.4482758" vertical-offset="1560" max-vertical-offset="3460">
+          <folding>
+            <element signature="n#style#0;n#input#0;n#span#0;n#div#0;n#div#1;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uz/micros/estore/controller/store/BookController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="1140" selection-end="1140" vertical-scroll-proportion="0.4921466" vertical-offset="120" max-vertical-offset="2024">
-          <folding />
+        <state line="82" column="26" selection-start="2989" selection-end="2989" vertical-scroll-proportion="1.2473118" vertical-offset="1176" max-vertical-offset="2240">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org"
-        xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-        layout:decorator="master">
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="master">
 <head>
     <title>Create</title>
 </head>
@@ -11,25 +11,37 @@
         <div class="col-md-12">
             <h2>Create new book</h2>
 
-            <form data-th-action="@{/store/books}" data-th-object="${book}" method="post" enctype="multipart/form-data">
+            <form data-th-action="@{/store/books}"
+                  data-th-object="${book}" method="post"
+                  enctype="multipart/form-data"
+                  >
                 <input type="hidden" name="id" data-th-field="*{id}"/>
-
+                <ul>
+                    <li th:each="e : ${#fields.detailedErrors()}" th:class="${e.global}? globalerr : fielderr">
+                        <span th:text="${e.global}? '*' : ${e.fieldName}">The field name</span> |
+                        <span th:text="${e.message}">The error message</span>
+                    </li>
+                </ul>
                 <div class="row">
                     <div class="col-md-5">
                         <div class="form-group">
                             <label class="control-label">Title</label>
+                            <span class="field-error" th:if="${#fields.hasErrors('title')}">Нельзя совсем пустой</span>
                             <input class="form-control" data-th-field="*{title}" autofocus="autofocus"/>
                         </div>
                         <div class="form-group">
                             <label class="control-label">Year</label>
+                            <span class="field-error" th:if="${#fields.hasErrors('year')}" th:errors="*{year}"></span>
                             <input class="form-control" data-th-field="*{year}"/>
                         </div>
                         <div class="form-group">
                             <label class="control-label">Pages</label>
+                            <span class="field-error" th:if="${#fields.hasErrors('pages')}" th:errors="*{pages}"></span>
                             <input class="form-control" data-th-field="*{pages}"/>
                         </div>
                         <div class="form-group">
                             <label class="control-label">ISBN</label>
+                            <span class="field-error" th:if="${#fields.hasErrors('isbn')}" th:errors="*{isbn}"></span>
                             <input class="form-control" data-th-field="*{isbn}"/>
                         </div>
                     </div>
@@ -64,11 +76,12 @@
                     <div class="col-md-5">
                         <div class="form-group">
                             <label class="control-label">Price</label>
+                            <span class="field-error" th:if="${#fields.hasErrors('price')}" th:errors="*{price}"></span>
                             <input class="form-control" data-th-field="*{price}"/>
                         </div>
                         <div class="form-group">
                             <label class="control-label">Image</label>
-
+                            <!--<span class="field-error" th:if="${#fields.hasErrors('imageFile')}">Пустой картина нельзя</span>-->
                             <div class="input-group">
                                 <span class="input-group-btn">
                                         <span class="btn btn-primary btn-file">
@@ -80,6 +93,7 @@
                         </div>
                         <div class="form-group">
                             <label class="control-label">Description</label>
+                            <span class="field-error" th:if="${#fields.hasErrors('desc')}" th:errors="*{desc}"></span>
                             <textarea class="form-control" data-th-field="*{desc}" cols="20" rows="5"/>
                         </div>
                         <p>
@@ -95,7 +109,8 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <button type="button" class="close" data-dismiss="modal"
+                                        aria-hidden="true">&times;</button>
                                 <h4 class="modal-title">New Genre</h4>
                             </div>
                             <div class="modal-body">
@@ -110,17 +125,20 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary" id="saveGenre" onclick="saveNewGenre();">Save changes</button>
+                                <button type="button" class="btn btn-primary" id="saveGenre" onclick="saveNewGenre();">
+                                    Save changes
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="modal fade" id="addAuthor" role="dialog" >
+                <div class="modal fade" id="addAuthor" role="dialog">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <button type="button" class="close" data-dismiss="modal"
+                                        aria-hidden="true">&times;</button>
                                 <h4 class="modal-title">New Author</h4>
                             </div>
                             <div class="modal-body">
@@ -131,7 +149,9 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary" id="saveAuthor" onclick="saveNewAuthor();">Save changes</button>
+                                <button type="button" class="btn btn-primary" id="saveAuthor"
+                                        onclick="saveNewAuthor();">Save changes
+                                </button>
                             </div>
                         </div>
                     </div>

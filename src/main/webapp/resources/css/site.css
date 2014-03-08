@@ -94,3 +94,7 @@ input[readonly] {
     background-color: white !important;
     cursor: text !important;
 }
+
+.field-error{
+    color: red;
+}

@@ -1,9 +1,12 @@
 package uz.micros.estore.entity.store;
 
+
+import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.web.multipart.MultipartFile;
 import uz.micros.estore.entity.BaseEntity;
+
 import javax.persistence.*;
-import javax.servlet.annotation.MultipartConfig;
+import javax.validation.constraints.*;
 import java.util.UUID;
 
 @Entity
@@ -12,6 +15,8 @@ public class Book extends BaseEntity {
     public Book() {
     }
 
+    @NotEmpty
+    @Size(max = 200)
     @Column(name = "title", columnDefinition = "varchar(200)", nullable = false, unique = true)
     private String title;
 
@@ -30,26 +35,36 @@ public class Book extends BaseEntity {
     private Genre genre;
 
     @ManyToOne
-    @JoinColumn(name="series_id", nullable = true)
+    @JoinColumn(name = "series_id", nullable = true)
     private Series series;
 
+    @Digits(integer = 4, fraction = 2)
+    @DecimalMin("0.99")
     @Column(name = "price", nullable = false)
     private double price;
 
+    @Min(1900)
+    @Max(2025)
     @Column(name = "year", nullable = false)
     private short year;
 
+    @Min(1)
+    @Max(5000)
     @Column(name = "pages", nullable = false)
     private short pages;
 
+    @Size(min = 9, max = 13)
     @Column(name = "isbn", nullable = false, columnDefinition = "varchar(20)")
     private String isbn;
 
+    @NotEmpty
+    @Size(max = 3072)
     @Column(name = "description", nullable = false, columnDefinition = "varchar(3072)")
     private String desc;
 
+    //@NotNull
     @Column(name = "imageFile")
-    @org.hibernate.annotations.Type(type="pg-uuid")
+    @org.hibernate.annotations.Type(type = "pg-uuid")
     private UUID imageFile;
 
     public String getTitle() {
@@ -124,7 +139,15 @@ public class Book extends BaseEntity {
         this.desc = desc;
     }
 
-    public String shortTitle(){
+    public UUID getImageFile() {
+        return imageFile;
+    }
+
+    public void setImageFile(UUID imageFile) {
+        this.imageFile = imageFile;
+    }
+
+    public String shortTitle() {
         return title.length() <= 40 ? title
                 : title.substring(0, 39);
     }

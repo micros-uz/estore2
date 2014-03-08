@@ -17,24 +17,27 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-context:4.0.0.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-expression:4.0.0.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:4.0.0.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:4.0.0.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-tx:4.0.0.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-orm:4.0.0.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.security:spring-security-web:3.2.0.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.security:spring-security-core:3.2.0.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.security:spring-security-config:3.2.0.RELEASE" />
           <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:3.1.0" />
-          <element id="library" level="project" name="Maven: org.postgresql:postgresql:9.3-1100-jdbc41" />
+          <element id="library" level="project" name="Maven: org.postgresql:postgresql:9.3-1101-jdbc41" />
           <element id="library" level="project" name="Maven: joda-time:joda-time:2.1" />
           <element id="library" level="project" name="Maven: org.springframework.data:spring-data-jpa:1.4.3.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.data:spring-data-commons:1.6.3.RELEASE" />
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.1" />
           <element id="library" level="project" name="Maven: org.slf4j:jcl-over-slf4j:1.7.1" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-orm:4.0.0.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:4.0.0.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-tx:4.0.0.RELEASE" />
           <element id="library" level="project" name="Maven: org.aspectj:aspectjrt:1.7.2" />
+          <element id="library" level="project" name="Maven: javax.validation:validation-api:1.1.0.Final" />
+          <element id="library" level="project" name="Maven: org.hibernate:hibernate-validator:5.0.2.Final" />
+          <element id="library" level="project" name="Maven: org.jboss.logging:jboss-logging:3.1.1.GA" />
+          <element id="library" level="project" name="Maven: com.fasterxml:classmate:1.0.0" />
           <element id="library" level="project" name="Maven: org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final" />
           <element id="library" level="project" name="Maven: org.hibernate:hibernate-core:4.2.4.Final" />
           <element id="library" level="project" name="Maven: antlr:antlr:2.7.7" />
-          <element id="library" level="project" name="Maven: org.jboss.logging:jboss-logging:3.1.0.GA" />
           <element id="library" level="project" name="Maven: dom4j:dom4j:1.6.1" />
           <element id="library" level="project" name="Maven: org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:1.0.1.Final" />
           <element id="library" level="project" name="Maven: org.hibernate.common:hibernate-commons-annotations:4.0.2.Final" />
@@ -47,8 +50,7 @@
           <element id="library" level="project" name="Maven: org.webjars:bootstrap:3.1.1" />
           <element id="library" level="project" name="Maven: org.webjars:jquery:2.1.0" />
           <element id="library" level="project" name="Maven: org.webjars:knockout:3.0.0" />
-          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-dbcp:8.0.3" />
-          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-juli:8.0.3" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-dbcp:7.0.47" />
         </element>
       </element>
     </root>

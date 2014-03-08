@@ -1,23 +1,18 @@
 package uz.micros.estore.controller.store;
 
-import com.sun.net.httpserver.HttpsServer;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.context.support.HttpRequestHandlerServlet;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 import uz.micros.estore.controller.BaseController;
 import uz.micros.estore.entity.store.Book;
 import uz.micros.estore.service.intf.store.AuthorService;
 import uz.micros.estore.service.intf.store.BookService;
-import uz.micros.estore.service.intf.store.GenreService;
 
-import javax.servlet.http.HttpServletRequest;
+import javax.validation.Valid;
 import java.io.IOException;
-import java.io.UnsupportedEncodingException;
 import java.util.List;
 
 @Controller
@@ -65,11 +60,18 @@ public class BookController extends BaseController {
     }
 
     @RequestMapping(method = RequestMethod.POST)
-    public ModelAndView save(@ModelAttribute(value = "book") Book book,
-                             @RequestParam(value = "file", required = false) MultipartFile file,
-                             BindingResult result) {
+    public ModelAndView save(@Valid @ModelAttribute(value = "book") Book book,
+                             BindingResult result,
+                             @RequestParam(value = "file", required = false) MultipartFile file) {
+        ModelAndView res = null;
 
-        ModelAndView res;
+        if (result.hasErrors()){
+            return new ModelAndView("store/createEditBook")
+                    .addObject("book", book)
+                    .addObject("genres", getGenres())
+                    .addObject("authors", authorSvc.getAuthors())
+                    .addObject("useSideBar", false);
+        }
 
         try {
             book = bookSvc.save(book, (file != null) ? file.getBytes() : null);
