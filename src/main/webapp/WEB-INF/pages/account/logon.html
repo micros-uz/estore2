@@ -58,26 +58,22 @@
             <section class="social" id="socialLoginForm">
                 <h2 th:text="#{logon.welcome3}">Use another service to log in.</h2>
 
-                <button type="submit" name="provider" value="twitter" title="Log in using your twitter account"
+                <a th:href="@{/auth/twitter}" title="Log in using your twitter account"
                         class="btn btn-lg btn-twitter">
                     <i class="fa fa-twitter"></i>
-                </button>
-                <button type="submit" name="provider" value="google-plus" title="Log in using your google-plus account"
+                </a>
+                <a th:href="@{/auth/twitter}" title="Log in using your google-plus account"
                         class="btn btn-lg btn-google-plus">
                     <i class="fa fa-google-plus"></i>
-                </button>
-                <button type="submit" name="provider" value="facebook" title="Log in using your facebook account"
+                </a>
+                <a th:href="@{/auth/facebook}" title="Log in using your facebook account"
                         class="btn btn-lg btn-facebook">
                     <i class="fa fa-facebook"></i>
-                </button>
-                <button type="submit" name="provider" value="windows" title="Log in using your windows account"
-                        class="btn btn-lg btn-windows">
-                    <i class="fa fa-windows"></i>
-                </button>
-                <button type="submit" name="provider" value="github" title="Log in using your github account"
+                </a>
+                <a th:href="@{/auth/twitter}" title="Log in using your github account"
                         class="btn btn-lg btn-github">
                     <i class="fa fa-github"></i>
-                </button>
+                </a>
             </section>
         </div>
     </div>

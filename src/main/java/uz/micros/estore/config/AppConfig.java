@@ -4,6 +4,7 @@ import org.springframework.beans.factory.config.PropertyPlaceholderConfigurer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
@@ -11,12 +12,11 @@ import uz.micros.estore.util.DateFormatter;
 import uz.micros.estore.util.SecurityContextFacade;
 import uz.micros.estore.util.SecurityContextHolderFacade;
 
-import javax.servlet.MultipartConfigElement;
-
 @Configuration
 @EnableWebMvc
 @ComponentScan(basePackages = "uz.micros.estore")
 @EnableTransactionManagement
+@PropertySource("classpath:app.properties")
 public class AppConfig {
 
     @Bean

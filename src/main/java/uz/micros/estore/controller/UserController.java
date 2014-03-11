@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import uz.micros.estore.dto.RegUserDto;
 import uz.micros.estore.entity.AppUser;
-import uz.micros.estore.service.intf.UserService;
+import uz.micros.estore.service.UserService;
 
 import javax.servlet.http.HttpSession;
 import java.util.Locale;

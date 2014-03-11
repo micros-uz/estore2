@@ -3,7 +3,7 @@ package uz.micros.estore.controller.store;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.Formatter;
 import uz.micros.estore.entity.store.Genre;
-import uz.micros.estore.service.intf.store.GenreService;
+import uz.micros.estore.service.store.GenreService;
 
 import java.text.ParseException;
 import java.util.Collection;

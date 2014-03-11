@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import uz.micros.estore.entity.blog.Blog;
 import uz.micros.estore.entity.blog.Post;
-import uz.micros.estore.service.intf.blog.blog.BlogService;
+import uz.micros.estore.service.blog.BlogService;
 
 import java.util.List;
 

@@ -1,8 +1,7 @@
-package uz.micros.estore.service.impl.store;
+package uz.micros.estore.service.store;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import uz.micros.estore.service.intf.store.FileService;
 import uz.micros.estore.util.PathHelper;
 
 import java.io.*;
@@ -10,12 +9,11 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 @Service
-public class FileServiceImpl implements FileService {
+public class FileService  {
 
     @Autowired
     private PathHelper pathHelper;
 
-    @Override
     public void saveBookImage(int bookId, byte[] content) {
         String s = pathHelper.getPath();
         Path path = Paths.get(s, bookId + "-uploaded.jpg");

@@ -6,11 +6,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 import uz.micros.estore.controller.BaseController;
-import uz.micros.estore.entity.store.Author;
 import uz.micros.estore.entity.store.Book;
-import uz.micros.estore.entity.store.Genre;
-import uz.micros.estore.service.intf.store.BookService;
-import uz.micros.estore.service.intf.store.GenreService;
+import uz.micros.estore.service.store.BookService;
 
 import java.util.List;
 

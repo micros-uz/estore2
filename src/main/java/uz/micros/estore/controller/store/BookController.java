@@ -8,8 +8,8 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 import uz.micros.estore.controller.BaseController;
 import uz.micros.estore.entity.store.Book;
-import uz.micros.estore.service.intf.store.AuthorService;
-import uz.micros.estore.service.intf.store.BookService;
+import uz.micros.estore.service.store.AuthorService;
+import uz.micros.estore.service.store.BookService;
 
 import javax.validation.Valid;
 import java.io.IOException;
@@ -65,7 +65,7 @@ public class BookController extends BaseController {
                              @RequestParam(value = "file", required = false) MultipartFile file) {
         ModelAndView res = null;
 
-        if (result.hasErrors()){
+        if (result.hasErrors()) {
             return new ModelAndView("store/createEditBook")
                     .addObject("book", book)
                     .addObject("genres", getGenres())

@@ -33,6 +33,8 @@
         <hibernate.version>4.2.4.Final</hibernate.version>
         <hibernate.validator.version>5.0.2.Final</hibernate.validator.version>
         <postgresql.version>9.3-1101-jdbc41</postgresql.version>
+
+        <org.slf4j-version>1.7.5</org.slf4j-version>
     </properties>
 
     <dependencies>
@@ -58,6 +60,13 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
             <version>${spring.version}</version>
+            <exclusions>
+                <!-- Exclude Commons Logging in favor of SLF4j -->
+                <exclusion>
+                    <groupId>commons-logging</groupId>
+                    <artifactId>commons-logging</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
@@ -133,6 +142,16 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.social</groupId>
+            <artifactId>spring-social-config</artifactId>
+            <version>${springframework.social-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.social</groupId>
+            <artifactId>spring-social-security</artifactId>
+            <version>${springframework.social-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.social</groupId>
             <artifactId>spring-social-web</artifactId>
             <version>${springframework.social-version}</version>
         </dependency>
@@ -163,14 +182,32 @@
             <version>3.1.0</version>
         </dependency>
 
-<!--    UNCOMMENT this dependency may cause more debug output during tests
+<!--    UNCOMMENT this dependency may cause more debug output during tests -->
 
-    <dependency>
+		<!-- Logging -->
+        <dependency>
             <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-simple</artifactId>
-            <version>1.6.4</version>
-            <scope>provided</scope>
-        </dependency>-->
+            <artifactId>slf4j-api</artifactId>
+            <version>${org.slf4j-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>jcl-over-slf4j</artifactId>
+            <version>${org.slf4j-version}</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>${org.slf4j-version}</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.16</version>
+            <scope>runtime</scope>
+        </dependency>
 
         <dependency>
             <groupId>javax.servlet.jsp</groupId>
