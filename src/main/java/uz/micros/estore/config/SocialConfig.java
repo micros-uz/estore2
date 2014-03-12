@@ -1,4 +1,4 @@
-package uz.micros.estore.config;
+ package uz.micros.estore.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
