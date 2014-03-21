@@ -83,6 +83,14 @@ public class Book extends BaseEntity {
         this.author = author;
     }
 
+    public int getGenre_id() {
+        return genre_id;
+    }
+
+    public void setGenre_id(int genre_id) {
+        this.genre_id = genre_id;
+    }
+
     public Genre getGenre() {
         return genre;
     }

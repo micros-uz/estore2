@@ -60,9 +60,9 @@
             </li>
             <li class="dropdown">
 
-                <a th:if="${#httpServletRequest.remoteUser == null}" href="/login">
+                <a th:if="${#httpServletRequest.remoteUser == null}" href="/signin">
                     <span th:text="#{acc.hello}">Hello Guest</span><br></br>
-                    <span th:text="#{acc.login}">Log In</span>
+                    <span th:text="#{acc.signin}">Sign In</span>
                 </a>
                 <a th:if="${#httpServletRequest.remoteUser != null}" href="#" class="dropdown-toggle"
                    data-toggle="dropdown">
@@ -72,7 +72,7 @@
                 </a>
                 <ul class="dropdown-menu">
                     <li>
-                        <form th:action="@{/logout}" method="post">
+                        <form th:action="@{/signout}" method="post">
                             <input type="submit" value="Logout" th:value="#{acc.logout}"/>
                         </form>
                     </li>

@@ -6,8 +6,9 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
-import uz.micros.estore.controller.BaseController;
+import uz.micros.estore.controller.BaseStoreController;
 import uz.micros.estore.entity.store.Book;
+import uz.micros.estore.entity.store.Genre;
 import uz.micros.estore.service.store.AuthorService;
 import uz.micros.estore.service.store.BookService;
 
@@ -17,7 +18,7 @@ import java.util.List;
 
 @Controller
 @RequestMapping("/store/books")
-public class BookController extends BaseController {
+public class BookStoreController extends BaseStoreController {
 
     @Autowired
     private BookService bookSvc;
@@ -37,10 +38,19 @@ public class BookController extends BaseController {
             return new ModelAndView("notFound");
     }
 
-    @RequestMapping("/create")
-    public ModelAndView create() {
+    @RequestMapping("/create/{genreId}")
+    public ModelAndView create(@PathVariable(value = "genreId") int genreId) {
+        Book book = new Book();
+        List<Genre> genres = getGenres();
+
+        for (int k = 0; k < genres.size(); k++)
+            if (genres.get(k).getId() == genreId){
+                book.setGenre(genres.get(k));
+                break;
+            }
+
         return new ModelAndView("store/createEditBook")
-                .addObject("book", new Book())
+                .addObject("book",book)
                 .addObject("genres", getGenres())
                 .addObject("authors", authorSvc.getAuthors());
     }

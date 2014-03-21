@@ -7,7 +7,7 @@ import uz.micros.estore.service.store.GenreService;
 
 import java.util.List;
 
-public abstract class BaseController {
+public abstract class BaseStoreController extends GenericController {
     @Autowired
     private GenreService service;
 

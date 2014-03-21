@@ -34,3 +34,17 @@ insert into Series (Genre_Id, Title) values (9, U&'\041a\043b\0430\0441\0441\043
 insert into Series (Genre_Id, Title) values (9, U&'\041c\0430\0441\0442\0435\0440-\043a\043b\0430\0441\0441');
 insert into Series (Genre_Id, Title) values (9, U&'\0411\0435\0441\0442\0441\0435\043b\043b\0435\0440\044b O''Reilly');
 
+drop table if exists UserConnection;
+create table UserConnection (userId varchar(255) not null,
+                             providerId varchar(255) not null,
+                             providerUserId varchar(255),
+                             rank int not null,
+                             displayName varchar(255),
+                             profileUrl varchar(512),
+                             imageUrl varchar(512),
+                             accessToken varchar(255) not null,
+                             secret varchar(255),
+                             refreshToken varchar(255),
+                             expireTime bigint,
+  primary key (userId, providerId, providerUserId));
+create unique index UserConnectionRank on UserConnection(userId, providerId, rank);

@@ -28,7 +28,7 @@
 		<webjars-font-awesome.version>4.0.3</webjars-font-awesome.version>
 
         <tomcat-dbcp.version>7.0.47</tomcat-dbcp.version>
-        <spring-data-jpa.version>1.4.3.RELEASE</spring-data-jpa.version>
+        <spring-data-jpa.version>1.5.1.RELEASE</spring-data-jpa.version>
 
         <hibernate.version>4.2.4.Final</hibernate.version>
         <hibernate.validator.version>5.0.2.Final</hibernate.validator.version>

@@ -1,17 +1,56 @@
 package uz.micros.estore.dto;
 
+import org.hibernate.validator.constraints.NotEmpty;
+
+import javax.validation.constraints.Size;
+
 public class RegUserDto {
-    private String username;
+
+    @NotEmpty
+    @Size(max = 15)
+    private String firstName;
+
+    @NotEmpty
+    @Size(max = 15)
+    private String lastName;
+
+    @NotEmpty
+    @Size(max = 10)
+    private String userName;
+
+    @NotEmpty
+    @Size(max = 10)
     private String password;
+
+    @NotEmpty
+    @Size(max = 10)
     private String password2;
+
+
     private String email;
 
-    public String getUsername() {
-        return username;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     public String getPassword() {

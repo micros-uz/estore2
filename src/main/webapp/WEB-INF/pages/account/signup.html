@@ -1,0 +1,68 @@
+﻿<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="master">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title layout:fragment="title">Register</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Sign Up</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div data-th-if="${!#strings.isEmpty(message)}"
+                 data-th-class="${message.type.cssClass}"
+                 data-th-text="${message.text}">error message text</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <form name="f" data-th-action="@{/signup}"
+                  data-th-object="${newUser}"
+                  method="post"> <!--enctype="multipart/form-data"-->
+                <input type="hidden" name="_csrf" data-th-value="${_csrf.token}" />
+                <div class="formInfo">
+                    <div class="error" data-th-if="${#fields.hasErrors('*')}">Unable to sign up. Please fix the errors below and resubmit.</div>
+                </div>
+                <div class="form-group">
+                    <label for="firstName" data-th-text="#{logon.firstName}">First Name</label>
+                    <span class="field-error" data-th-if="${#fields.hasErrors('firstName')}" data-th-errors="*{firstName}"></span>
+                    <input data-th-field="*{firstName}" id="firstName" class="form-control"
+                           autofocus="autofocus"/>
+                </div>
+                <div class="form-group">
+                    <label for="lastName" data-th-text="#{logon.lastName}">Last Name</label>
+                    <span class="field-error" data-th-if="${#fields.hasErrors('lastName')}" data-th-errors="*{lastName}"></span>
+                    <input type="text" id="lastName" data-th-field="*{lastName}" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label for="userName" data-th-text="#{logon.userName}">User Name</label>
+                    <span class="field-error" data-th-if="${#fields.hasErrors('userName')}" data-th-errors="*{userName}"></span>
+                    <input type="text" id="userName" data-th-field="*{userName}" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label for="password" data-th-text="#{logon.pwd}">Password</label>
+                    <span class="field-error" data-th-if="${#fields.hasErrors('password')}" data-th-errors="*{password}"></span>
+                    <input type="password" id="password" data-th-field="*{password}" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label for="password2" data-th-text="#{logon.pwdConfirm}">Password Confirm</label>
+                    <span class="field-error" data-th-if="${#fields.hasErrors('password2')}" data-th-errors="*{password2}"></span>
+                    <input type="password" id="password2" data-th-field="*{password2}" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label for="email" data-th-text="#{logon.email}">Email</label>
+                    <span class="field-error" data-th-if="${#fields.hasErrors('email')}" data-th-errors="*{email}"></span>
+                    <input type="email" id="email" name="email" class="form-control"/>
+                </div>
+
+                <input type="submit" class="btn btn-primary" data-th-value="#{logon.signup}"/>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -26,15 +26,15 @@ public class CustomUserDetailsService implements UserDetailsService {
     }
 
     @Override
-    public UserDetails loadUserByUsername(String userName) throws UsernameNotFoundException {
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 
-        AppUser user = service.getUserByName(userName);
+        AppUser user = service.getUserByUserName(username);
 
         if (user != null)
-            return new User(user.getName(), user.getPassword(), true,
+            return new User(user.getUsername(), user.getPassword(), true,
                     true, true, true, getAuthorities());
         else
-            return new User(userName, userName, true,
+            return new User(username, username, true,
                     true, true, true, getAuthorities());
     }
 

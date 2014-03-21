@@ -46,24 +46,32 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
-                .csrf().disable()
+                //.csrf().disable()
                 .authorizeRequests()
+                .antMatchers("/admin/**").permitAll()
                 .antMatchers("/auth/**", "/signin/**", "/signup/**").permitAll()
-                .antMatchers("/login/**").permitAll()
                 .antMatchers("/webjars/**").permitAll()
                 .antMatchers("/content/**").permitAll()
                 .antMatchers("/resources/**").permitAll()
-                .antMatchers("/register").permitAll()
                 .antMatchers("/blog/**").permitAll()
                 .antMatchers("/store/**").permitAll()
                 .antMatchers("/").permitAll()
-                .anyRequest().authenticated();
-        http
-                .apply(new SpringSocialConfigurer());
-        http
+                .anyRequest().authenticated()
+            //.and()
+                //.rememberMe()
+            .and()
+                .apply(new SpringSocialConfigurer())
+            .and()
                 .formLogin()
-                .loginPage("/login")
-                .permitAll();
+                    .loginPage("/signin")
+                    .loginProcessingUrl("/signin/authenticate")
+                    //.failureUrl("/signin?error=true")
+                    .permitAll()
+                 .and()
+                    .logout()
+                        .logoutSuccessUrl("/")
+                        .logoutUrl("/signout")
+                        .deleteCookies("JSESSIONID");
     }
 
     @Bean

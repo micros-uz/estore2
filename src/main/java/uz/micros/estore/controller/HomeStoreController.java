@@ -10,7 +10,7 @@ import java.util.Locale;
 
 @Controller
 @RequestMapping("/")
-public class HomeController extends BaseController{
+public class HomeStoreController extends BaseStoreController {
 
     @RequestMapping(method = RequestMethod.GET)
     public String printWelcome(Locale locale, ModelMap model) {

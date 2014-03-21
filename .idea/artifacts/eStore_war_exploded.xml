@@ -29,11 +29,11 @@
           <element id="library" level="project" name="Maven: javax.inject:javax.inject:1" />
           <element id="library" level="project" name="Maven: org.springframework.social:spring-social-security:1.1.0.BUILD-SNAPSHOT" />
           <element id="library" level="project" name="Maven: org.springframework.social:spring-social-google:1.0.0.M3" />
-          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-crypto:3.1.4.RELEASE" />
-          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.2.2" />
-          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.2.2" />
-          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.2.2" />
           <element id="library" level="project" name="Maven: org.springframework.social:spring-social-twitter:1.1.0.BUILD-SNAPSHOT" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.3.0" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.3.0" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.3.0" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-crypto:3.2.0.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.social:spring-social-facebook:1.1.0.BUILD-SNAPSHOT" />
           <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:3.1.0" />
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.5" />
@@ -42,9 +42,9 @@
           <element id="library" level="project" name="Maven: log4j:log4j:1.2.16" />
           <element id="library" level="project" name="Maven: org.postgresql:postgresql:9.3-1101-jdbc41" />
           <element id="library" level="project" name="Maven: joda-time:joda-time:2.1" />
-          <element id="library" level="project" name="Maven: org.springframework.data:spring-data-jpa:1.4.3.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework.data:spring-data-commons:1.6.3.RELEASE" />
-          <element id="library" level="project" name="Maven: org.aspectj:aspectjrt:1.7.2" />
+          <element id="library" level="project" name="Maven: org.springframework.data:spring-data-jpa:1.5.1.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.data:spring-data-commons:1.7.1.RELEASE" />
+          <element id="library" level="project" name="Maven: org.aspectj:aspectjrt:1.7.4" />
           <element id="library" level="project" name="Maven: javax.validation:validation-api:1.1.0.Final" />
           <element id="library" level="project" name="Maven: org.hibernate:hibernate-validator:5.0.2.Final" />
           <element id="library" level="project" name="Maven: org.jboss.logging:jboss-logging:3.1.1.GA" />

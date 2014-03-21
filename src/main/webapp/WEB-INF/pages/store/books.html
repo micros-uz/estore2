@@ -7,7 +7,7 @@
 </head>
 <body>
 <section layout:fragment="sidebar">
-    <div layout:include="store\catalog :: catalog"></div>
+    <div layout:include="store/catalog :: catalog"></div>
 </section>
 <section layout:fragment="content">
     <div class="books-pane">
@@ -20,7 +20,7 @@
         </div>
 
         <p data-th-if="${beans.securityContextFacade.isAdmin()}">
-            <a data-th-href="@{/store/books/create}">Add New Book</a>
+            <a data-th-href="@{'/store/books/create/' + ${genreId}}">Add New Book</a>
         </p>
 
         <div class="row">

@@ -13,10 +13,10 @@ public class AppUser {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int appUserId;
 
-    @Column(name="name", unique = true, nullable = false)
-    private String name;
+    @Column(name="userName", unique = true, nullable = false)
+    private String userName;
 
-    @Column(name="email", unique = true, nullable = false)
+    @Column(name="email", nullable = false)
     private String email;
 
     @Column(name="password", nullable = false)
@@ -25,23 +25,39 @@ public class AppUser {
     @Column(name="type", nullable = false)
     private Integer type;
 
+    @Column(name="firstName", nullable = false)
+    private String firstName;
+
+    @Column(name="lastName", nullable = false)
+    private String lastName;
+
     public AppUser() {
         type = ROLE_USER;
     }
 
-    public AppUser(String name, String password, String email, Integer type) {
-        this.name = name;
+    public AppUser(String firstName, String lastName, String userName, String password, String email, Integer type) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.userName = userName;
         this.email = email;
         this.password = password;
         this.type = type;
     }
 
-    public String getPassword() {
-        return password;
+    public int getAppUserId() {
+        return appUserId;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setAppUserId(int appUserId) {
+        this.appUserId = appUserId;
+    }
+
+    public String getUsername() {
+        return userName;
+    }
+
+    public void setUsername(String username) {
+        this.userName = username;
     }
 
     public String getEmail() {
@@ -52,12 +68,12 @@ public class AppUser {
         this.email = email;
     }
 
-    public String getName() {
-        return name;
+    public String getPassword() {
+        return password;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public Integer getType() {
@@ -66,5 +82,21 @@ public class AppUser {
 
     public void setType(Integer type) {
         this.type = type;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 }

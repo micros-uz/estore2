@@ -1,0 +1,94 @@
+﻿<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org"
+      layout:decorator="master">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title layout:fragment="title">Sign in</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="page-title">
+                <h1 th:text="#{logon.welcome1}">Welcome, Please Sign In!</h1>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h3 th:text="#{logon.newcust}">New Customer!</h3>
+
+            <p th:text="#{logon.newcust2}">By creating an account at eStore you will be able to shop faster, be up to
+                date on an orders status,
+                and keep track of the orders you have previously made.</p>
+            <br></br>
+
+            <div class="buttons">
+                <a data-th-href="@{/signup}" class="btn btn-large btn-primary" th:text="#{logon.signup}">Sign Up</a>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 th:text="#{logon.welcome2}">Use a local account to log in.</h3>
+
+                    <form name="f" data-th-action="@{/signin/authenticate}" method="post">
+                        <div data-th-if="${param.error}" class="alert alert-error" th:text="#{logon.wrong}">
+                            Invalid username and password.
+                        </div>
+                        <!--logoutSuccessUrl("/") - default - /login?logout" -->
+                        <div data-th-if="${param.logout}" class="alert alert-success" th:text="#{logon.logout}">
+                            You have been logged out.
+                        </div>
+                        <div data-th-if="${param.registered}" class="alert alert-success" th:text="#{logon.signedup}">
+                            You have been registered successfully.
+                        </div>
+                        <div class="form-group">
+                            <label for="userName" th:text="#{logon.userName}">Name</label>
+                            <input type="text" id="userName" name="username" class="form-control"
+                                   autofocus="autofocus"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="password" th:text="#{logon.pwd}">Password</label>
+                            <input type="password" id="password" name="password" class="form-control"/>
+                        </div>
+                        <div class="checkbox">
+                            <input data-val="true" data-val-required="The RememberMe field is required." id="RememberMe"
+                                   name="RememberMe" type="checkbox" value="true"/><input name="RememberMe"
+                                                                                          type="hidden" value="false"/>
+                            <label class="checkbox" for="RememberMe" th:text="#{logon.rememberme}">RememberMe</label>
+                        </div>
+                        <input type="submit" class="btn btn-primary" value="Sign In" th:value="#{logon.signin}"/>
+                    </form>
+                </div>
+            </div>
+            <br></br>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <section class="social" id="socialLoginForm">
+                        <h2 th:text="#{logon.welcome3}">Use another service to log in.</h2>
+
+                        <a th:href="@{/auth/twitter}" title="Log in using your twitter account"
+                           class="btn btn-lg btn-twitter">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a th:href="@{/auth/twitter}" title="Log in using your google-plus account"
+                           class="btn btn-lg btn-google-plus">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
+                        <a th:href="@{/auth/facebook}" title="Log in using your facebook account"
+                           class="btn btn-lg btn-facebook">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a th:href="@{/auth/twitter}" title="Log in using your github account"
+                           class="btn btn-lg btn-github">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

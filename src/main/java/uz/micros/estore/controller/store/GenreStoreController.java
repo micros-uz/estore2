@@ -5,7 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
-import uz.micros.estore.controller.BaseController;
+import uz.micros.estore.controller.BaseStoreController;
 import uz.micros.estore.entity.store.Book;
 import uz.micros.estore.service.store.BookService;
 
@@ -13,7 +13,7 @@ import java.util.List;
 
 @Controller
 @RequestMapping("/store/genres")
-public class GenreController extends BaseController{
+public class GenreStoreController extends BaseStoreController {
 
     @Autowired
     private BookService bookSvc;
@@ -24,6 +24,7 @@ public class GenreController extends BaseController{
         List<Book> books = bookSvc.getByGenre(id);
 
         return new ModelAndView("store/books")
+                .addObject("genreId", id)
                 .addObject("books", books);
     }
 }
