@@ -17,8 +17,8 @@ import static org.springframework.test.web.servlet.setup.MockMvcBuilders.webAppC
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebAppConfiguration
-@ContextConfiguration(name="uz.micros.estore.AppConfig")
-class AppTests {
+@ContextConfiguration(name="uz.micros.estore.config.AppConfig")
+public class AppTests {
     private MockMvc mockMvc;
 
     @SuppressWarnings("SpringJavaAutowiringInspection")

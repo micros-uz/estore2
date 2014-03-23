@@ -1,5 +1,6 @@
 package uz.micros.estore.entity.store;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import uz.micros.estore.entity.BaseEntity;
 import javax.persistence.*;
 import java.util.Set;
@@ -15,6 +16,7 @@ public class Author extends BaseEntity {
     @Column(name = "name", columnDefinition = "varchar(30)", unique = true, nullable = false)
     private String name;
 
+    @JsonIgnore
     @OneToMany(mappedBy="author")
     private Set<Book> books;
 
