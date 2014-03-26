@@ -37,4 +37,8 @@ public class BookService {
     public void delete(int id){
         rpstr.delete(id);
     }
+
+    public List<Book> getAll() {
+        return rpstr.findAll();
+    }
 }

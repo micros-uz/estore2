@@ -1,6 +1,7 @@
 package uz.micros.estore.entity.store;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.web.multipart.MultipartFile;
 import uz.micros.estore.entity.BaseEntity;
@@ -26,14 +27,17 @@ public class Book extends BaseEntity {
     @Column(name = "genre_id", insertable = false, updatable = false)
     private int genre_id;
 
+    @JsonIgnore
     @ManyToOne
     @JoinColumn(name = "author_id", nullable = false)
     private Author author;
 
+    @JsonIgnore
     @ManyToOne
     @JoinColumn(name = "genre_id", nullable = false)
     private Genre genre;
 
+    @JsonIgnore
     @ManyToOne
     @JoinColumn(name = "series_id", nullable = true)
     private Series series;
