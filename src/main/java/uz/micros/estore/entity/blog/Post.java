@@ -10,10 +10,10 @@ import java.util.Set;
 @Table(name = "Posts")
 public class Post extends BaseEntity {
 
-    @Column(name = "Title", unique = true, columnDefinition = "varchar(50)", nullable = false)
+    @Column(name = "Title", unique = true, columnDefinition = "varchar(150)", nullable = false)
     private String title;
 
-    @Column(name = "Text", columnDefinition = "varchar(4096)", nullable = false)
+    @Column(name = "Text", columnDefinition = "varchar(32768)", nullable = false)
     private String text;
 
     @Column(name = "Date", columnDefinition = "date", nullable = false)

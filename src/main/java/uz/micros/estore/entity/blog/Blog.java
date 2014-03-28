@@ -9,7 +9,7 @@ import java.util.ArrayList;
 @Table(name = "Blogs")
 public class Blog extends BaseEntity {
 
-    @Column(name = "Title", unique = true, columnDefinition = "varchar(50)", nullable = false)
+    @Column(name = "Title", unique = true, columnDefinition = "varchar(150)", nullable = false)
     private String title;
 
     @Transient

@@ -57,7 +57,7 @@ public class Book extends BaseEntity {
     @Column(name = "pages", nullable = false)
     private short pages;
 
-    @Size(min = 9, max = 13)
+    @Size(min = 9, max = 20)
     @Column(name = "isbn", nullable = false, columnDefinition = "varchar(20)")
     private String isbn;
 
