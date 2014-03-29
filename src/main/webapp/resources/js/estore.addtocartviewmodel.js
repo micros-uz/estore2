@@ -3,7 +3,7 @@ estore.vm = estore.vm || {};
 
 estore.AddToCartViewModel = function () {
     this.addToCart = function (vm, e) {
-        var id = $(e.currentTarget).attr('data-bookid');
+        var id = $(e.currentTarget).attr('value');
         alert('Book ID = ' + id);
         estore.dataservice.addToCart(id);
     };

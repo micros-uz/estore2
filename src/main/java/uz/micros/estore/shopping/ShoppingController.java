@@ -13,10 +13,10 @@ public class ShoppingController {
     @Autowired
     private ShoppingCart cart;
 
-    @RequestMapping("add/{id}")
+    @RequestMapping(value = "add", method = RequestMethod.POST)
     @ResponseStatus(value = HttpStatus.OK)
     @ResponseBody
-    public String addToCart(@PathVariable("id") int id)
+    public String addToCart(@RequestBody int id)
     {
         return "OK";
     }

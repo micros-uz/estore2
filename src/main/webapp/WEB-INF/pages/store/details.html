@@ -16,7 +16,8 @@
 
             <div><p class="det-price" th:text="${book.price}"></p></div>
             <div>
-                <button class="addToCart btn btn-primary centred" data-bookid="${book.id}"
+                <!--we use data-th-value instead of data-bookid since last is not parsed by thymeleaf-->
+                <button class="addToCart btn btn-primary centred" data-th-value="${book.id}"
                         data-bind="click: addToCartVM.addToCart"><span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;Add
                     to Cart
                 </button>
