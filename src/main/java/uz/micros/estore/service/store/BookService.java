@@ -41,4 +41,8 @@ public class BookService {
     public List<Book> getAll() {
         return rpstr.findAll();
     }
+
+    public List<Book> search(String query) {
+        return getAll();
+    }
 }
