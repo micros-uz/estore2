@@ -28,7 +28,8 @@
 		<webjars-knockout.version>3.0.0</webjars-knockout.version>
 		<webjars-font-awesome.version>4.0.3</webjars-font-awesome.version>
 
-        <tomcat-dbcp.version>7.0.47</tomcat-dbcp.version>
+        <javax.servlet-api.version>3.1.0</javax.servlet-api.version>
+        <tomcat-dbcp.version>8.0.5</tomcat-dbcp.version>
         <spring-data-jpa.version>1.5.1.RELEASE</spring-data-jpa.version>
 
         <hibernate.version>4.2.4.Final</hibernate.version>
@@ -165,6 +166,12 @@
             <groupId>org.springframework.social</groupId>
             <artifactId>spring-social-twitter</artifactId>
             <version>${spring-social-twitter.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.security</groupId>
+                    <artifactId>spring-security-crypto</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.springframework.social</groupId>
@@ -177,11 +184,14 @@
             <version>${springframework.social-version}</version>
         </dependency>-->
 
+<!--    WITHOUT COMMENTING CANNOT BE RUN ON Tomcat 8.0.5 - THE FOLLOWING ERROR:
+        org.springframework.web.SpringServletContainerInitializer cannot be cast to javax.servlet.ServletContainerInitializer
+
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
-            <version>3.1.0</version>
-        </dependency>
+            <version>${javax.servlet-api.version}</version>
+        </dependency>-->
 
         <!-- Jackson -->
 
@@ -308,7 +318,7 @@
         <dependency>
             <groupId>nz.net.ultraq.thymeleaf</groupId>
             <artifactId>thymeleaf-layout-dialect</artifactId>
-            <version>1.2.2</version>
+            <version>1.2.3</version>
             <scope>compile</scope>
         </dependency>
 
@@ -473,7 +483,8 @@
                 <artifactId>tomcat7-maven-plugin</artifactId>
                 <version>2.3-SNAPSHOT</version>
                 <configuration>
-                    <path>/${project.build.finalName}</path>
+                    <!--<path>/${project.build.finalName}</path>-->
+                    <path>/</path>
                 </configuration>
             </plugin>
         </plugins>

@@ -68,9 +68,7 @@
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.3.0" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.3.2" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.3.0" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.security:spring-security-crypto:3.2.0.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.social:spring-social-facebook:1.1.0.BUILD-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="Maven: javax.servlet:javax.servlet-api:3.1.0" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.5" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.slf4j:jcl-over-slf4j:1.7.5" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.slf4j:slf4j-log4j12:1.7.5" level="project" />
@@ -98,12 +96,13 @@
     <orderEntry type="library" name="Maven: org.thymeleaf:thymeleaf:2.1.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: ognl:ognl:3.0.6" level="project" />
     <orderEntry type="library" name="Maven: org.thymeleaf:thymeleaf-spring4:2.1.2.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:1.2.2" level="project" />
+    <orderEntry type="library" name="Maven: nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:1.2.3" level="project" />
     <orderEntry type="library" name="Maven: org.webjars:bootstrap:3.1.1" level="project" />
     <orderEntry type="library" name="Maven: org.webjars:jquery:2.1.0" level="project" />
     <orderEntry type="library" name="Maven: org.webjars:knockout:3.0.0" level="project" />
     <orderEntry type="library" name="Maven: org.webjars:font-awesome:4.0.3" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-dbcp:7.0.47" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-dbcp:8.0.5" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-juli:8.0.5" level="project" />
   </component>
 </module>
 
