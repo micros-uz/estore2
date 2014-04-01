@@ -8,8 +8,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class SigninController {
 
-
-
     @RequestMapping("/signin")
     public String login(@RequestParam(value = "error", required = false) String error,
                         @RequestParam(value = "logout", required = false) String logout,

@@ -65,4 +65,20 @@ public class Comment extends BaseEntity {
     public void setAuthor(AppUser author) {
         this.author = author;
     }
+
+    public int getPost_id() {
+        return post_id;
+    }
+
+    public void setPost_id(int post_id) {
+        this.post_id = post_id;
+    }
+
+    public int getAuthor_id() {
+        return author_id;
+    }
+
+    public void setAuthor_id(int author_id) {
+        this.author_id = author_id;
+    }
 }
