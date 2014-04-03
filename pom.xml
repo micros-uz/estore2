@@ -32,7 +32,7 @@
         <tomcat-dbcp.version>8.0.5</tomcat-dbcp.version>
         <spring-data-jpa.version>1.5.1.RELEASE</spring-data-jpa.version>
 
-        <hibernate.version>4.2.4.Final</hibernate.version>
+        <hibernate.version>4.3.5.Final</hibernate.version>
         <hibernate.validator.version>5.0.2.Final</hibernate.validator.version>
         <postgresql.version>9.3-1101-jdbc41</postgresql.version>
         <hsqldb.version>2.3.2</hsqldb.version>
@@ -294,8 +294,8 @@
 
         <dependency>
             <groupId>org.hibernate.javax.persistence</groupId>
-            <artifactId>hibernate-jpa-2.0-api</artifactId>
-            <version>1.0.1.Final</version>
+            <artifactId>hibernate-jpa-2.1-api</artifactId>
+            <version>1.0.0.Final</version>
         </dependency>
         <dependency>
             <groupId>org.hibernate</groupId>
