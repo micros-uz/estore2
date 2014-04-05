@@ -36,6 +36,6 @@ public class CommentController {
 
         commentService.save(comment);
 
-        return new ModelAndView("redirect:/blog/post/" + comment.getPost().getId());
+        return new ModelAndView("redirect:/blog/posts/" + comment.getPost().getId());
     }
 }

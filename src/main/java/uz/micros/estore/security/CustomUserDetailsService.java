@@ -34,8 +34,7 @@ public class CustomUserDetailsService implements UserDetailsService {
             return new User(user.getUsername(), user.getPassword(), true,
                     true, true, true, getAuthorities());
         else
-            return new User(username, username, true,
-                    true, true, true, getAuthorities());
+            throw new UsernameNotFoundException("No user with username '" + username + "' found!");
     }
 
     private Collection<? extends GrantedAuthority> getAuthorities() {
