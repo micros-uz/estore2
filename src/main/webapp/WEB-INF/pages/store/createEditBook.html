@@ -15,6 +15,7 @@
                   data-th-object="${book}" method="post"
                   enctype="multipart/form-data"
                   >
+                <!--<input type="hidden" data-th-name="${_csrf.parameterName}" data-th-value="${_csrf.token}" />-->
                 <input type="hidden" name="id" data-th-field="*{id}"/>
                 <ul>
                     <li th:each="e : ${#fields.detailedErrors()}" th:class="${e.global}? globalerr : fielderr">

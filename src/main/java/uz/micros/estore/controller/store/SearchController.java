@@ -17,11 +17,12 @@ public class SearchController {
     @Autowired
     private BookService bookSvc;
 
+    @RequestMapping(params = "query")
     public ModelAndView go(@RequestParam("query") String query){
         List<Book> books = bookSvc.search(query);
 
         return new ModelAndView("store/books")
-                .addObject("genreId", 1) // todo: should not use!
+                .addObject("genreId", 0)
                 .addObject("books", books);
     }
 }

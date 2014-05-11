@@ -1,6 +1,7 @@
 package uz.micros.estore.config;
 
-import org.apache.tomcat.dbcp.dbcp2.BasicDataSource;
+import org.hibernate.search.jpa.FullTextEntityManager;
+import org.hibernate.search.jpa.Search;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -72,5 +73,11 @@ public class PersistenceConfig {
         transactionManager.setEntityManagerFactory(entityManagerFactory());
 
         return transactionManager;
+    }
+
+    @Bean
+    //@SpringRequestScoped
+    public FullTextEntityManager fullTextEntityManager() {
+        return Search.getFullTextEntityManager(entityManagerFactory().createEntityManager());
     }
 }

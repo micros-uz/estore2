@@ -23,7 +23,7 @@
             <form name="f" data-th-action="@{/signup}"
                   data-th-object="${newUser}"
                   method="post"> <!--enctype="multipart/form-data"-->
-                <input type="hidden" name="_csrf" data-th-value="${_csrf.token}" />
+                <!--<input type="hidden" name="_csrf" data-th-value="${_csrf.token}" />-->
                 <div class="formInfo">
                     <div class="error" data-th-if="${#fields.hasErrors('*')}">Unable to sign up. Please fix the errors below and resubmit.</div>
                 </div>

@@ -1,6 +1,6 @@
 package uz.micros.estore.config;
 
-
+/*
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.ContextLoaderListener;
@@ -44,9 +44,9 @@ public class WebInitializer implements WebApplicationInitializer {
         fr.addMappingForUrlPatterns(null, true, "/*");
     }
 }
-
+*/
 //  ANOTHER WAY TO INITIALIZE
-/*
+
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
@@ -70,7 +70,7 @@ public class WebInitializer extends AbstractAnnotationConfigDispatcherServletIni
 
     @Override
     protected String[] getServletMappings() {
-        return new String[]{"/"};
+        return new String[]{"/*"};
     }
 
     @Override
@@ -82,6 +82,7 @@ public class WebInitializer extends AbstractAnnotationConfigDispatcherServletIni
         return new Filter[] {characterEncodingFilter};
     }
 
+
     // file upload support
     @Override
     protected void customizeRegistration(ServletRegistration.Dynamic registration) {
@@ -90,4 +91,3 @@ public class WebInitializer extends AbstractAnnotationConfigDispatcherServletIni
         registration.setMultipartConfig(multipartConfigElement);
     }
 }
-*/

@@ -8,20 +8,23 @@
     <name>eStore</name>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
         <spring.security.version>3.2.3.RELEASE</spring.security.version>
-        <spring.version>4.0.3.RELEASE</spring.version>
+        <spring.version>4.0.4.RELEASE</spring.version>
 
-        <springframework.social-version>1.1.0.BUILD-SNAPSHOT</springframework.social-version>
+        <springframework.social-version>1.1.0.RELEASE</springframework.social-version>
         <springframework.social-google-version>1.0.0.M3</springframework.social-google-version>
-        <springframework.social.facebook-version>1.1.0.BUILD-SNAPSHOT</springframework.social.facebook-version>
-        <spring-social-twitter.version>1.1.0.BUILD-SNAPSHOT</spring-social-twitter.version>
+        <springframework.social.facebook-version>1.1.1.RELEASE</springframework.social.facebook-version>
+        <spring-social-twitter.version>1.1.0.RELEASE</spring-social-twitter.version>
 
-        <jdk.version>1.7</jdk.version>
+        <jdk.version>1.8</jdk.version>
         <junit.version>4.11</junit.version>
-        <jetty.version>9.1.4.v20140401</jetty.version>
+        <jetty.version>9.2.0.M1</jetty.version>
         <thymeleaf.version>2.1.2.RELEASE</thymeleaf.version>
 
-        <jackson-version>2.3.2</jackson-version>
+        <jackson-version>2.3.3</jackson-version>
         <!-- Web dependencies -->
         <webjars-bootstrap.version>3.1.1</webjars-bootstrap.version>
         <webjars-jquery.version>2.1.0</webjars-jquery.version>
@@ -30,10 +33,10 @@
 
         <javax.servlet-api.version>3.1.0</javax.servlet-api.version>
         <tomcat-dbcp.version>8.0.5</tomcat-dbcp.version>
-        <spring-data-jpa.version>1.5.1.RELEASE</spring-data-jpa.version>
+        <spring-data-jpa.version>1.5.2.RELEASE</spring-data-jpa.version>
 
         <hibernate.version>4.3.5.Final</hibernate.version>
-        <hibernate.validator.version>5.0.2.Final</hibernate.validator.version>
+        <hibernate.validator.version>5.1.1.Final</hibernate.validator.version>
         <postgresql.version>9.3-1101-jdbc41</postgresql.version>
         <hsqldb.version>2.3.2</hsqldb.version>
 
@@ -187,12 +190,13 @@
 
 <!--    WITHOUT COMMENTING CANNOT BE RUN ON Tomcat 8.0.5 - THE FOLLOWING ERROR:
         org.springframework.web.SpringServletContainerInitializer cannot be cast to javax.servlet.ServletContainerInitializer
-
+-->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
             <version>${javax.servlet-api.version}</version>
-        </dependency>-->
+            <scope>provided</scope>
+        </dependency>
 
         <!-- Jackson -->
 
@@ -229,12 +233,12 @@
             <scope>runtime</scope>
         </dependency>
 
-        <dependency>
+<!--        <dependency>
             <groupId>javax.servlet.jsp</groupId>
             <artifactId>jsp-api</artifactId>
             <version>2.1</version>
             <scope>provided</scope>
-        </dependency>
+        </dependency>-->
 
         <!-- DB drivers dependencies -->
 
@@ -308,6 +312,12 @@
             <version>${hibernate.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-search-orm</artifactId>
+            <version>4.5.1.Final</version>
+        </dependency>
+
         <!-- Thymeleaf -->
 
         <dependency>
@@ -325,7 +335,7 @@
         <dependency>
             <groupId>nz.net.ultraq.thymeleaf</groupId>
             <artifactId>thymeleaf-layout-dialect</artifactId>
-            <version>1.2.3</version>
+            <version>1.2.4</version>
             <scope>compile</scope>
         </dependency>
 
@@ -488,7 +498,7 @@
             <plugin>
                 <groupId>org.apache.tomcat.maven</groupId>
                 <artifactId>tomcat7-maven-plugin</artifactId>
-                <version>2.3-SNAPSHOT</version>
+                <version>2.2</version>
                 <configuration>
                     <!--<path>/${project.build.finalName}</path>-->
                     <path>/</path>

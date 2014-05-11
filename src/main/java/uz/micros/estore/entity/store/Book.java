@@ -2,6 +2,8 @@ package uz.micros.estore.entity.store;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.hibernate.search.annotations.*;
+import org.hibernate.search.annotations.Index;
 import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.web.multipart.MultipartFile;
 import uz.micros.estore.entity.BaseEntity;
@@ -12,6 +14,7 @@ import java.util.UUID;
 
 @Entity
 @Table(name = "Books")
+@Indexed
 public class Book extends BaseEntity {
     public Book() {
     }
@@ -19,6 +22,7 @@ public class Book extends BaseEntity {
     @NotEmpty
     @Size(max = 200)
     @Column(name = "title", columnDefinition = "varchar(200)", nullable = false, unique = true)
+    @Field(index = Index.YES, analyze = Analyze.NO, store = Store.NO)
     private String title;
 
     @Column(name = "author_id", insertable = false, updatable = false)
@@ -64,6 +68,7 @@ public class Book extends BaseEntity {
     @NotEmpty
     @Size(max = 3072)
     @Column(name = "description", nullable = false, columnDefinition = "varchar(3072)")
+    @Field(index = Index.YES, analyze = Analyze.NO, store = Store.NO)
     private String desc;
 
     //@NotNull
