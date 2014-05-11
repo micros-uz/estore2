@@ -52,8 +52,10 @@ public class BookService {
                 .buildQueryBuilder().forEntity(Book.class).get();
         org.apache.lucene.search.Query qry = qb
                 .keyword()
-                .onFields("title", "desc")
-                .matching(query)
+                    .wildcard()
+                .onField("title")
+                // start with "*" - performance penalty
+                .matching("*" + query + "*")
                 .createQuery();
 
         javax.persistence.Query persistenceQuery =

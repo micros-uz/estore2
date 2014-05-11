@@ -19,7 +19,7 @@
         <springframework.social.facebook-version>1.1.1.RELEASE</springframework.social.facebook-version>
         <spring-social-twitter.version>1.1.0.RELEASE</spring-social-twitter.version>
 
-        <jdk.version>1.8</jdk.version>
+        <jdk.version>1.7</jdk.version>
         <junit.version>4.11</junit.version>
         <jetty.version>9.2.0.M1</jetty.version>
         <thymeleaf.version>2.1.2.RELEASE</thymeleaf.version>
